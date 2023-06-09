@@ -4,75 +4,81 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/dist/output.css" rel="stylesheet" />
+        <link href="assets/css/dist/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
         <title>Бетар Волга - Главная</title>
     </head>
     <body>
         <div class="page">
             <header id="header" class="header">
-                <!-- top -->
-                <div
-                    class="flex justify-between h-12 bg-slate-400 items-center"
-                >
-                    <!-- location -->
-                    <div class="flex space-x-2 items-center">
-                        <svg class="w-6 h-6">
-                            <use href="/src/icons/sprites.svg#geo" />
-                        </svg>
-                        <span>Волгоград</span>
-                    </div>
-
-                    <!-- nav -->
-                    <nav>
-                        <ul class="flex space-x-10">
-                            <li><a href="#">Покупателям</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
+                <div class="bg-[#E6EBEF]">
+                    <div
+                        class="flex justify-between h-12 items-center max-w-screen-xl mx-auto"
+                    >
+                        <div
+                            class="flex space-x-2 items-center text-b2 fill-textSecondary text-textSecondary"
+                        >
+                            <svg class="w-6 h-6">
+                                <use href="assets/icons/sprites.svg#geo" />
+                            </svg>
+                            <span>Волгоград</span>
+                        </div>
+                        <nav>
+                            <ul
+                                class="flex space-x-10 text-b2 text-textSecondary"
+                            >
+                                <li><a href="#">Покупателям</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div
+                            class="flex space-x-5 items-center text-b2 text-textSecondary"
+                        >
+                            <span>Вход</span>
+                            <span class="h-3.5 w-[1px] bg-textSecondary"></span>
+                            <span class="text-textPrimary">Регистрация</span>
+                        </div>
+                        <ul class="flex space-x-4 stroke-textSecondary">
+                            <li>
+                                <a href="#">
+                                    <svg class="w-6 h-6">
+                                        <use
+                                            href="assets/icons/sprites.svg#telegram"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="w-6 h-6">
+                                        <use
+                                            href="assets/icons/sprites.svg#whatsapp"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                    </nav>
-
-                    <!-- auth -->
-                    <div class="flex space-x-5">
-                        <span>Вход</span>
-                        <span>|</span>
-                        <span>Регистрация</span>
                     </div>
-
-                    <!-- socials -->
-                    <ul class="flex space-x-4">
-                        <li>
-                            <a href="#">
-                                <svg class="w-6 h-6">
-                                    <use
-                                        href="/src/icons/sprites.svg#telegram"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <svg class="w-6 h-6">
-                                    <use
-                                        href="/src/icons/sprites.svg#whatsapp"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-
-                <!-- middle -->
-                <div class="flex justify-between items-center h-24">
+                <div
+                    class="flex justify-between items-center h-24 border-b-[1px] border-stroke-1 max-w-screen-xl mx-auto"
+                >
                     <div class="flex space-x-6 items-center">
                         <!-- logo -->
                         <a href="#">
                             <img
-                                src="/src/images/logo.svg"
+                                src="assets/images/logo.svg"
                                 alt="Logo"
                                 class="h-10"
                             />
                         </a>
-                        <div class="">
+                        <div class="text-b2 text-[#333333]">
                             Сантехника<br />
                             и хозтовары
                         </div>
@@ -81,76 +87,92 @@
                     <div class="flex space-x-5 items-center">
                         <!-- catalog button -->
                         <div
-                            class="flex space-x-3 items-center px-5 py-3 bg-slate-700 rounded-lg"
+                            class="flex space-x-3 items-center px-5 py-3 rounded-lg bg-accent-1 text-fullWhite stroke-fullWhite text-[14px] font-medium"
                         >
                             <svg class="w-6 h-6">
-                                <use href="/src/icons/sprites.svg#burger" />
+                                <use href="assets/icons/sprites.svg#burger" />
                             </svg>
                             <span>Каталог</span>
                         </div>
 
                         <!-- input -->
                         <div
-                            class="rounded-lg border relative flex items-center gap-x-3 pr-3"
+                            class="rounded-lg relative flex items-center gap-x-3 pr-3 border border-stroke-1"
                         >
-                            <svg class="w-6 h-6 absolute left-3">
-                                <use href="/src/icons/sprites.svg#search" />
+                            <svg
+                                class="w-6 h-6 absolute left-3 text-textSecondary"
+                            >
+                                <use href="assets/icons/sprites.svg#search" />
                             </svg>
                             <input
                                 type="text"
-                                class="w-96 pl-12 h-11"
+                                class="w-96 pl-12 h-11 placeholder-gray text-b3"
                                 placeholder="Поиск по каталогу"
                             />
-                            <div class="h-5 w-px bg-black"></div>
-                            <button class="px-5">Найти</button>
+                            <div class="h-5 w-px bg-stroke-1"></div>
+                            <button class="px-5 text-c1 text-accent-1">
+                                Найти
+                            </button>
                         </div>
                     </div>
 
                     <ul class="flex space-x-4">
-                        <li>
+                        <li
+                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center"
+                        >
                             <a href="#">
-                                <svg class="w-6 h-6">
+                                <svg class="w-6 h-6 fill-textSecondary">
                                     <use
-                                        href="/src/icons/sprites.svg#comparison"
+                                        href="assets/icons/sprites.svg#comparison"
                                     />
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li
+                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center"
+                        >
                             <a href="#">
-                                <svg class="w-6 h-6">
+                                <svg class="w-6 h-6 stroke-textSecondary">
                                     <use
-                                        href="/src/icons/sprites.svg#wishlist"
+                                        href="assets/icons/sprites.svg#wishlist"
                                     />
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li
+                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center relative"
+                        >
                             <a href="#">
-                                <!-- decor element -->
-                                <svg class="w-6 h-6">
-                                    <use href="/src/icons/sprites.svg#bag" />
+                                <span
+                                    class="w-5 h-5 rounded-full bg-accent-2 text-[10px] text-fullWhite absolute -right-2 -top-0.5 flex items-center justify-center"
+                                    >0</span
+                                >
+                                <svg class="w-6 h-6 fill-textSecondary">
+                                    <use href="assets/icons/sprites.svg#bag" />
                                 </svg>
                             </a>
                         </li>
                     </ul>
                 </div>
-
-                <!-- bottom -->
-                <div class="flex justify-between">
-                    <nav class="flex space-x-8 items-center">
+                <div class="flex justify-between h-20 max-w-screen-xl mx-auto">
+                    <nav
+                        class="flex space-x-8 items-center text-b2 text-textSecondary"
+                    >
                         <ul class="flex space-x-8 items-center">
                             <li><a href="#">Водоснабжение</a></li>
                             <li><a href="#">Отопление</a></li>
                             <li><a href="#">Сантехника</a></li>
                         </ul>
-                        <div class="h-4 w-px bg-black"></div>
+                        <span class="h-3.5 w-px bg-gray"></span>
                         <ul class="flex space-x-8 items-center">
                             <li>
-                                <a href="#" class="flex space-x-2">
+                                <a
+                                    href="#"
+                                    class="flex items-center space-x-2 text-accent-2"
+                                >
                                     <svg class="w-6 h-6">
                                         <use
-                                            href="/src/icons/sprites.svg#promo"
+                                            href="assets/icons/sprites.svg#promo"
                                         />
                                     </svg>
                                     <span>Акции</span>
@@ -162,25 +184,82 @@
                     </nav>
 
                     <div class="flex items-center space-x-3">
-                        <span>пн-пт 9:00–19:00</span>
-                        <a href="#">+7 962 760-04-84</a>
-                        <a href="#" class="px-3 py-1.5 border rounded-lg"
+                        <span class="text-b3 text-[#828282]"
+                            >пн-пт 9:00–19:00</span
+                        >
+                        <a href="#" class="text-b2 text-textSecondary"
+                            >+7 962 760-04-84</a
+                        >
+                        <a
+                            href="#"
+                            class="px-3.5 py-1.5 border rounded-lg text-b2 text-accent-1 border-stroke-1"
                             >Обратный звонок</a
                         >
                     </div>
                 </div>
             </header>
 
-            <section>
-                <!-- slider -->
+            <section class="pt-10 pb-20 max-w-screen-xl mx-auto">
+                <div class="relative mb-10">
+                    <div
+                        class="flex flex-col items-start absolute top-10 left-10"
+                    >
+                        <h2 class="text-h2 text-fullWhite mb-5">
+                            Сантехника и хотовары<br />оптом и в розницу
+                        </h2>
+                        <a
+                            href="#"
+                            class="text-fullWhite bg-accent-1 rounded-lg text-b2 py-4 px-8 inline-flex"
+                        >
+                            Подробнее
+                        </a>
+                    </div>
+                    <div
+                        class="flex items-center space-x-1.5 rounded-lg p-2.5 bg-fullWhite absolute top-10 right-10"
+                    >
+                        <div>
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_left"
+                                />
+                            </svg>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <span
+                                class="w-1.5 h-1.5 bg-accent-1 rounded-full"
+                            ></span>
+                            <span
+                                class="w-1.5 h-1.5 bg-stroke-1 rounded-full"
+                            ></span>
+                            <span
+                                class="w-1.5 h-1.5 bg-stroke-1 rounded-full"
+                            ></span>
+                            <span
+                                class="w-1.5 h-1.5 bg-stroke-1 rounded-full"
+                            ></span>
+                        </div>
+                        <div>
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_right"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <img
+                        src="assets/images/slider-image.png"
+                        alt=""
+                        class="rounded-[20px] w-full"
+                    />
+                </div>
 
-                <div class="grid grid-cols-3">
+                <div class="flex justify-between">
                     <div class="flex items-center space-x-5">
                         <div
-                            class="w-24 h-24 flex items-center justify-center border rounded-full"
+                            class="w-24 h-24 flex items-center justify-center border border-stroke-1 rounded-full"
                         >
-                            <svg class="w-12 h-12">
-                                <use href="/src/icons/sprites.svg#365" />
+                            <svg class="w-12 h-12 fill-gray">
+                                <use href="assets/icons/sprites.svg#365" />
                             </svg>
                         </div>
                         <p>
@@ -190,10 +269,10 @@
                     </div>
                     <div class="flex items-center space-x-5">
                         <div
-                            class="w-24 h-24 flex items-center justify-center border rounded-full"
+                            class="w-24 h-24 flex items-center justify-center border border-stroke-1 rounded-full"
                         >
-                            <svg class="w-12 h-12">
-                                <use href="/src/icons/sprites.svg#location" />
+                            <svg class="w-12 h-12 fill-gray stroke-gray">
+                                <use href="assets/icons/sprites.svg#location" />
                             </svg>
                         </div>
                         <p>
@@ -203,10 +282,10 @@
                     </div>
                     <div class="flex items-center space-x-5">
                         <div
-                            class="w-24 h-24 flex items-center justify-center border rounded-full"
+                            class="w-24 h-24 flex items-center justify-center border border-stroke-1 rounded-full"
                         >
-                            <svg class="w-12 h-12">
-                                <use href="/src/icons/sprites.svg#pallet" />
+                            <svg class="w-12 h-12 fill-gray">
+                                <use href="assets/icons/sprites.svg#pallet" />
                             </svg>
                         </div>
                         <p>
@@ -217,19 +296,22 @@
                 </div>
             </section>
 
-            <!-- season goods -->
-            <section>
-                <div class="flex justify-between">
-                    <div class="flex space-x-8">
-                        <h1>Сезонные товары</h1>
+            <section
+                class="py-20 border-t-[1px] border-stroke-1 max-w-screen-xl mx-auto"
+            >
+                <div
+                    class="flex justify-between border-b-[1px] border-stroke-1 pb-4 mb-14"
+                >
+                    <div class="flex space-x-8 items-center">
+                        <h1 class="text-h2">Сезонные товары</h1>
                         <a
                             href="#"
-                            class="flex space-x-1.5 items-center border rounded-lg pl-5 h-9 pr-3"
+                            class="flex space-x-1.5 items-center border border-stroke-1 rounded-lg pl-5 h-9 pr-3"
                         >
-                            <span>В каталог</span>
-                            <svg class="w-6 h-6">
+                            <span class="text-accent-1">В каталог</span>
+                            <svg class="w-6 h-6 fill-accent-1">
                                 <use
-                                    href="/src/icons/sprites.svg#arrow_right"
+                                    href="assets/icons/sprites.svg#arrow_right"
                                 />
                             </svg>
                         </a>
@@ -237,18 +319,20 @@
 
                     <ul class="flex items-center space-x-4">
                         <li
-                            class="w-16 h-16 border rounded-full flex items-center justify-center"
+                            class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
                         >
-                            <svg class="w-8 h-8">
-                                <use href="/src/icons/sprites.svg#arrow_left" />
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_left"
+                                />
                             </svg>
                         </li>
                         <li
-                            class="w-16 h-16 border rounded-full flex items-center justify-center"
+                            class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
                         >
-                            <svg class="w-8 h-8">
+                            <svg class="w-8 h-8 fill-accent-1">
                                 <use
-                                    href="/src/icons/sprites.svg#arrow_right"
+                                    href="assets/icons/sprites.svg#arrow_right"
                                 />
                             </svg>
                         </li>
@@ -256,64 +340,86 @@
                 </div>
 
                 <!-- card block -->
-                <div class="flex">
+                <div class="flex mb-10">
                     <!-- card item -->
-                    <div class="border px-4 pt-4 pb-6 rounded-2xl">
-                        <div class="relative border rounded-lg mb-6">
+                    <div
+                        class="border border-stroke-1 px-4 pt-4 pb-6 rounded-2xl w-[325px]"
+                    >
+                        <div
+                            class="relative border border-stroke-1 rounded-lg mb-6"
+                        >
                             <!-- tags -->
                             <ul class="absolute top-4 left-4">
-                                <li class="px-2 py-1 bg-slate-600 rounded-md">
+                                <li
+                                    class="px-2 py-1 rounded-md bg-accent-2 text-[#F2F2F2] text-[12px]"
+                                >
                                     -20%
                                 </li>
                             </ul>
 
                             <!-- favourites and stats -->
-                            <ul>
-                                <li>
-                                    <!-- fav icon -->
+                            <ul class="absolute top-4 right-0 space-y-3">
+                                <li
+                                    class="w-12 h-12 border-stroke-2 border-y-[1px] border-l-[1px] rounded-lg flex items-center justify-center"
+                                >
+                                    <svg class="w-6 h-6 stroke-gray">
+                                        <use
+                                            href="assets/icons/sprites.svg#wishlist"
+                                        />
+                                    </svg>
                                 </li>
-                                <li>
-                                    <!-- stat icon -->
+                                <li
+                                    class="w-12 h-12 border-stroke-2 border-y-[1px] border-l-[1px] rounded-lg flex items-center justify-center"
+                                >
+                                    <svg class="w-6 h-6 fill-gray">
+                                        <use
+                                            href="assets/icons/sprites.svg#comparison"
+                                        />
+                                    </svg>
                                 </li>
                             </ul>
-                            <img src="/src/images/card-image.png" alt="" />
+                            <img src="assets/images/card-image.png" alt="" />
                         </div>
 
-                        <div class="mb-2">Артикул: i007827</div>
-                        <h2 class="mb-4 h-16">
-                            Шуруповёрт «MASTER» ДА-18/2 Li (10)
+                        <div class="mb-2 text-c1">Артикул: i007827</div>
+                        <h2 class="mb-4 h-16 text-b1 text-[#333333]">
+                            <span class="font-medium">Шуруповёрт</span> «MASTER»
+                            ДА-18/2 Li (10)
                         </h2>
 
                         <div class="flex justify-between mb-2">
-                            <div>В наличии</div>
-                            <div class="line-through">4200 ₽</div>
+                            <div class="text-label text-c1">В наличии</div>
+                            <div class="line-through text-gray text-[14px]">
+                                4200 ₽
+                            </div>
                         </div>
 
-                        <div class="text-right mb-4">
-                            3 360 <span>₽</span><span>/шт.</span>
+                        <div class="text-right mb-4 text-textSecondary text-h4">
+                            3 360 <span>₽</span
+                            ><span class="text-c1 text-gray">/шт.</span>
                         </div>
 
                         <div class="grid grid-cols-2 gap-x-3 items-center">
                             <!-- counter -->
                             <div
-                                class="flex justify-between items-center h-10 rounded-lg border"
+                                class="flex justify-between items-center h-10 rounded-lg border border-stroke-1"
                             >
                                 <div
                                     class="w-10 h-10 flex items-center justify-center"
                                 >
-                                    <svg class="w-4 h-4">
+                                    <svg class="w-4 h-4 stroke-accent-1">
                                         <use
-                                            href="/src/icons/sprites.svg#minus"
+                                            href="assets/icons/sprites.svg#minus"
                                         />
                                     </svg>
                                 </div>
-                                <div>1</div>
+                                <div class="text-b3">1</div>
                                 <div
                                     class="w-10 h-10 flex items-center justify-center"
                                 >
-                                    <svg class="w-4 h-4">
+                                    <svg class="w-4 h-4 stroke-accent-1">
                                         <use
-                                            href="/src/icons/sprites.svg#plus"
+                                            href="assets/icons/sprites.svg#plus"
                                         />
                                     </svg>
                                 </div>
@@ -321,10 +427,10 @@
 
                             <!-- in cart -->
                             <button
-                                class="flex items-center justify-center bg-slate-500 space-x-2 h-10 rounded-lg"
+                                class="flex items-center justify-center space-x-2 h-10 rounded-lg bg-accent-1 text-b3 text-fullWhite fill-fullWhite"
                             >
                                 <svg class="w-4 h-4">
-                                    <use href="/src/icons/sprites.svg#bag" />
+                                    <use href="assets/icons/sprites.svg#bag" />
                                 </svg>
                                 <span>В корзину</span>
                             </button>
@@ -332,318 +438,598 @@
                     </div>
                 </div>
 
-                <!-- dots of slider -->
-            </section>
-
-            <!-- categories -->
-            <section>
-                <div class="">
-                    <h1>Категории</h1>
-                    <a href="#">
-                        Перейти в каталог
-                        <!-- svg icon -->
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-2 gap-x-5">
-                    <div
-                        class="relative flex flex-col items-start justify-between"
-                    >
-                        <img
-                            src="/src/images/category-item-1.png"
-                            alt=""
-                        />
-                        <ul class="absolute top-0 left-">
-                            <li>Для раковины и умывальника</li>
-                            <li>Для ванной и душа</li>
-                            <li>Для кухни</li>
-                            <li>Трубки для смесителя</li>
-                            <li>Шланги и лейки для душа</li>
-                            <li>Комплектующие</li>
-                            <li>Сифоны</li>
-                        </ul>
-                        <div class="absolute bottom-0 left-0">
-                            <div class="mb-6">
-                                <h4>Сантехника</h4>
-                                <span>0000</span>
-                            </div>
-                            <a
-                                href="#"
-                                class="py-3 px-6 rounded-lg bg-orange-300"
-                            >
-                                Подробнее
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-rows-2 gap-y-5">
-                        <div
-                            class="relative flex flex-col items-start justify-between"
-                        >
-                            <img
-                                src="/src/images/category-item-2.png"
-                                alt=""
-                                class="absolute bottom-0 right-0 w-full h-full"
-                            />
-                            <ul>
-                                <li>Насосы и комплектующие</li>
-                                <li>Системы фильтрации воды</li>
-                            </ul>
-                            <div>
-                                <div class="mb-6">
-                                    <h4>Водоснабжение</h4>
-                                    <span>1111</span>
-                                </div>
-                                <a
-                                    href="#"
-                                    class="py-3 px-6 rounded-lg bg-orange-300"
-                                >
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                        <div
-                            class="relative flex flex-col items-start justify-between"
-                        >
-                            <img
-                                src="/src/images/category-item-3.png"
-                                alt=""
-                                class="absolute bottom-0 right-0 w-full h-full"
-                            />
-                            <ul>
-                                <li>Радиаторы и комплектующие</li>
-                                <li>Газовые колонки</li>
-                            </ul>
-                            <div>
-                                <div class="mb-6">
-                                    <h4>Отопление</h4>
-                                    <span>1111</span>
-                                </div>
-                                <a
-                                    href="#"
-                                    class="py-3 px-6 rounded-lg bg-orange-300"
-                                >
-                                    Подробнее
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-3 gap-x-5">
-                    <div
-                        class="relative flex flex-col items-start justify-between"
-                    >
-                        <img
-                            src="/src/images/category-item-4.png"
-                            alt=""
-                            class="absolute bottom-0 right-0 w-full h-full"
-                        />
-                        <ul>
-                            <li>Полипропиленовые</li>
-                            <li>Канализационные</li>
-                        </ul>
-                        <div>
-                            <div class="mb-6">
-                                <h4>Трубы и фитинги</h4>
-                                <span>1111</span>
-                            </div>
-                            <a
-                                href="#"
-                                class="py-3 px-6 rounded-lg bg-orange-300"
-                            >
-                                Подробнее
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="relative flex flex-col items-start justify-between"
-                    >
-                        <img
-                            src="/src/images/category-item-5.png"
-                            alt=""
-                            class="absolute bottom-0 right-0 w-full h-full"
-                        />
-                        <ul>
-                            <li>Счётчики электроэнергии</li>
-                            <li>Счётчики воды</li>
-                            <li>Счётчики газа</li>
-                        </ul>
-                        <div>
-                            <div class="mb-6">
-                                <h4>Приборы учёта</h4>
-                                <span>1111</span>
-                            </div>
-                            <a
-                                href="#"
-                                class="py-3 px-6 rounded-lg bg-orange-300"
-                            >
-                                Подробнее
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="relative flex flex-col items-start justify-between"
-                    >
-                        <img
-                            src="/src/images/category-item-6.png"
-                            alt=""
-                            class="absolute bottom-0 right-0 w-full h-full"
-                        />
-                        <ul>
-                            <li>Хозтовары</li>
-                            <li>Инструменты</li>
-                            <li>Крепёж и хомуты</li>
-                        </ul>
-                        <div>
-                            <div class="mb-6">
-                                <h4>Что ещё у нас есть</h4>
-                                <span>1111</span>
-                            </div>
-                            <a
-                                href="#"
-                                class="py-3 px-6 rounded-lg bg-orange-300"
-                            >
-                                Подробнее
-                            </a>
-                        </div>
-                    </div>
+                <div class="flex items-center justify-center space-x-3">
+                    <div class="w-2.5 h-2.5 bg-accent-2 rounded-full"></div>
+                    <div class="w-2.5 h-2.5 bg-stroke-1 rounded-full"></div>
+                    <div class="w-2.5 h-2.5 bg-stroke-1 rounded-full"></div>
+                    <div class="w-2.5 h-2.5 bg-stroke-1 rounded-full"></div>
+                    <div class="w-2.5 h-2.5 bg-stroke-1 rounded-full"></div>
+                    <div class="w-2.5 h-2.5 bg-stroke-1 rounded-full"></div>
+                    <div class="w-2.5 h-2.5 bg-stroke-1 rounded-full"></div>
                 </div>
             </section>
 
-            <!-- promo -->
-            <section>
-                <div>
-                    <h1>Акции</h1>
-                    <ul>
-                        <li>
-                            <!-- svg icon -->
+            <section class="bg-white py-20">
+                <div class="max-w-screen-xl mx-auto">
+                    <div
+                        class="flex items-center justify-between border-b-[1px] border-stroke-1 pb-4 mb-14"
+                    >
+                        <h2 class="text-h2">Категории</h2>
+                        <a
+                            href="#"
+                            class="flex space-x-1.5 items-center border border-stroke-1 rounded-lg pl-5 h-9 pr-3 body-2"
+                        >
+                            <span class="text-accent-1">Перейти в каталог</span>
+                            <svg class="w-6 h-6 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_right"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-5 mb-10">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div
+                                class="relative flex flex-col items-start justify-between bg-fullWhite rounded-2xl border border-stroke-2 h-[588px] w-full p-10"
+                            >
+                                <ul
+                                    class="flex items-center gap-2.5 text-b3 text-[#828282] flex-wrap"
+                                >
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Для раковины и умывальника
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Для ванной и душа
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Для кухни
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Трубки для смесителя
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Шланги и лейки для душа
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Комплектующие
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Сифоны
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="mb-6 flex space-x-1.5">
+                                        <h4 class="text-h4 text-textSecondary">
+                                            Сантехника
+                                        </h4>
+                                        <span class="text-b1 text-gray"
+                                            >0000</span
+                                        >
+                                    </div>
+                                    <a
+                                        href="#"
+                                        class="py-1.5 px-3.5 rounded-lg text-accent-1 text-b2 inline-flex border border-stroke-1"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-y-5">
+                                <div
+                                    class="relative flex flex-col items-start justify-between bg-fullWhite rounded-2xl border border-stroke-2 h-full w-full p-10"
+                                >
+                                    <ul
+                                        class="flex items-center flex-wrap gap-2.5 text-b3 text-[#828282] w-1/2"
+                                    >
+                                        <li
+                                            class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                        >
+                                            Насосы и комплектующие
+                                        </li>
+                                        <li
+                                            class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                        >
+                                            Системы фильтрации воды
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <div class="mb-6 flex space-x-1.5">
+                                            <h4
+                                                class="text-h4 text-textSecondary"
+                                            >
+                                                Водоснабжение
+                                            </h4>
+                                            <span class="text-b1 text-gray"
+                                                >1111</span
+                                            >
+                                        </div>
+                                        <a
+                                            href="#"
+                                            class="py-1.5 px-3.5 rounded-lg text-accent-1 text-b2 inline-flex border border-stroke-1"
+                                        >
+                                            Подробнее
+                                        </a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="relative flex flex-col items-start justify-between bg-fullWhite rounded-2xl border border-stroke-2 h-full w-full p-10"
+                                >
+                                    <ul
+                                        class="flex items-center flex-wrap gap-2.5 text-b3 text-[#828282] w-1/2"
+                                    >
+                                        <li
+                                            class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                        >
+                                            Радиаторы и комплектующие
+                                        </li>
+                                        <li
+                                            class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                        >
+                                            Газовые колонки
+                                        </li>
+                                    </ul>
+                                    <div>
+                                        <div class="mb-6 flex space-x-1.5">
+                                            <h4
+                                                class="text-h4 text-textSecondary"
+                                            >
+                                                Отопление
+                                            </h4>
+                                            <span class="text-b1 text-gray"
+                                                >1111</span
+                                            >
+                                        </div>
+                                        <a
+                                            href="#"
+                                            class="py-1.5 px-3.5 rounded-lg text-accent-1 text-b2 inline-flex border border-stroke-1"
+                                        >
+                                            Подробнее
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-5">
+                            <div
+                                class="relative flex flex-col items-start justify-between bg-fullWhite rounded-2xl border border-stroke-2 h-[440px] p-10"
+                            >
+                                <ul
+                                    class="flex items-center flex-wrap gap-2.5 text-b3 text-[#828282] w-1/2"
+                                >
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Полипропиленовые
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Канализационные
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="mb-6 flex space-x-1.5">
+                                        <h4 class="text-h4 text-textSecondary">
+                                            Трубы и фитинги
+                                        </h4>
+                                        <span class="text-b1 text-gray"
+                                            >0000</span
+                                        >
+                                    </div>
+                                    <a
+                                        href="#"
+                                        class="py-1.5 px-3.5 rounded-lg text-accent-1 text-b2 inline-flex border border-stroke-1"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="relative flex flex-col items-start justify-between bg-fullWhite rounded-2xl border border-stroke-2 h-[440px] p-10"
+                            >
+                                <ul
+                                    class="flex items-center flex-wrap gap-2.5 text-b3 text-[#828282] w-1/2"
+                                >
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Счётчики электроэнергии
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Счётчики воды
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Счётчики газа
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="mb-6 flex space-x-1.5">
+                                        <h4 class="text-h4 text-textSecondary">
+                                            Приборы учёта
+                                        </h4>
+                                        <span class="text-b1 text-gray"
+                                            >0000</span
+                                        >
+                                    </div>
+                                    <a
+                                        href="#"
+                                        class="py-1.5 px-3.5 rounded-lg text-accent-1 text-b2 inline-flex border border-stroke-1"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="relative flex flex-col items-start justify-between bg-fullWhite rounded-2xl border border-stroke-2 h-[440px] p-10"
+                            >
+                                <ul
+                                    class="flex items-center flex-wrap gap-2.5 text-b3 text-[#828282] w-1/2"
+                                >
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Хозтовары
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Инструменты
+                                    </li>
+                                    <li
+                                        class="py-1.5 px-3.5 border border-stroke-2 rounded-[30px] whitespace-nowrap"
+                                    >
+                                        Крепёж и хомуты
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="mb-6 flex space-x-1.5">
+                                        <h4 class="text-h4 text-textSecondary">
+                                            Что ещё у нас есть
+                                        </h4>
+                                        <span class="text-b1 text-gray"
+                                            >0000</span
+                                        >
+                                    </div>
+                                    <a
+                                        href="#"
+                                        class="py-1.5 px-3.5 rounded-lg text-accent-1 text-b2 inline-flex border border-stroke-1"
+                                    >
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-8">
+                        <div class="w-full h-[1px] bg-stroke-1"></div>
+                        <a
+                            href="#"
+                            class="text-[15px] font-medium py-4 px-8 bg-accent-1 text-fullWhite rounded-lg whitespace-nowrap"
+                            >Смотреть все категории</a
+                        >
+                        <div class="w-full h-[1px] bg-stroke-1"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-20 max-w-screen-xl mx-auto">
+                <div
+                    class="flex items-center justify-between pb-4 border-b-[1px] border-stroke-1 mb-14"
+                >
+                    <h2 class="text-h2">Акции</h2>
+                    <ul class="flex items-center space-x-4">
+                        <li
+                            class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
+                        >
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_left"
+                                />
+                            </svg>
                         </li>
-                        <li>
-                            <!-- svg icon -->
+                        <li
+                            class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
+                        >
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_right"
+                                />
+                            </svg>
                         </li>
                     </ul>
                 </div>
 
-                <!-- card item -->
+                <div class="flex">
+                    <!-- card item -->
+                    <div
+                        class="border border-stroke-1 px-4 pt-4 pb-6 rounded-2xl w-[325px]"
+                    >
+                        <div
+                            class="relative border border-stroke-1 rounded-lg mb-6"
+                        >
+                            <!-- tags -->
+                            <ul class="absolute top-4 left-4">
+                                <li
+                                    class="px-2 py-1 rounded-md bg-accent-2 text-[#F2F2F2] text-[12px]"
+                                >
+                                    -20%
+                                </li>
+                            </ul>
+
+                            <!-- favourites and stats -->
+                            <ul class="absolute top-4 right-0 space-y-3">
+                                <li
+                                    class="w-12 h-12 border-stroke-2 border-y-[1px] border-l-[1px] rounded-lg flex items-center justify-center"
+                                >
+                                    <svg class="w-6 h-6 stroke-gray">
+                                        <use
+                                            href="assets/icons/sprites.svg#wishlist"
+                                        />
+                                    </svg>
+                                </li>
+                                <li
+                                    class="w-12 h-12 border-stroke-2 border-y-[1px] border-l-[1px] rounded-lg flex items-center justify-center"
+                                >
+                                    <svg class="w-6 h-6 fill-gray">
+                                        <use
+                                            href="assets/icons/sprites.svg#comparison"
+                                        />
+                                    </svg>
+                                </li>
+                            </ul>
+                            <img src="assets/images/card-image.png" alt="" />
+                        </div>
+
+                        <div class="mb-2 text-c1">Артикул: i007827</div>
+                        <h2 class="mb-4 h-16 text-b1 text-[#333333]">
+                            <span class="font-medium">Шуруповёрт</span> «MASTER»
+                            ДА-18/2 Li (10)
+                        </h2>
+
+                        <div class="flex justify-between mb-2">
+                            <div class="text-label text-c1">В наличии</div>
+                            <div class="line-through text-gray text-[14px]">
+                                4200 ₽
+                            </div>
+                        </div>
+
+                        <div class="text-right mb-4 text-textSecondary text-h4">
+                            3 360 <span>₽</span
+                            ><span class="text-c1 text-gray">/шт.</span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-x-3 items-center">
+                            <!-- counter -->
+                            <div
+                                class="flex justify-between items-center h-10 rounded-lg border border-stroke-1"
+                            >
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center"
+                                >
+                                    <svg class="w-4 h-4 stroke-accent-1">
+                                        <use
+                                            href="assets/icons/sprites.svg#minus"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="text-b3">1</div>
+                                <div
+                                    class="w-10 h-10 flex items-center justify-center"
+                                >
+                                    <svg class="w-4 h-4 stroke-accent-1">
+                                        <use
+                                            href="assets/icons/sprites.svg#plus"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- in cart -->
+                            <button
+                                class="flex items-center justify-center space-x-2 h-10 rounded-lg bg-accent-1 text-b3 text-fullWhite fill-fullWhite"
+                            >
+                                <svg class="w-4 h-4">
+                                    <use href="assets/icons/sprites.svg#bag" />
+                                </svg>
+                                <span>В корзину</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <!-- unknown section -->
-            <section class="grid grid-cols-2 gap-x-5">
+            <section class="grid grid-cols-2 gap-x-5 py-20 max-w-screen-xl mx-auto">
                 <div
-                    class="rounded-2xl p-10 flex flex-col justify-between items-start h-80 bg-red-300"
+                    class="rounded-2xl p-10 flex flex-col justify-between items-start h-80 bg-accent-2-opacity relative"
                 >
                     <div class="">
-                        <h2 class="mb-4">Доставка</h2>
-                        <p>
+                        <h2 class="mb-4 text-h3 text-textSecondary">
+                            Доставка
+                        </h2>
+                        <p class="text-b1 text-textPrimary">
                             Условия доставки распространяются только на оптовые
                             заказы
                         </p>
                     </div>
-                    <a href="#" class="py-3 px-6 rounded-lg bg-orange-300"
+                    <a
+                        href="#"
+                        class="py-3 px-6 rounded-lg bg-accent-2 text-fullWhite"
                         >Подробнее</a
                     >
+                    <img
+                        src="assets/icons/delivery.svg"
+                        alt=""
+                        class="absolute right-0 bottom-0"
+                    />
                 </div>
                 <div
-                    class="rounded-2xl p-10 flex flex-col justify-between items-start h-80 bg-red-300"
+                    class="rounded-2xl p-10 flex flex-col justify-between items-start h-80 bg-accent-1-opacity relative"
                 >
                     <div class="">
-                        <h2 class="mb-4">Свой сервисный центр</h2>
-                        <p>
+                        <h2 class="mb-4 text-h3 text-accent-1">
+                            Свой сервисный центр
+                        </h2>
+                        <p class="text-b1 text-textPrimary">
                             Вы можете обратиться в наш сервисный центр, если
                             товары оказались неисправны. Мы приведём их в
                             рабочее состояние
                         </p>
                     </div>
-                    <a href="#" class="py-3 px-6 rounded-lg bg-orange-300"
+                    <a
+                        href="#"
+                        class="py-3 px-6 rounded-lg bg-accent-1 text-fullWhite"
                         >Подробнее</a
                     >
+                    <img
+                        src="assets/icons/yourServiceCenter.svg"
+                        alt=""
+                        class="absolute right-0 bottom-0"
+                    />
                 </div>
             </section>
 
-            <!-- unknown section -->
-            <section>
-                <div class="flex justify-between items-end">
-                    <h1>
-                        Один из ведущих поставщиков сантехнической продукции
-                    </h1>
-                    <p>
-                        в Волгоградской, Астраханской, Саратовской и Ростовской
-                        областях
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-2">
-                    <div class="">
-                        <div class="space-y-6">
-                            <p>
-                                Мы предоставляем полный комплекс услуг
-                                для организаций любого уровня: от небольших
-                                магазинов, до торговых сетей.
-                            </p>
-                            <p>
-                                С 2015 года и по сегодняшний день компания
-                                «Бетар-Волга» непрерывно растёт, расширяет
-                                ассортимент и повышает качество обслуживания.
-                                Мы стараемся воплотить в жизнь все пожелания
-                                заказчиков.
-                            </p>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-5">
-                            <h2 class="h-60">О нас в цифрах:</h2>
-                            <div
-                                class="rounded-2xl h-60 flex flex-col items-center justify-center"
-                            >
-                                <p class="mb-4">8</p>
-                                <p>лет на рынке</p>
-                            </div>
-                            <div
-                                class="rounded-2xl h-60 flex flex-col items-center justify-center"
-                            >
-                                <p class="mb-4">2000</p>
-                                <p>наименований товаров</p>
-                            </div>
-                            <div
-                                class="rounded-2xl h-60 flex flex-col items-center justify-center"
-                            >
-                                <p class="mb-4">90%</p>
-                                <p>товаров всегда в наличии</p>
-                            </div>
-                        </div>
+            <section class="bg-white py-20">
+                <div class="max-w-screen-xl mx-auto">
+                    <div
+                        class="flex justify-between items-end py-8 border-b-[1px] border-stroke-1 mb-[72px]"
+                    >
+                        <h2 class="text-h2">
+                            Один из ведущих поставщиков<br />сантехнической
+                            продукции
+                        </h2>
+                        <p class="text-b1 text-right">
+                            в Волгоградской, Астраханской,<br />Саратовской
+                            и Ростовской областях
+                        </p>
                     </div>
 
-                    <div class="flex flex-col items-center justify-center">
-                        <h2 class="text-center mb-6">Наши сертификаты</h2>
-                        <div class="mb-6">
-                            <!-- swipe elements -->
-                            <img
-                                src="/src/images/certificate.png"
-                                alt="Certificate"
-                                class="rounded-2xl"
-                            />
-                        </div>
-                        <!-- dots of slider -->
-                    </div>
-                </div>
+                    <div class="flex gap-x-5">
+                        <div class="w-1/2">
+                            <div class="space-y-6 mb-[74px]">
+                                <p class="text-b1 text-textSecondary">
+                                    Мы предоставляем полный комплекс услуг
+                                    для организаций любого уровня: от небольших
+                                    магазинов, до торговых сетей.
+                                </p>
+                                <p class="text-b1 text-textSecondary">
+                                    С 2015 года и по сегодняшний день компания
+                                    «Бетар-Волга» непрерывно растёт, расширяет
+                                    ассортимент и повышает качество
+                                    обслуживания. Мы стараемся воплотить в жизнь
+                                    все пожелания заказчиков.
+                                </p>
+                            </div>
 
-                <!-- video -->
-            </section>
-
-            <!-- answers-questions -->
-            <section>
-                <h1>Ответили на самые частые вопросы</h1>
-
-                <div class="">
-                    <div class="">
-                        <div class="">
-                            <div>
-                                <h2>Сколько стоит доставка?</h2>
-                                <div class="">
-                                    <!-- plus icon -->
+                            <div
+                                class="grid grid-cols-2 gap-5 pt-5 border-t-[1px] border-stroke-1"
+                            >
+                                <h2 class="h-60 text-accent-2 text-h3">
+                                    О нас в цифрах:
+                                </h2>
+                                <div
+                                    class="rounded-2xl h-60 flex flex-col items-center justify-center bg-accent-1-opacity"
+                                >
+                                    <p
+                                        class="mb-4 text-textSecondary text-h1 font-medium tracking-tighter"
+                                    >
+                                        8
+                                    </p>
+                                    <p class="text-b3 text-textPrimary">
+                                        лет на рынке
+                                    </p>
+                                </div>
+                                <div
+                                    class="rounded-2xl h-60 flex flex-col items-center justify-center bg-accent-1-opacity"
+                                >
+                                    <p
+                                        class="mb-4 text-textSecondary text-h1 font-medium tracking-tighter"
+                                    >
+                                        2000
+                                    </p>
+                                    <p class="text-b3 text-textPrimary">
+                                        наименований товаров
+                                    </p>
+                                </div>
+                                <div
+                                    class="rounded-2xl h-60 flex flex-col items-center justify-center bg-accent-2-opacity"
+                                >
+                                    <p
+                                        class="mb-4 text-textSecondary text-h1 font-medium tracking-tighter"
+                                    >
+                                        90%
+                                    </p>
+                                    <p class="text-b3 text-textPrimary">
+                                        товаров всегда в наличии
+                                    </p>
                                 </div>
                             </div>
-                            <p>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-center justify-center bg-fullWhite w-1/2 rounded-2xl border border-stroke-2"
+                        >
+                            <h2
+                                class="text-center mb-6 text-h3 text-textSecondary"
+                            >
+                                Наши сертификаты
+                            </h2>
+                            <div class="mb-6">
+                                <!-- swipe elements -->
+                                <img
+                                    src="assets/images/certificate.png"
+                                    alt="Certificate"
+                                    class="rounded-2xl"
+                                />
+                            </div>
+                            <!-- dots of slider -->
+                        </div>
+                    </div>
+
+                    <!-- video -->
+                </div>
+            </section>
+
+            <section class="py-20 max-w-screen-xl mx-auto">
+                <div class="flex pb-4 border-b-[1px] border-stroke-2 mb-14">
+                    <h2 class="text-h2">Ответили на самые частые вопросы</h2>
+                </div>
+
+                <div class="flex items-end gap-x-52">
+                    <div class="w-2/3 flex flex-col space-y-11">
+                        <div
+                            class="flex flex-col pb-5 border-stroke-2 border-b-[1px]"
+                        >
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-h4">Сколько стоит доставка?</h4>
+                                <div class="">
+                                    <svg class="w-8 h-8 stroke-accent-1">
+                                        <use
+                                            href="assets/icons/sprites.svg#plus"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="text-b2 text-textPrimary w-3/4 hidden">
                                 Мы — один из ведущих поставщиков сантехнической
                                 продукции в Волгоградской, Астраханской,
                                 Саратовской и Ростовской областях. Предоставляем
@@ -652,38 +1038,117 @@
                                 сетей.
                             </p>
                         </div>
-                        <div class="">
-                            <div>
-                                <h2>Как я могу вернуть приобретенный товар?</h2>
+                        <div
+                            class="flex flex-col pb-5 border-stroke-2 border-b-[1px]"
+                        >
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-h4">
+                                    Как я могу вернуть приобретенный товар?
+                                </h4>
                                 <div class="">
-                                    <!-- plus icon -->
+                                    <svg class="w-8 h-8 stroke-accent-1">
+                                        <use
+                                            href="assets/icons/sprites.svg#plus"
+                                        />
+                                    </svg>
                                 </div>
                             </div>
-                            <p></p>
+                            <p class="text-b2 text-textPrimary w-3/4 hidden">
+                                Мы — один из ведущих поставщиков сантехнической
+                                продукции в Волгоградской, Астраханской,
+                                Саратовской и Ростовской областях. Предоставляем
+                                полный комплекс услуг для организаций любого
+                                уровня: от небольших магазинов, до торговых
+                                сетей.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col pb-5 border-stroke-2 border-b-[1px]"
+                        >
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-h4">
+                                    Какие сроки возврата товара?
+                                </h4>
+                                <div class="">
+                                    <svg class="w-8 h-8 stroke-accent-1">
+                                        <use
+                                            href="assets/icons/sprites.svg#plus"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="text-b2 text-textPrimary w-3/4 hidden">
+                                Мы — один из ведущих поставщиков сантехнической
+                                продукции в Волгоградской, Астраханской,
+                                Саратовской и Ростовской областях. Предоставляем
+                                полный комплекс услуг для организаций любого
+                                уровня: от небольших магазинов, до торговых
+                                сетей.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col pb-5 border-stroke-2 border-b-[1px]"
+                        >
+                            <div class="flex justify-between items-center mb-4">
+                                <h4 class="text-h4">Сколько стоит доставка?</h4>
+                                <div class="">
+                                    <svg class="w-8 h-8 stroke-accent-1">
+                                        <use
+                                            href="assets/icons/sprites.svg#plus"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="text-b2 text-textPrimary w-3/4 hidden">
+                                Мы — один из ведущих поставщиков сантехнической
+                                продукции в Волгоградской, Астраханской,
+                                Саратовской и Ростовской областях. Предоставляем
+                                полный комплекс услуг для организаций любого
+                                уровня: от небольших магазинов, до торговых
+                                сетей.
+                            </p>
                         </div>
                     </div>
 
-                    <div class="">
-                        <h2>Остались вопросы?</h2>
-                        <p>
-                            Задайте свой вопрос в чате, мы ответим в течение
+                    <div class="w-1/3 flex items-end flex-col">
+                        <h3 class="text-h3 mb-6">Остались вопросы?</h3>
+                        <p class="text-b2 text-textPrimary mb-6 text-right">
+                            Задайте свой вопрос в чате,<br />мы ответим в
+                            течение<br />
                             нескольких минут
                         </p>
-                        <a href="#">Задать вопрос</a>
+                        <a
+                            href="#"
+                            class="bg-accent-1 text-fullWhite py-3 px-6 rounded-lg inline-block"
+                            >Задать вопрос</a
+                        >
                     </div>
                 </div>
             </section>
 
-            <!-- popular brands -->
-            <section>
-                <div class="">
-                    <h1>Популярные бренды</h1>
-                    <ul>
-                        <li>
-                            <!-- svg icon -->
+            <section class="py-20 max-w-screen-xl mx-auto">
+                <div
+                    class="flex items-center justify-between pb-4 border-b-[1px] border-stroke-1 mb-14"
+                >
+                    <h2 class="text-h2">Популярные бренды</h2>
+                    <ul class="flex items-center space-x-4">
+                        <li
+                            class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
+                        >
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_left"
+                                />
+                            </svg>
                         </li>
-                        <li>
-                            <!-- svg icon -->
+                        <li
+                            class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
+                        >
+                            <svg class="w-8 h-8 fill-accent-1">
+                                <use
+                                    href="assets/icons/sprites.svg#arrow_right"
+                                />
+                            </svg>
                         </li>
                     </ul>
                 </div>
@@ -691,19 +1156,19 @@
                 <!-- brands -->
                 <div class="flex space-x-5">
                     <div
-                        class="flex items-center justify-center w-96 h-60 rounded-2xl bg-zinc-600"
+                        class="flex items-center justify-center w-96 h-60 rounded-2xl bg-[#F3F3F3]"
                     >
                         <img
-                            src="/src/images/brand-image.svg"
+                            src="assets/images/brand-image.svg"
                             alt=""
                             class="h-32"
                         />
                     </div>
                     <div
-                        class="flex items-center justify-center w-96 h-60 rounded-2xl bg-zinc-600"
+                        class="flex items-center justify-center w-96 h-60 rounded-2xl bg-[#F3F3F3]"
                     >
                         <img
-                            src="/src/images/brand-image.svg"
+                            src="assets/images/brand-image.svg"
                             alt=""
                             class="h-32"
                         />
@@ -711,150 +1176,204 @@
                 </div>
             </section>
 
-            <!-- our blog -->
-            <section>
-                <div class="">
-                    <h1>Наш блог</h1>
-                    <ul>
-                        <li>
-                            <!-- svg icon -->
-                        </li>
-                        <li>
-                            <!-- svg icon -->
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- card-blog -->
-                <div class="px-5 pt-5 pb-10 w-96 rounded-2xl border">
-                    <img
-                        src="/src/images/blog-image.png"
-                        alt=""
-                        class="rounded-2xl mb-6 w-full"
-                    />
-                    <div class="flex justify-between mb-8">
-                        <h2>Как выбрать унитаз?</h2>
-                        <div>01.01.2023</div>
-                    </div>
-                    <p class="mb-6">
-                        Правильно оборудованный санузел подразумевает тщательный
-                        подход к выбору унитаза. Это обязательный атрибут
-                        современного туалета.
-                    </p>
-                    <a
-                        href="#"
-                        class="px-3 h-8 rounded-lg border inline-flex items-center justify-center"
-                        >Подробнее</a
+            <section class="bg-white py-20">
+                <div class="max-w-screen-xl mx-auto">
+                    <div
+                        class="flex items-center justify-between pb-4 border-b-[1px] border-[#E0E0E0] mb-14"
                     >
+                        <h2 class="text-h2">Наш блог</h2>
+                        <ul class="flex items-center space-x-4">
+                            <li
+                                class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
+                            >
+                                <svg class="w-8 h-8 fill-accent-1">
+                                    <use
+                                        href="assets/icons/sprites.svg#arrow_left"
+                                    />
+                                </svg>
+                            </li>
+                            <li
+                                class="w-16 h-16 border border-stroke-2 rounded-full flex items-center justify-center"
+                            >
+                                <svg class="w-8 h-8 fill-accent-1">
+                                    <use
+                                        href="assets/icons/sprites.svg#arrow_right"
+                                    />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- card-blog -->
+                    <div
+                        class="px-5 pt-5 pb-10 w-96 rounded-2xl border border-stroke-2 bg-fullWhite"
+                    >
+                        <img
+                            src="assets/images/blog-image.png"
+                            alt=""
+                            class="rounded-2xl mb-6 w-full"
+                        />
+                        <div class="flex justify-between mb-8">
+                            <h4 class="text-h4">Как выбрать унитаз?</h4>
+                            <div class="text-c1">01.01.2023</div>
+                        </div>
+                        <p class="mb-6 text-b3 text-[#333333]">
+                            Правильно оборудованный санузел подразумевает
+                            тщательный подход к выбору унитаза. Это обязательный
+                            атрибут современного туалета.
+                        </p>
+                        <a
+                            href="#"
+                            class="px-3 h-8 rounded-lg border border-stroke-1 inline-flex items-center justify-center text-accent-1 text-b2"
+                            >Подробнее</a
+                        >
+                    </div>
                 </div>
             </section>
 
-            <footer id="footer" class="footer bg-slate-700 py-20">
-                <!-- top -->
-                <div class="grid grid-cols-4">
-                    <div class="">
-                        <div class="mb-12">
-                            <!-- logo -->
-                            <a href="#" class="mb-6">
-                                <img
-                                    src="/src/images/logo.svg"
-                                    alt=""
-                                    class="h-10"
-                                />
-                            </a>
-                            <div class="">Сантехника и хозтовары</div>
+            <footer
+                id="footer"
+                class="footer py-20 bg-textSecondary text-white rounded-t-[40px]"
+            >
+                <div class="max-w-screen-xl mx-auto">
+                    <div class="grid grid-cols-4 gap-x-5">
+                        <div class="">
+                            <div class="mb-12">
+                                <a href="#" class="mb-6 inline-block">
+                                    <img
+                                        src="assets/images/logo_dark.svg"
+                                        alt=""
+                                        class="h-10"
+                                    />
+                                </a>
+                                <div class="text-b2">
+                                    Сантехника и хозтовары
+                                </div>
+                            </div>
+                            <div class="mb-24 flex space-x-5 items-center">
+                                <span class="text-b2">Вход</span>
+                                <span class="bg-white h-3.5 w-[1px]"></span>
+                                <span class="text-b2">Регистрация</span>
+                            </div>
+                            <div class="space-x-2 flex items-center">
+                                <svg class="w-6 h-6 fill-white">
+                                    <use href="assets/icons/sprites.svg#geo" />
+                                </svg>
+                                <span class="text-b3"
+                                    >Волгоград, пр. Дорожников, 12Г</span
+                                >
+                            </div>
                         </div>
-
-                        <!-- auth -->
-                        <div class="mb-24 flex space-x-5 items-center">
-                            <span>Вход</span>
-                            <span class=""></span>
-                            <span>Регистрация</span>
+                        <div class="">
+                            <div
+                                class="mb-8 pb-2 border-b-[1px] border-textPrimary text-b3"
+                            >
+                                Каталог
+                            </div>
+                            <nav>
+                                <ul class="space-y-2 text-b2">
+                                    <li><a href="#">Все товары</a></li>
+                                    <li>
+                                        <a href="#">Товары со скидкой (%)</a>
+                                    </li>
+                                    <li><a href="#">Сезонные</a></li>
+                                    <li><a href="#">Популярные</a></li>
+                                    <li><a href="#">Новинки</a></li>
+                                    <li><a href="#">Водоснабжение</a></li>
+                                    <li><a href="#">Отопление</a></li>
+                                    <li><a href="#">Сантехника</a></li>
+                                </ul>
+                            </nav>
                         </div>
-
-                        <!-- location -->
-                        <div class="space-x-2 flex items-center">
-                            <svg class="w-6 h-6">
-                                <use href="/src/icons/sprites.svg#geo" />
-                            </svg>
-                            <span>Волгоград, пр. Дорожников, 12Г</span>
+                        <div class="">
+                            <div
+                                class="mb-8 pb-2 border-b-[1px] border-textPrimary text-b3"
+                            >
+                                Информация
+                            </div>
+                            <nav>
+                                <ul class="space-y-2 text-b2">
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Возврат / обмен</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Частые вопросы</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="">
+                            <div
+                                class="mb-8 pb-2 border-b-[1px] border-textPrimary text-b3"
+                            >
+                                Связаться с нами
+                            </div>
+                            <a href="#" class="mb-3 text-h4 inline-flex"
+                                >+7 962 760-04-84</a
+                            >
+                            <div class="space-x-3 mb-8">
+                                <span class="text-[12px]"
+                                    >пн-пт 9:00–19:00</span
+                                >
+                                <span class=""></span>
+                                <span class="text-b3">Обратный звонок</span>
+                            </div>
+                            <div
+                                class="mb-10 pb-2 text-b3 border-b-[1px] border-textPrimary"
+                            >
+                                Написать нам
+                            </div>
+                            <div class="flex items-center">
+                                <ul class="space-x-2 flex items-center mr-6">
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="inline-flex w-12 h-12 rounded-full items-center justify-center border border-textPrimary"
+                                        >
+                                            <svg
+                                                class="w-6 h-6 stroke-accent-1"
+                                            >
+                                                <use
+                                                    href="assets/icons/sprites.svg#whatsapp"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="#"
+                                            class="inline-flex w-12 h-12 rounded-full items-center justify-center border border-textPrimary"
+                                        >
+                                            <svg
+                                                class="w-6 h-6 stroke-accent-1"
+                                            >
+                                                <use
+                                                    href="assets/icons/sprites.svg#telegram"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="text-b3">betar-vlg.opt@mail.ru</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="mb-8 pb-2">Каталог</div>
-                        <nav>
-                            <ul class="space-y-2">
-                                <li><a href="#">Все товары</a></li>
-                                <li><a href="#">Товары со скидкой (%)</a></li>
-                                <li><a href="#">Сезонные</a></li>
-                                <li><a href="#">Популярные</a></li>
-                                <li><a href="#">Новинки</a></li>
-                                <li><a href="#">Водоснабжение</a></li>
-                                <li><a href="#">Отопление</a></li>
-                                <li><a href="#">Сантехника</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="">
-                        <div class="mb-8 pb-2">Информация</div>
-                        <nav>
-                            <ul class="space-y-2">
-                                <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">Возврат / обмен</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Частые вопросы</a></li>
-                                <li><a href="#">Блог</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="">
-                        <div class="mb-8 pb-2">Связаться с нами</div>
 
-                        <a href="#" class="mb-3">+7 962 760-04-84</a>
-                        <div class="space-x-3">
-                            <span>пн-пт 9:00–19:00</span>
-                            <span class=""></span>
-                            <span>Обратный звонок</span>
+                    <div
+                        class="grid grid-cols-4 pt-6 mt-20 border-t-[1px] border-textPrimary"
+                    >
+                        <div class="text-b3 text-[#828282]">
+                            © 2023 БЕТАР-Волга
                         </div>
-
-                        <div class="mb-10 pb-2">Написать нам</div>
-
-                        <div class="flex items-center">
-                            <ul class="space-x-2 flex items-center mr-6">
-                                <li>
-                                    <a href="#">
-                                        <svg class="w-6 h-6">
-                                            <use
-                                                href="/src/icons/sprites.svg#whatsapp"
-                                            />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <svg class="w-6 h-6">
-                                            <use
-                                                href="/src/icons/sprites.svg#telegram"
-                                            />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div>betar-vlg.opt@mail.ru</div>
+                        <div class="text-b3">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                        <div class="text-b3">
+                            <a href="#">Договор оферты</a>
+                        </div>
+                        <div class="text-b3">
+                            <a href="#">Разработка сайта</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- bottom -->
-                <div class="grid grid-cols-4 pt-6 mt-20">
-                    <div>© 2023 БЕТАР-Волга</div>
-                    <div>
-                        <a href="#">Политика конфиденциальности</a>
-                    </div>
-                    <div>
-                        <a href="#">Договор оферты</a>
-                    </div>
-                    <div><a href="#">Разработка сайта</a></div>
                 </div>
             </footer>
         </div>
