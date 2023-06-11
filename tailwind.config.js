@@ -42,6 +42,20 @@ module.exports = {
                 letterSpacing: '0em',
                 fontWeight: '400',
             }],
+            'mobile-h2': ['24px', {
+                lineHeight: '100%',
+                letterSpacing: '-0.02em',
+                fontWeight: '500',
+            }],
+            'mobile-b1': ['12px', {
+                fontWeight: '500',
+            }],
+            'mobile-b2': ['10px', {
+                fontWeight: '400',
+            }],
+            'mobile-b3': ['8px', {
+                fontWeight: '400',
+            }],
         },
         colors: {
             "accent-1": "#2D88D6",

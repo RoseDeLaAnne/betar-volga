@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="assets/css/dist/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Бетар Волга - Каталог</title>
+    </head>
+    <body>
+        <div class="page">
+            <header id="header" class="header">
+                <div class="bg-[#E6EBEF]">
+                    <div
+                        class="flex justify-between h-12 items-center max-w-screen-xl mx-auto"
+                    >
+                        <div
+                            class="flex space-x-2 items-center text-b2 fill-textSecondary text-textSecondary"
+                        >
+                            <svg class="w-6 h-6">
+                                <use href="assets/icons/sprites.svg#geo" />
+                            </svg>
+                            <span>Волгоград</span>
+                        </div>
+                        <nav>
+                            <ul
+                                class="flex space-x-10 text-b2 text-textSecondary"
+                            >
+                                <li><a href="#">Покупателям</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div
+                            class="flex space-x-5 items-center text-b2 text-textSecondary"
+                        >
+                            <span>Вход</span>
+                            <span class="h-3.5 w-[1px] bg-textSecondary"></span>
+                            <span class="text-textPrimary">Регистрация</span>
+                        </div>
+                        <ul class="flex space-x-4 stroke-textSecondary">
+                            <li>
+                                <a href="#">
+                                    <svg class="w-6 h-6">
+                                        <use
+                                            href="assets/icons/sprites.svg#telegram"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="w-6 h-6">
+                                        <use
+                                            href="assets/icons/sprites.svg#whatsapp"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="flex justify-between items-center h-24 border-b-[1px] border-stroke-1 max-w-screen-xl mx-auto"
+                >
+                    <div class="flex space-x-6 items-center">
+                        <!-- logo -->
+                        <a href="#">
+                            <img
+                                src="assets/images/logo.svg"
+                                alt="Logo"
+                                class="h-10"
+                            />
+                        </a>
+                        <div class="text-b2 text-[#333333]">
+                            Сантехника<br />
+                            и хозтовары
+                        </div>
+                    </div>
+
+                    <div class="flex space-x-5 items-center">
+                        <!-- catalog button -->
+                        <div
+                            class="flex space-x-3 items-center px-5 py-3 rounded-lg bg-accent-1 text-fullWhite stroke-fullWhite text-[14px] font-medium"
+                        >
+                            <svg class="w-6 h-6">
+                                <use href="assets/icons/sprites.svg#burger" />
+                            </svg>
+                            <span>Каталог</span>
+                        </div>
+
+                        <!-- input -->
+                        <div
+                            class="rounded-lg relative flex items-center gap-x-3 pr-3 border border-stroke-1"
+                        >
+                            <svg
+                                class="w-6 h-6 absolute left-3 text-textSecondary"
+                            >
+                                <use href="assets/icons/sprites.svg#search" />
+                            </svg>
+                            <input
+                                type="text"
+                                class="w-96 pl-12 h-11 placeholder-gray text-b3"
+                                placeholder="Поиск по каталогу"
+                            />
+                            <div class="h-5 w-px bg-stroke-1"></div>
+                            <button class="px-5 text-c1 text-accent-1">
+                                Найти
+                            </button>
+                        </div>
+                    </div>
+
+                    <ul class="flex space-x-4">
+                        <li
+                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center"
+                        >
+                            <a href="#">
+                                <svg class="w-6 h-6 fill-textSecondary">
+                                    <use
+                                        href="assets/icons/sprites.svg#comparison"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li
+                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center"
+                        >
+                            <a href="#">
+                                <svg class="w-6 h-6 stroke-textSecondary">
+                                    <use
+                                        href="assets/icons/sprites.svg#wishlist"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li
+                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center relative"
+                        >
+                            <a href="#">
+                                <span
+                                    class="w-5 h-5 rounded-full bg-accent-2 text-[10px] text-fullWhite absolute -right-2 -top-0.5 flex items-center justify-center"
+                                    >0</span
+                                >
+                                <svg class="w-6 h-6 fill-textSecondary">
+                                    <use href="assets/icons/sprites.svg#bag" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-between h-20 max-w-screen-xl mx-auto">
+                    <nav
+                        class="flex space-x-8 items-center text-b2 text-textSecondary"
+                    >
+                        <ul class="flex space-x-8 items-center">
+                            <li><a href="#">Водоснабжение</a></li>
+                            <li><a href="#">Отопление</a></li>
+                            <li><a href="#">Сантехника</a></li>
+                        </ul>
+                        <span class="h-3.5 w-px bg-gray"></span>
+                        <ul class="flex space-x-8 items-center">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="flex items-center space-x-2 text-accent-2"
+                                >
+                                    <svg class="w-6 h-6">
+                                        <use
+                                            href="assets/icons/sprites.svg#promo"
+                                        />
+                                    </svg>
+                                    <span>Акции</span>
+                                </a>
+                            </li>
+                            <li><a href="#">Сезонные товары</a></li>
+                            <li><a href="#">Новинки</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="text-b3 text-[#828282]"
+                            >пн-пт 9:00–19:00</span
+                        >
+                        <a href="#" class="text-b2 text-textSecondary"
+                            >+7 962 760-04-84</a
+                        >
+                        <a
+                            href="#"
+                            class="px-3.5 py-1.5 border rounded-lg text-b2 text-accent-1 border-stroke-1"
+                            >Обратный звонок</a
+                        >
+                    </div>
+                </div>
+            </header>
+
+            <div
+                class="text-b3 text-gray flex items-center space-x-2 max-w-screen-xl mx-auto my-10"
+            >
+                <span>Главная</span><span>/</span>
+                <span class="text-textSecondary">Каталог</span>
+            </div>
+
+            <section>
+                <h2>Каталог</h2>
+
+                <!-- first -->
+                <div class="grid grid-cols-4 gap-x-5">
+                    <div
+                        class="bg-accent-1-opacity rounded-[14px] flex justify-between"
+                    >
+                        <div class="text-b1 font-medium">Товары со скидкой</div>
+                        <img src="assets/icons/catalog-1.svg" alt="" />
+                    </div>
+                    <div
+                        class="bg-accent-2-opacity rounded-[14px] flex justify-between"
+                    >
+                        <div class="text-b1 font-medium">Новинки</div>
+                        <img src="assets/icons/catalog-2.svg" alt="" />
+                    </div>
+                    <div
+                        class="bg-accent-1-opacity rounded-[14px] flex justify-between"
+                    >
+                        <div class="text-b1 font-medium">Популярные</div>
+                        <img src="assets/icons/catalog-3.svg" alt="" />
+                    </div>
+                    <div
+                        class="bg-accent-2-opacity rounded-[14px] flex justify-between"
+                    >
+                        <div class="text-b1 font-medium">Сезонные</div>
+                        <img src="assets/icons/catalog-4.svg" alt="" />
+                    </div>
+                </div>
+
+                <div>
+                    <div class="relative rounded-xl">
+                        <svg class="w-5 h-5 absolute top-0 left-0">
+                            <use href="assets/icons/sprites.svg#search" />
+                        </svg>
+                        <input
+                            type="text"
+                            placeholder="Артикул: i1234567890"
+                            class="py-[18px] px-[18px] text-b3 placeholder-textPrimary bg-white"
+                        />
+                    </div>
+                    <ul class="flex flex-col gap-y-5">
+                        <li>
+                            <a
+                                href="#"
+                                class="inline-flex rounded-[10px] text-b1 medium text-white bg-accent-1 py-5 px-5"
+                                >Сантехника</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="inline-flex rounded-[10px] text-b1 medium py-5 px-5 border border-stroke-2"
+                                >Водоснабжение</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="inline-flex rounded-[10px] text-b1 medium py-5 px-5 border border-stroke-2"
+                                >Отопление</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="inline-flex rounded-[10px] text-b1 medium py-5 px-5 border border-stroke-2"
+                                >Трубы и фитинги</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="inline-flex rounded-[10px] text-b1 medium py-5 px-5 border border-stroke-2"
+                                >Приборы учёта</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="inline-flex rounded-[10px] text-b1 medium py-5 px-5 border border-stroke-2"
+                                >Что ещё у нас есть</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a
+                        href="#"
+                        class="flex items-center justify-between bg-accent-1-opacity py-3 pl-[30px] pr-5 rounded-lg"
+                    >
+                        <span class="text-b1 font-medium text-accent-1"
+                            >Все товары</span
+                        >
+                        <svg class="w-8 h-8 fill-accent-1">
+                            <use href="assets/icons/sprites.svg#arrow_right" />
+                        </svg>
+                    </a>
+
+                    <div class="bg-accent-1-opacity rounded-2xl">
+                        <div class="flex justify-between">
+                            <div class="text-b1 font-medium">Смесители</div>
+                            <div class="text-b2 text-gray">0000</div>
+                        </div>
+
+                        <ul class="flex flex-col gap-y-1.5">
+                            <li>Рычаг</li>
+                            <li>Для кухни</li>
+                            <li>Для ванной и душа</li>
+                            <li>Для раковины и умывальника</li>
+                            <li>Проточные смесители</li>
+                        </ul>
+                        <ul class="flex flex-col gap-y-1.5">
+                            <li>Comfort</li>
+                            <li>IDDIS</li>
+                            <li>MILARDO</li>
+                            <li>SOLONE</li>
+                            <li>ZEGOR</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="bg-white rounded-2xl">
+                            <div class="flex flex-col">
+                                <div class="text-b1 font-medium gap-y-3">
+                                    Труба гофрированная
+                                </div>
+                                <di class="text-b2 text-gray">0000</di>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl">
+                            <div class="flex flex-col">
+                                <div class="text-b1 font-medium gap-y-3">
+                                    Врезки для ёмкостей
+                                </div>
+                                <di class="text-b2 text-gray">0000</di>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-2xl">
+                        <div class="flex flex-col">
+                            <div class="text-b1 font-medium gap-y-3">
+                                Комплектующие для смесителей
+                            </div>
+                            <di class="text-b2 text-gray">0000</di>
+                        </div>
+
+                        <ul class="flex flex-col gap-y-2">
+                            <li>Держатели леек душа</li>
+                            <li>Крепления</li>
+                            <li>Ручки для смесителей</li>
+                            <li>Аэраторы</li>
+                            <li>Изливы</li>
+                            <li>Картриджи для смесителей</li>
+                            <li>Кран-буксы</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-2xl">
+                        <div class="flex flex-col">
+                            <div class="text-b1 font-medium gap-y-3">
+                                Прокладки, кольца, сантех. наборы
+                            </div>
+                            <di class="text-b2 text-gray">0000</di>
+                        </div>
+
+                        <ul class="flex flex-col gap-y-2">
+                            <li>Прокладки и кольца для смывного бочка</li>
+                            <li>Прокладки на американку</li>
+                            <li>Кольца</li>
+                            <li>Наборы прокладок</li>
+                            <li>Прокладки паронит</li>
+                            <li>Прокладки резиновые</li>
+                            <li>Прокладки силиконовые</li>
+                        </ul>
+                    </div>
+                    <div class="bg-accent-2-opacity rounded-2xl">
+                        <div class="flex flex-col">
+                            <div class="text-b1 font-medium gap-y-3">
+                                Трубки для смесителя
+                            </div>
+                            <di class="text-b2 text-gray">0000</di>
+                        </div>
+                    </div>
+                    <div class="bg-accent-2-opacity rounded-2xl">
+                        <div class="flex flex-col">
+                            <div class="text-b1 font-medium gap-y-3">
+                                Регуляторы давления
+                            </div>
+                            <di class="text-b2 text-gray">0000</di>
+                        </div>
+                    </div>
+                    <div class="bg-accent-2-opacity rounded-2xl">
+                        <div class="flex flex-col">
+                            <div class="text-b1 font-medium gap-y-3">
+                                Фитинги
+                            </div>
+                            <di class="text-b2 text-gray">0000</di>
+                        </div>
+
+                        <ul class="flex flex-col gap-y-2">
+                            <li>Gebo и аналоги</li>
+                            <li>Сталь, чугун</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col bg-white">
+                        <div class="text-b1 font-medium gap-y-3">Концевики</div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-white">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Удлинители
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="bg-white rounded-2xl">
+                        <div class="flex flex-col">
+                            <div class="text-b1 font-medium gap-y-3">
+                                Фитинги резьбовые латунные
+                            </div>
+                            <di class="text-b2 text-gray">0000</di>
+                        </div>
+
+                        <ul
+                            class="flex flex-col gap-y-2 text-b2 text-textPrimary"
+                        >
+                            <li>Сгон</li>
+                            <li>Крестовины</li>
+                            <li>Американки</li>
+                            <li>Заглушки</li>
+                            <li class="flex items-start gap-x-1">
+                                Контргайки<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-x-1">
+                                Муфты<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-x-1">
+                                Ниппели<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-x-1">
+                                Переходники<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-x-1">
+                                Тройники<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-x-1">
+                                Угольники<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-x-1">
+                                Футорки<span class="text-gray text-b3"
+                                    >000</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col bg-white rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Трехходовые клапаны
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-white rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Аксессуары для ванных комнат
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-white rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Сифоны
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+
+                    <div class="flex flex-col bg-accent-1-opacity rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Лейки для душа
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-accent-1-opacity rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Шланги для душа
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-accent-1-opacity rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Шланги
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+
+                        <ul class="flex flex-col gap-y-2 text-b3 text-textPrimary">
+                            <li>Шланги наливные</li>
+                            <li>Шланги и фитинги сливные</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col bg-accent-1-opacity rounded-2xl">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Комплектующие
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+
+                        <ul class="flex flex-col flex-wrap gap-y-2 text-b3 text-textPrimary">
+                            <li>Гофры для сифонов</li>
+                            <li>Трубы фановые</li>
+                            <li>Колонки смывные и узлы впуска</li>
+                            <li>Крепеж</li>
+                            <li>Вантузы</li>
+                            <li>Комплектующие для смывного бачка</li>
+                            <li>Бордюрная лента</li>
+                            <li>Отражатели</li>
+                            <li>Арматура для сливных бачков унитазов</li>
+                            <li>Выпуски</li>
+                            <li>Гофротрубы</li>
+                            <li>Клапан слив налив для сливных бачков унитазов</li>
+                            <li>Гофры и манжеты для унитаза</li>
+                            <li>Отводы канализационные</li>
+                            <li>Пробки для сифонов, сеточки и др.</li>
+                            <li>Прокладки</li>
+                            <li>Ремкомплекты</li>
+                            <li>Тросы сантехнические</li>
+                            <li>Хомуты для сифонов</li>
+                            <li>Шланги гофрированные</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col bg-accent-2-opacity rounded-2xl">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Гибкие подводки для воды
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+
+                        <ul class="flex flex-col flex-wrap gap-y-2 text-b3 text-textPrimary">
+                            <li>Подводка угловая для стиральных машин</li>
+                            <li>Гибкие подводки для воды</li>
+                            <li>Гибкие подводки для воды в силиконовой оплётке</li>
+                            <li>Гибкие подводки для смесителей</li>
+                            <li>Гибкие подводки для смесителей в силиконовой оплётке</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col bg-white rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Крышки и сиденья для унитазов
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-white rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Трапы
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                    <div class="flex flex-col bg-white rounded-[14px]">
+                        <div class="text-b1 font-medium gap-y-3">
+                            Штуцеры
+                        </div>
+                        <di class="text-b2 text-gray">0000</di>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

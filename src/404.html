@@ -15,202 +15,374 @@
     </head>
     <body>
         <div class="page">
-            <header id="header" class="header">
-                <div class="bg-[#E6EBEF]">
+            <main
+                id="main"
+                class="main mx-auto flex max-w-screen-xl flex-col gap-y-8 px-2.5 pb-12 sm:px-0"
+            >
+                <!-- <div class="mb-4 mt-5 sm:mb-10 sm:mt-10"> -->
+                <div class="mt-5 sm:mt-10">
                     <div
-                        class="flex justify-between h-12 items-center max-w-screen-xl mx-auto"
+                        class="flex items-center gap-x-[6px] text-mobile-b2 font-medium text-gray sm:text-b3"
                     >
-                        <div
-                            class="flex space-x-2 items-center text-b2 fill-textSecondary text-textSecondary"
-                        >
-                            <svg class="w-6 h-6">
-                                <use href="assets/icons/sprites.svg#geo" />
-                            </svg>
-                            <span>Волгоград</span>
-                        </div>
-                        <nav>
-                            <ul
-                                class="flex space-x-10 text-b2 text-textSecondary"
-                            >
-                                <li><a href="#">Покупателям</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </nav>
-                        <div
-                            class="flex space-x-5 items-center text-b2 text-textSecondary"
-                        >
-                            <span>Вход</span>
-                            <span class="h-3.5 w-[1px] bg-textSecondary"></span>
-                            <span class="text-textPrimary">Регистрация</span>
-                        </div>
-                        <ul class="flex space-x-4 stroke-textSecondary">
-                            <li>
-                                <a href="#">
-                                    <svg class="w-6 h-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#telegram"
-                                        />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg class="w-6 h-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#whatsapp"
-                                        />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                        <div>Главная</div>
+                        <div>/</div>
+                        <div class="text-textSecondary">404</div>
                     </div>
                 </div>
-                <div
-                    class="flex justify-between items-center h-24 border-b-[1px] border-stroke-1 max-w-screen-xl mx-auto"
-                >
-                    <div class="flex space-x-6 items-center">
-                        <!-- logo -->
-                        <a href="#">
-                            <img
-                                src="assets/images/logo.svg"
-                                alt="Logo"
-                                class="h-10"
-                            />
-                        </a>
-                        <div class="text-b2 text-[#333333]">
-                            Сантехника<br />
-                            и хозтовары
-                        </div>
-                    </div>
 
-                    <div class="flex space-x-5 items-center">
-                        <!-- catalog button -->
-                        <div
-                            class="flex space-x-3 items-center px-5 py-3 rounded-lg bg-accent-1 text-fullWhite stroke-fullWhite text-[14px] font-medium"
-                        >
-                            <svg class="w-6 h-6">
-                                <use href="assets/icons/sprites.svg#burger" />
-                            </svg>
-                            <span>Каталог</span>
-                        </div>
-
-                        <!-- input -->
-                        <div
-                            class="rounded-lg relative flex items-center gap-x-3 pr-3 border border-stroke-1"
-                        >
-                            <svg
-                                class="w-6 h-6 absolute left-3 text-textSecondary"
-                            >
-                                <use href="assets/icons/sprites.svg#search" />
-                            </svg>
-                            <input
-                                type="text"
-                                class="w-96 pl-12 h-11 placeholder-gray text-b3"
-                                placeholder="Поиск по каталогу"
-                            />
-                            <div class="h-5 w-px bg-stroke-1"></div>
-                            <button class="px-5 text-c1 text-accent-1">
-                                Найти
-                            </button>
-                        </div>
-                    </div>
-
-                    <ul class="flex space-x-4">
-                        <li
-                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center"
-                        >
-                            <a href="#">
-                                <svg class="w-6 h-6 fill-textSecondary">
-                                    <use
-                                        href="assets/icons/sprites.svg#comparison"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                        <li
-                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center"
-                        >
-                            <a href="#">
-                                <svg class="w-6 h-6 stroke-textSecondary">
-                                    <use
-                                        href="assets/icons/sprites.svg#wishlist"
-                                    />
-                                </svg>
-                            </a>
-                        </li>
-                        <li
-                            class="w-11 h-11 rounded-full border border-stroke-1 flex items-center justify-center relative"
-                        >
-                            <a href="#">
-                                <span
-                                    class="w-5 h-5 rounded-full bg-accent-2 text-[10px] text-fullWhite absolute -right-2 -top-0.5 flex items-center justify-center"
-                                    >0</span
-                                >
-                                <svg class="w-6 h-6 fill-textSecondary">
-                                    <use href="assets/icons/sprites.svg#bag" />
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex justify-between h-20 max-w-screen-xl mx-auto">
-                    <nav
-                        class="flex space-x-8 items-center text-b2 text-textSecondary"
+                <section>
+                    <div
+                        class="flex w-full flex-col items-center justify-center gap-y-6 rounded-[10px] bg-accent-1-opacity py-10 sm:gap-y-8 sm:py-28"
                     >
-                        <ul class="flex space-x-8 items-center">
-                            <li><a href="#">Водоснабжение</a></li>
-                            <li><a href="#">Отопление</a></li>
-                            <li><a href="#">Сантехника</a></li>
-                        </ul>
-                        <span class="h-3.5 w-px bg-gray"></span>
-                        <ul class="flex space-x-8 items-center">
-                            <li>
-                                <a
-                                    href="#"
-                                    class="flex items-center space-x-2 text-accent-2"
-                                >
-                                    <svg class="w-6 h-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#promo"
-                                        />
-                                    </svg>
-                                    <span>Акции</span>
-                                </a>
-                            </li>
-                            <li><a href="#">Сезонные товары</a></li>
-                            <li><a href="#">Новинки</a></li>
-                        </ul>
-                    </nav>
-
-                    <div class="flex items-center space-x-3">
-                        <span class="text-b3 text-[#828282]"
-                            >пн-пт 9:00–19:00</span
+                        <div
+                            class="-my-10 text-[116px] font-medium -tracking-widest text-accent-2 sm:-my-20 sm:text-[216px]"
                         >
-                        <a href="#" class="text-b2 text-textSecondary"
-                            >+7 962 760-04-84</a
+                            404
+                        </div>
+                        <div
+                            class="text-center text-c1 text-textPrimary sm:text-b1"
                         >
+                            К сожалению, такой страницы<br class="sm:hidden" />
+                            ещё нет :(
+                        </div>
                         <a
                             href="#"
-                            class="px-3.5 py-1.5 border rounded-lg text-b2 text-accent-1 border-stroke-1"
-                            >Обратный звонок</a
+                            class="inline-flex rounded-md bg-accent-1 px-6 py-2 text-mobile-b1 text-fullWhite sm:rounded-lg sm:px-12 sm:py-4 sm:text-[15px]"
+                            >На главную</a
                         >
                     </div>
-                </div>
-            </header>
+                </section>
 
-            <div
-                class="text-b3 text-gray flex items-center space-x-2 max-w-screen-xl mx-auto my-10"
+                <section>
+                    <div class="mb-8 sm:mb-14">
+                        <div
+                            class="border-b-[1px] border-[#E0E0E0] pb-3 sm:pb-4"
+                        >
+                            <h2 class="text-mobile-h2 sm:text-h2">
+                                Ответили на самые частые вопросы
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col gap-y-6 sm:flex-row sm:items-end sm:gap-x-52"
+                    >
+                        <div class="mb-6 sm:mb-0 sm:w-3/4">
+                            <div class="flex flex-col gap-y-[26px] sm:gap-y-11">
+                                <div
+                                    class="flex flex-col gap-y-3 border-b-[1px] border-stroke-2 pb-3 sm:gap-y-4 sm:pb-5"
+                                >
+                                    <div
+                                        class="flex items-start justify-between"
+                                    >
+                                        <h4
+                                            class="text-b1 font-medium sm:text-h4"
+                                        >
+                                            Сколько стоит доставка?
+                                        </h4>
+                                        <svg
+                                            class="h-4 w-4 stroke-gray sm:h-8 sm:w-8"
+                                        >
+                                            <use
+                                                href="assets/icons/sprites.svg#plus"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <p
+                                        class="text-mobile-b2 text-textPrimary sm:text-b2"
+                                    >
+                                        Мы — один из ведущих поставщиков
+                                        сантехнической продукции
+                                        в Волгоградской, Астраханской,
+                                        Саратовской и Ростовской областях.
+                                        Предоставляем полный комплекс услуг
+                                        для организаций любого уровня:
+                                        от небольших магазинов, до торговых
+                                        сетей.
+                                    </p>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-y-3 border-b-[1px] border-stroke-2 pb-3 sm:gap-y-4 sm:pb-5"
+                                >
+                                    <div
+                                        class="flex items-start justify-between"
+                                    >
+                                        <h4
+                                            class="text-b1 font-medium sm:text-h4"
+                                        >
+                                            Сколько стоит доставка?
+                                        </h4>
+                                        <svg
+                                            class="h-4 w-4 stroke-gray sm:h-8 sm:w-8"
+                                        >
+                                            <use
+                                                href="assets/icons/sprites.svg#plus"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <p
+                                        class="text-mobile-b2 text-textPrimary sm:text-b2"
+                                    >
+                                        Мы — один из ведущих поставщиков
+                                        сантехнической продукции
+                                        в Волгоградской, Астраханской,
+                                        Саратовской и Ростовской областях.
+                                        Предоставляем полный комплекс услуг
+                                        для организаций любого уровня:
+                                        от небольших магазинов, до торговых
+                                        сетей.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col items-start gap-y-4 sm:w-1/4 sm:items-end sm:gap-y-6"
+                        >
+                            <h4
+                                class="text-b1 font-medium text-[#333333] sm:text-right sm:text-h3"
+                            >
+                                Остались вопросы?
+                            </h4>
+                            <p
+                                class="text-c1 text-textPrimary sm:text-right sm:text-b2 sm:text-[#333333]"
+                            >
+                                Задайте свой вопрос в чате,<br
+                                    class="hidden sm:block"
+                                />
+                                мы ответим <br class="sm:hidden" />в течение<br
+                                    class="hidden sm:block"
+                                />
+                                нескольких минут
+                            </p>
+                            <a
+                                class="inline-flex rounded-md bg-accent-1 px-6 py-2 text-mobile-b1 text-fullWhite sm:rounded-lg sm:py-3 sm:text-b3 sm:font-medium"
+                                >Задать вопрос</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer
+                id="footer"
+                class="footer rounded-t-[10px] bg-textSecondary fill-white px-2.5 py-8 text-white sm:rounded-t-[40px] sm:px-0 sm:py-20"
             >
-                <span>Главная</span><span>/</span>
-                <span class="text-textSecondary">404</span>
-            </div>
+                <div
+                    class="mx-auto flex max-w-screen-xl flex-col gap-y-5 sm:gap-y-12"
+                >
+                    <div
+                        class="flex flex-col gap-y-5 sm:grid sm:grid-cols-4 sm:gap-x-5"
+                    >
+                        <div class="flex flex-col gap-y-5 sm:justify-between">
+                            <div class="flex flex-col gap-y-5 sm:gap-y-12">
+                                <!-- 1 -->
+                                <div
+                                    class="flex gap-x-6 sm:flex-col sm:gap-x-0 sm:gap-y-6"
+                                >
+                                    <a href="#" class="inline-flex">
+                                        <img
+                                            src="assets/images/logo_dark.svg"
+                                            alt="Logo Dark"
+                                            class="h-7 sm:h-10"
+                                        />
+                                    </a>
+                                    <div class="text-c1 sm:text-b2">
+                                        Сантехника<br class="sm:hidden" />
+                                        и хозтовары
+                                    </div>
+                                </div>
 
-            <section class="bg-accent-1-opacity flex flex-col items-center justify-center py-28 max-w-screen-xl mx-auto rounded-3xl">
-                <p class="text-accent-2 font-medium text-[216px]">404</p>
-                <p class="text-b1 text-textPrimary mb-8">К сожалению, такой страницы ещё нет :(</p>
-                <a href="#" class="font-medium text-[15px] inline-flex bg-accent-1 text-fullWhite rounded-lg px-12 py-3">На главную</a>
-            </section>
+                                <!-- 2 -->
+                                <div
+                                    class="flex items-center gap-x-6 text-c1 sm:text-b2"
+                                >
+                                    <div>Вход</div>
+                                    <div
+                                        class="block h-[10px] w-px bg-white"
+                                    ></div>
+                                    <div>Регистрация</div>
+                                </div>
+                            </div>
+
+                            <!-- 3 -->
+                            <div
+                                class="flex items-center gap-x-2 text-c1 sm:text-b3"
+                            >
+                                <svg class="h-4 w-4">
+                                    <use href="assets/icons/sprites.svg#geo" />
+                                </svg>
+                                <div>Волгоград,пр. Дорожников, 12Г</div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col gap-y-5 sm:order-4 sm:gap-y-8"
+                        >
+                            <!-- 4 -->
+                            <div class="flex flex-col">
+                                <div
+                                    class="mb-[18px] border-b-[1px] border-textPrimary pb-1.5 text-c1 sm:mb-8 sm:pb-2 sm:text-b3"
+                                >
+                                    Связаться с нами
+                                </div>
+                                <div class="flex flex-col gap-y-3">
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-b1 font-medium sm:text-h4"
+                                        >+7 962 760-04-84</a
+                                    >
+                                    <div
+                                        class="flex items-center gap-x-3 text-c1 sm:text-b3"
+                                    >
+                                        <div>пн-пт 9:00–19:00</div>
+                                        <div
+                                            class="block h-[14px] w-px bg-white"
+                                        ></div>
+                                        <div>Обратный звонок</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 5 -->
+                            <div class="flex flex-col">
+                                <div
+                                    class="mb-[18px] border-b-[1px] border-textPrimary pb-1.5 text-c1 sm:mb-8 sm:pb-2.5 sm:text-b3"
+                                >
+                                    Написать нам
+                                </div>
+                                <div class="flex items-center gap-x-6">
+                                    <ul class="flex items-center gap-x-2">
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="inline-flex rounded-full border border-textPrimary p-2 sm:p-3"
+                                            >
+                                                <svg
+                                                    class="h-4 w-4 stroke-accent-1 sm:h-6 sm:w-6"
+                                                >
+                                                    <use
+                                                        href="assets/icons/sprites.svg#whatsapp"
+                                                    />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="inline-flex rounded-full border border-textPrimary p-2 sm:p-3"
+                                            >
+                                                <svg
+                                                    class="h-4 w-4 stroke-accent-1 sm:h-6 sm:w-6"
+                                                >
+                                                    <use
+                                                        href="assets/icons/sprites.svg#telegram"
+                                                    />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-c1 sm:text-b3">
+                                        betar-vlg.opt@mail.ru
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div>
+                            <div
+                                class="mb-[18px] flex items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:pb-2"
+                            >
+                                <div
+                                    class="text-mobile-b1 text-accent-1 sm:text-b3 sm:text-white"
+                                >
+                                    Каталог
+                                </div>
+                                <div class="sm:hidden">
+                                    <svg class="h-6 w-6 fill-gray">
+                                        <use
+                                            href="assets/icons/sprites.svg#arrow_right"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul
+                                class="flex flex-col gap-y-2 text-c1 sm:text-b2"
+                            >
+                                <li>
+                                    <a href="#">Все товары</a>
+                                </li>
+                                <li>
+                                    <a href="#">Товары со скидкой (%)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сезонные</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 7 -->
+                        <div>
+                            <div
+                                class="mb-[18px] flex items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:pb-2"
+                            >
+                                <div
+                                    class="text-mobile-b1 text-accent-1 sm:text-b3 sm:text-white"
+                                >
+                                    Информация
+                                </div>
+                                <div class="sm:hidden">
+                                    <svg class="h-6 w-6 fill-gray">
+                                        <use
+                                            href="assets/icons/sprites.svg#arrow_right"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <ul
+                                class="flex flex-col gap-y-2 text-c1 sm:text-b2"
+                            >
+                                <li>
+                                    <a href="#">Все товары</a>
+                                </li>
+                                <li>
+                                    <a href="#">Товары со скидкой (%)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Сезонные</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div
+                        class="sm:border-t-[1px] sm:border-textPrimary sm:pt-6"
+                    >
+                        <ul
+                            class="flex flex-col gap-y-3 text-c1 sm:grid sm:grid-cols-4 sm:text-b3"
+                        >
+                            <li class="sm:order-2">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                            <li class="sm:order-3">
+                                <a href="#">Договор оферты</a>
+                            </li>
+                            <li class="sm:order-4">
+                                <a href="#">Разработка сайта</a>
+                            </li>
+                            <li
+                                class="text-mobile-b2 text-[#828282] sm:order-1 sm:text-b3"
+                            >
+                                <a href="#">© 2023 БЕТАР-Волга</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
