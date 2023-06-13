@@ -22,3 +22,7 @@
         }
     }
 }
+
+.bg-transparent {
+    background: transparent;
+}
