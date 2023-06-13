@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="page">
-            <header id="header" class="header left-0 top-0 w-full">
+            <header id="header" class="header">
                 <div class="hidden bg-[#E6EBEF] sm:block">
                     <div class="mx-auto max-w-screen-xl">
                         <div class="grid h-12 grid-cols-4 items-center">
@@ -107,8 +107,9 @@
                         <div
                             class="hidden items-center gap-x-5 sm:col-span-2 sm:flex"
                         >
-                            <div
-                                class="flex items-center gap-x-3 rounded-lg bg-accent-1 stroke-fullWhite px-5 py-2.5 text-[14px] font-medium text-[#F2F2F2]"
+                            <a
+                                href="catalog.html"
+                                class="inline-flex items-center gap-x-3 rounded-lg bg-accent-1 stroke-fullWhite px-5 py-2.5 text-[14px] font-medium text-[#F2F2F2]"
                             >
                                 <svg class="h-6 w-6">
                                     <use
@@ -116,7 +117,7 @@
                                     />
                                 </svg>
                                 <span>Каталог</span>
-                            </div>
+                            </a>
                             <div
                                 class="relative flex w-full items-center gap-x-3 rounded-[6px] border border-stroke-1 pr-3"
                             >
@@ -142,7 +143,7 @@
                         </div>
                         <div class="flex items-center justify-end gap-x-[10px]">
                             <a
-                                href="#"
+                                href="404.html"
                                 class="hidden rounded-full border border-stroke-1 p-2.5 sm:inline-flex"
                             >
                                 <svg
@@ -154,7 +155,7 @@
                                 </svg>
                             </a>
                             <a
-                                href="#"
+                                href="404.html"
                                 class="inline-flex rounded-full sm:border sm:border-stroke-1 sm:p-2.5"
                             >
                                 <svg
@@ -166,7 +167,7 @@
                                 </svg>
                             </a>
                             <a
-                                href="#"
+                                href="cart.html"
                                 class="relative inline-flex items-end rounded-full sm:border sm:border-stroke-1 sm:p-2.5"
                             >
                                 <div
@@ -191,15 +192,17 @@
                             class="flex items-center space-x-8 text-b2 text-textSecondary"
                         >
                             <ul class="flex items-center space-x-8">
-                                <li><a href="#">Водоснабжение</a></li>
-                                <li><a href="#">Отопление</a></li>
-                                <li><a href="#">Сантехника</a></li>
+                                <li>
+                                    <a href="catalog.html">Водоснабжение</a>
+                                </li>
+                                <li><a href="catalog.html">Отопление</a></li>
+                                <li><a href="catalog.html">Сантехника</a></li>
                             </ul>
                             <span class="h-3.5 w-px bg-gray"></span>
                             <ul class="flex items-center space-x-8">
                                 <li>
                                     <a
-                                        href="#"
+                                        href="catalog.html"
                                         class="flex items-center space-x-2 text-accent-2"
                                     >
                                         <svg class="h-6 w-6">
@@ -210,8 +213,10 @@
                                         <span>Акции</span>
                                     </a>
                                 </li>
-                                <li><a href="#">Сезонные товары</a></li>
-                                <li><a href="#">Новинки</a></li>
+                                <li>
+                                    <a href="catalog.html">Сезонные товары</a>
+                                </li>
+                                <li><a href="catalog.html">Новинки</a></li>
                             </ul>
                         </nav>
 
@@ -256,7 +261,6 @@
                 id="main"
                 class="main mx-auto flex max-w-screen-xl flex-col gap-y-8 px-2.5 pb-12 sm:px-0"
             >
-                <!-- <div class="mb-4 mt-5 sm:mb-10 sm:mt-10"> -->
                 <div class="mt-5 sm:mt-10">
                     <div
                         class="flex items-center gap-x-[6px] text-mobile-b2 font-medium text-gray sm:text-b3"
@@ -413,7 +417,6 @@
                     >
                         <div class="flex flex-col gap-y-5 sm:justify-between">
                             <div class="flex flex-col gap-y-5 sm:gap-y-12">
-                                <!-- 1 -->
                                 <div
                                     class="flex gap-x-6 sm:flex-col sm:gap-x-0 sm:gap-y-6"
                                 >
@@ -429,34 +432,31 @@
                                         и хозтовары
                                     </div>
                                 </div>
-
-                                <!-- 2 -->
                                 <div
                                     class="flex items-center gap-x-6 text-c1 sm:text-b2"
                                 >
-                                    <div>Вход</div>
+                                    <div class="cursor-pointer">Вход</div>
                                     <div
                                         class="block h-[10px] w-px bg-white"
                                     ></div>
-                                    <div>Регистрация</div>
+                                    <div class="cursor-pointer">
+                                        Регистрация
+                                    </div>
                                 </div>
                             </div>
-
-                            <!-- 3 -->
                             <div
                                 class="flex items-center gap-x-2 text-c1 sm:text-b3"
                             >
                                 <svg class="h-4 w-4">
                                     <use href="assets/icons/sprites.svg#geo" />
                                 </svg>
-                                <div>Волгоград,пр. Дорожников, 12Г</div>
+                                <div>Волгоград, пр. Дорожников, 12Г</div>
                             </div>
                         </div>
 
                         <div
                             class="flex flex-col gap-y-5 sm:order-4 sm:gap-y-8"
                         >
-                            <!-- 4 -->
                             <div class="flex flex-col">
                                 <div
                                     class="mb-[18px] border-b-[1px] border-textPrimary pb-1.5 text-c1 sm:mb-8 sm:pb-2 sm:text-b3"
@@ -474,14 +474,14 @@
                                     >
                                         <div>пн-пт 9:00–19:00</div>
                                         <div
-                                            class="block h-[14px] w-px bg-white"
+                                            class="block h-3.5 w-px bg-white"
                                         ></div>
-                                        <div>Обратный звонок</div>
+                                        <div class="cursor-pointer">
+                                            Обратный звонок
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- 5 -->
                             <div class="flex flex-col">
                                 <div
                                     class="mb-[18px] border-b-[1px] border-textPrimary pb-1.5 text-c1 sm:mb-8 sm:pb-2.5 sm:text-b3"
@@ -525,11 +525,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- 6 -->
                         <div>
                             <div
-                                class="mb-[18px] flex items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:pb-2"
+                                class="mb-[18px] flex cursor-pointer items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:cursor-auto sm:pb-2"
                             >
                                 <div
                                     class="text-mobile-b1 text-accent-1 sm:text-b3 sm:text-white"
@@ -545,25 +543,40 @@
                                 </div>
                             </div>
 
-                            <ul
-                                class="flex flex-col gap-y-2 text-c1 sm:text-b2"
-                            >
-                                <li>
-                                    <a href="#">Все товары</a>
-                                </li>
-                                <li>
-                                    <a href="#">Товары со скидкой (%)</a>
-                                </li>
-                                <li>
-                                    <a href="#">Сезонные</a>
-                                </li>
-                            </ul>
+                            <nav>
+                                <ul
+                                    class="flex flex-col gap-y-2 text-c1 sm:text-b2"
+                                >
+                                    <li>
+                                        <a href="catalog.html">Все товары</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Товары со скидкой (%)</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Сезонные</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Популярные</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Новинки</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Водоснабжение</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Отопление</a>
+                                    </li>
+                                    <li>
+                                        <a href="catalog.html">Сантехника</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-
-                        <!-- 7 -->
                         <div>
                             <div
-                                class="mb-[18px] flex items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:pb-2"
+                                class="mb-[18px] flex cursor-pointer items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:cursor-auto sm:pb-2"
                             >
                                 <div
                                     class="text-mobile-b1 text-accent-1 sm:text-b3 sm:text-white"
@@ -578,24 +591,29 @@
                                     </svg>
                                 </div>
                             </div>
-
-                            <ul
-                                class="flex flex-col gap-y-2 text-c1 sm:text-b2"
-                            >
-                                <li>
-                                    <a href="#">Все товары</a>
-                                </li>
-                                <li>
-                                    <a href="#">Товары со скидкой (%)</a>
-                                </li>
-                                <li>
-                                    <a href="#">Сезонные</a>
-                                </li>
-                            </ul>
+                            <nav>
+                                <ul
+                                    class="flex flex-col gap-y-2 text-c1 sm:text-b2"
+                                >
+                                    <li>
+                                        <a href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Возврат / обмен</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">О нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Частые вопросы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Блог</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-
-                    <!-- 8 -->
                     <div
                         class="sm:border-t-[1px] sm:border-textPrimary sm:pt-6"
                     >
@@ -603,7 +621,7 @@
                             class="flex flex-col gap-y-3 text-c1 sm:grid sm:grid-cols-4 sm:text-b3"
                         >
                             <li class="sm:order-2">
-                                <a href="#">Политика конфиденциальности</a>
+                                <a href="policy.html">Политика конфиденциальности</a>
                             </li>
                             <li class="sm:order-3">
                                 <a href="#">Договор оферты</a>
@@ -614,7 +632,7 @@
                             <li
                                 class="text-mobile-b2 text-[#828282] sm:order-1 sm:text-b3"
                             >
-                                <a href="#">© 2023 БЕТАР-Волга</a>
+                                © 2023 БЕТАР-Волга
                             </li>
                         </ul>
                     </div>
