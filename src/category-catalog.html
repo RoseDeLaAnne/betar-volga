@@ -16,416 +16,1088 @@
     <body>
         <div class="page">
             <!-- header -->
-            <!-- breadcrumbs -->
             <main id="main" class="main">
+                <!-- breadcrumbs -->
+                <section class="mb-5">
+                    <div class="mx-auto max-w-screen-xl">
+                        <div class="flex items-center gap-x-1.5">
+                            <a
+                                href="index.html"
+                                class="inline-flex text-mobile-b2 font-medium text-gray sm:text-b3"
+                                >Главная</a
+                            >
+                            <div class="text-mobile-b2 text-gray sm:text-b3">
+                                /
+                            </div>
+                            <a
+                                href="catalog.html"
+                                class="inline-flex text-mobile-b2 font-medium text-gray sm:text-b3"
+                                >Каталог</a
+                            >
+                            <div class="text-mobile-b2 text-gray sm:text-b3">
+                                /
+                            </div>
+                            <a
+                                href="category-catalog.html"
+                                class="inline-flex text-mobile-b2 font-medium text-textSecondary sm:text-b3"
+                                >Сантехника</a
+                            >
+                        </div>
+                    </div>
+                </section>
+
                 <section>
-                    <!-- headline -->
-                    <div
-                        class="flex items-start gap-x-2 border-b-[1px] border-[#E0E0E0] pb-3 sm:gap-x-3 sm:pb-4"
-                    >
-                        <div class="text-mobile-h2 sm:text-h2">Сантехника</div>
-                        <div class="text-mobile-b2 text-gray sm:text-b1">
-                            0000 товаров
-                        </div>
-                    </div>
-                    <!-- categories most popular -->
-                    <div
-                        class="flex flex-col sm:border-b-[1px] sm:border-stroke-1 sm:pb-[18px]"
-                    >
-                        <div class="flex sm:items-center sm:gap-x-3">
-                            <div class="flex items-center gap-x-2.5">
-                                <div
-                                    class="text-mobile-b2 text-gray sm:text-c1"
-                                >
-                                    Часто ищут:
-                                </div>
-                                <ul
-                                    class="flex items-center gap-x-1.5 sm:gap-x-3"
-                                >
-                                    <li
-                                        class="rounded-[4px] border border-stroke-1 px-2.5 py-1 text-mobile-b2 font-medium text-textPrimary sm:rounded-md sm:px-3 sm:text-b3"
-                                    >
-                                        Для кухни
-                                    </li>
-                                    <li
-                                        class="rounded-[4px] border border-stroke-1 px-2.5 py-1 text-mobile-b2 font-medium text-textPrimary sm:rounded-md sm:px-3 sm:text-b3"
-                                    >
-                                        Для ванной и душа
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="hidden items-center gap-x-1.5 sm:flex">
-                                <div class="text-b3 text-accent-1">Ещё</div>
-                                <div
-                                    class="rounded-[5px] bg-accent-1-opacity p-2"
-                                >
-                                    <svg class="h-3 w-3 stroke-accent-1">
-                                        <use
-                                            href="assets/icons/sprites.svg#plus"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-0.5 w-8 bg-stroke-1 sm:hidden"></div>
-                    </div>
-                    <!-- sorting and filtering and results -->
-                    <div
-                        class="flex flex-col gap-y-2 sm:grid sm:grid-cols-12 sm:items-center"
-                    >
+                    <div class="mx-auto max-w-screen-xl px-2.5 sm:px-0">
                         <div
-                            class="flex gap-x-2.5 sm:order-2 sm:col-span-9 sm:justify-between sm:gap-x-0"
+                            class="flex items-start gap-x-2 border-b-[1px] border-[#E0E0E0] pb-3 sm:gap-x-3 sm:pb-4"
                         >
-                            <div
-                                class="flex w-full items-center justify-between rounded-md border border-stroke-1 py-2 sm:w-auto sm:gap-x-3 sm:px-3"
-                            >
-                                <div
-                                    class="text-mobile-b2 text-textPrimary sm:text-b3 sm:text-textSecondary"
-                                >
-                                    Сортировать по
-                                </div>
-                                <div>
-                                    <svg class="h-3 w-3 sm:h-4 sm:w-4">
-                                        <use
-                                            href="assets/icons/sprites.svg#arrow_right"
-                                        />
-                                    </svg>
-                                </div>
+                            <div class="text-mobile-h2 sm:text-h2">
+                                Сантехника
                             </div>
-                            <div
-                                class="flex w-full items-center justify-center gap-x-1.5 rounded-md border border-stroke-1 py-2 sm:hidden"
-                            >
-                                <div class="text-mobile-b2 text-textPrimary">
-                                    Фильтровать
-                                </div>
-                                <div>
-                                    <svg class="h-3 w-3">
-                                        <use
-                                            href="assets/icons/sprites.svg#filter"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="hidden items-center gap-x-4 sm:flex">
-                                <div>
-                                    <svg class="h-6 w-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#columns"
-                                        />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <svg class="h-6 w-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#row"
-                                        />
-                                    </svg>
-                                </div>
+                            <div class="text-mobile-b2 text-gray sm:text-b1">
+                                0000 товаров
                             </div>
                         </div>
-                        <div
-                            class="text-mobile-b3 text-textPrimary sm:order-1 sm:col-span-3 sm:text-b3 sm:text-textSecondary"
-                        >
-                            Найдено 2052 товаров
-                        </div>
-                    </div>
-
-                    <!-- cards with filters (for dekstop only) -->
-                    <div class="flex sm:grid sm:grid-cols-12">
-                        <!-- filters (for desktop only) -->
-                        <div class="hidden sm:col-span-3 sm:flex sm:flex-col">
-                            <!-- input -->
-                            <div class="relative">
-                                <div
-                                    class="absolute left-4 top-1/2 -translate-y-1/2"
-                                >
-                                    <svg class="h-5 w-5">
-                                        <use
-                                            href="assets/icons/sprites.svg#search"
-                                        />
-                                    </svg>
-                                </div>
-                                <input
-                                    type="text"
-                                    placeholder="Артикул: i1234567890"
-                                />
-                            </div>
-
-                            <!-- categories -->
+                        <div class="mt-10 flex flex-col gap-y-6">
+                            <!-- categories most popular -->
                             <div
-                                class="flex flex-col gap-y-4 rounded-2xl border border-stroke-1 px-3.5 py-4"
+                                class="flex flex-col gap-y-2.5 sm:border-b-[1px] sm:border-stroke-1 sm:pb-[18px]"
                             >
-                                <div
-                                    class="border-b-[1px] border-stroke-1 pb-1.5 text-b2 font-medium text-[#333333]"
-                                >
-                                    Категории сантехники
-                                </div>
-
-                                <div class="flex flex-col items-start gap-y-4">
-                                    <ul class="flex flex-col gap-y-2">
-                                        <li class="text-b3 text-accent-2">
-                                            Все товары
-                                        </li>
-                                        <li class="text-b3">
-                                            Труба гофрированная
-                                        </li>
-                                    </ul>
+                                <div class="flex sm:items-center sm:gap-x-3">
+                                    <div class="flex items-center gap-x-2.5">
+                                        <div
+                                            class="text-mobile-b2 text-gray sm:text-c1"
+                                        >
+                                            Часто ищут:
+                                        </div>
+                                        <ul
+                                            class="no-scrollbar flex items-center gap-x-1.5 overflow-x-scroll sm:gap-x-3"
+                                        >
+                                            <li
+                                                class="whitespace-nowrap rounded-[4px] border border-stroke-1 px-2.5 py-1 text-mobile-b2 font-medium text-textPrimary sm:rounded-md sm:px-3 sm:text-b3"
+                                            >
+                                                Для кухни
+                                            </li>
+                                            <li
+                                                class="whitespace-nowrap rounded-[4px] border border-stroke-1 px-2.5 py-1 text-mobile-b2 font-medium text-textPrimary sm:rounded-md sm:px-3 sm:text-b3"
+                                            >
+                                                Для ванной и душа
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <div
-                                        class="flex items-center gap-x-2 border-b-[1px] border-dashed border-gray pb-1.5"
+                                        class="hidden items-center gap-x-1.5 sm:flex"
                                     >
-                                        <div class="text-b3 text-textPrimary">
-                                            Полный список
+                                        <div class="text-b3 text-accent-1">
+                                            Ещё
+                                        </div>
+                                        <div
+                                            class="rounded-[5px] bg-accent-1-opacity p-2"
+                                        >
+                                            <svg
+                                                class="h-3 w-3 stroke-accent-1"
+                                            >
+                                                <use
+                                                    href="assets/icons/sprites.svg#plus"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="h-0.5 w-8 bg-stroke-1 sm:hidden"
+                                ></div>
+                            </div>
+                            <!-- sorting and filtering and results -->
+                            <div
+                                class="flex flex-col gap-y-2 sm:grid sm:grid-cols-12 sm:items-center sm:border-b-[1px] sm:border-[#E0E0E0] sm:pb-[18px]"
+                            >
+                                <div
+                                    class="grid grid-cols-2 gap-x-2.5 sm:order-2 sm:col-span-9 sm:flex sm:justify-between sm:gap-x-0"
+                                >
+                                    <div
+                                        class="flex items-center justify-between rounded-md border border-stroke-1 px-2 py-2 sm:w-auto sm:gap-x-3 sm:px-3"
+                                    >
+                                        <div
+                                            class="text-mobile-b2 text-textPrimary sm:text-b3 sm:text-textSecondary"
+                                        >
+                                            Сортировать по
                                         </div>
                                         <div>
-                                            <svg class="h-4 w-4">
+                                            <svg class="h-3 w-3 sm:h-4 sm:w-4">
                                                 <use
                                                     href="assets/icons/sprites.svg#arrow_right"
                                                 />
                                             </svg>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-
-                            <!-- reset filters -->
-                            <div class="flex flex-col gap-y-3">
-                                <div class="flex items-center gap-x-1">
-                                    <div class="text-b3 text-[#4F4F4F]">
-                                        Сбросить все фильтры
-                                    </div>
-                                    <div>
-                                        <svg class="h-6 w-6">
-                                            <use
-                                                href="assets/icons/sprites.svg#close"
-                                            />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <ul class="flex gap-x-2.5">
-                                    <li
-                                        class="flex items-center gap-x-1.5 rounded-[5px] bg-white px-2.5 py-[5px]"
+                                    <div
+                                        class="flex items-center justify-center gap-x-1.5 rounded-md border border-stroke-1 px-2 py-2 sm:hidden"
                                     >
-                                        <div class="text-b3 text-textPrimary">
-                                            Для кухни
+                                        <div
+                                            class="text-mobile-b2 text-textPrimary"
+                                        >
+                                            Фильтровать
                                         </div>
                                         <div>
-                                            <svg class="h-5 w-5">
+                                            <svg class="h-3 w-3">
                                                 <use
-                                                    href="assets/icons/sprites.svg#close"
+                                                    href="assets/icons/sprites.svg#filter"
                                                 />
                                             </svg>
                                         </div>
-                                    </li>
-                                    <li
-                                        class="flex items-center gap-x-1.5 rounded-[5px] bg-white px-2.5 py-[5px]"
+                                    </div>
+                                    <div
+                                        class="hidden items-center gap-x-4 sm:flex"
                                     >
-                                        <div class="text-b3 text-textPrimary">
-                                            Для кухни
-                                        </div>
                                         <div>
-                                            <svg class="h-5 w-5">
+                                            <svg class="h-6 w-6">
                                                 <use
-                                                    href="assets/icons/sprites.svg#close"
+                                                    href="assets/icons/sprites.svg#columns"
                                                 />
                                             </svg>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <!-- filters  -->
-                            <div
-                                class="flex flex-col gap-y-5 rounded-[10px] border border-stroke-1 px-3.5 py-5"
-                            >
-                                <div
-                                    class="flex gap-x-2 border-b-[1px] border-stroke-1 pb-2.5"
-                                >
-                                    <div
-                                        class="text-b2 font-medium text-[#333333]"
-                                    >
-                                        Фильтры
-                                    </div>
-                                    <div>
-                                        <svg class="h-6 w-6">
-                                            <use
-                                                href="assets/icons/sprites.svg#arrow_right"
-                                            />
-                                        </svg>
-                                    </div>
-                                </div>
-
-                                <!-- purpose -->
-                                <div
-                                    class="flex flex-col gap-y-4 border-b-[1px] border-stroke-1 pb-5"
-                                >
-                                    <div
-                                        class="text-b2 font-medium text-[#333333]"
-                                    >
-                                        Назначение
-                                    </div>
-                                    <ul class="flex flex-col gap-y-2">
-                                        <li>
-                                            <label
-                                                class="flex items-center gap-x-2"
-                                            >
-                                                <input
-                                                    type="checkbox"
-                                                    name="purpose"
-                                                />
-                                                <div
-                                                    class="text-b3 text-textPrimary"
-                                                >
-                                                    Для ванной и душа
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label
-                                                class="flex items-center gap-x-2"
-                                            >
-                                                <input
-                                                    type="checkbox"
-                                                    name="purpose"
-                                                />
-                                                <div
-                                                    class="text-b3 text-textPrimary"
-                                                >
-                                                    Для ванной и душа
-                                                </div>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!-- price -->
-                                <div
-                                    class="flex flex-col gap-y-4 border-b-[1px] border-stroke-1 pb-5"
-                                >
-                                    <div class="text-b2 font-medium">
-                                        Цена <span class="text-gray">(₽)</span>
-                                    </div>
-
-                                    <div class="grid grid-cols-2 gap-x-2.5">
-                                        <input
-                                            type="text"
-                                            placeholder="0"
-                                            class="placeholder-[#333333]"
-                                            class="rounded-md border border-stroke-1 p-2.5"
-                                        />
-                                        <input
-                                            type="text"
-                                            placeholder="100 000"
-                                            class="placeholder-[#333333]"
-                                            class="rounded-md border border-stroke-1 p-2.5"
-                                        />
-                                    </div>
-
-                                    <!-- slider here -->
-                                </div>
-
-                                <!-- brand -->
-                                <div
-                                    class="flex flex-col gap-y-4 border-b-[1px] border-stroke-1 pb-5"
-                                >
-                                    <div
-                                        class="text-b2 font-medium text-[#333333]"
-                                    >
-                                        Бренд
-                                    </div>
-                                    <ul class="flex flex-col gap-y-2">
-                                        <li>
-                                            <label
-                                                class="flex items-center gap-x-2"
-                                            >
-                                                <input
-                                                    type="checkbox"
-                                                    name="purpose"
-                                                />
-                                                <div
-                                                    class="text-b3 text-textPrimary"
-                                                >
-                                                    Comfort (23)
-                                                </div>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="flex flex-col items-center gap-y-5">
-                                    <!-- apply filters -->
-                                    <button
-                                        class="rounded-lg bg-accent-1 px-6 py-3 text-b3 font-medium text-fullWhite"
-                                    >
-                                        Применить фильтры
-                                    </button>
-
-                                    <!-- reset filters -->
-                                    <div class="flex items-center gap-x-1">
-                                        <div class="text-b3 text-[#4F4F4F]">
-                                            Сбросить все фильтры
                                         </div>
                                         <div>
                                             <svg class="h-6 w-6">
                                                 <use
-                                                    href="assets/icons/sprites.svg#close"
+                                                    href="assets/icons/sprites.svg#row"
                                                 />
                                             </svg>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- cards -->
-                        <div class="sm:col-span-9">
-                            <div class="grid grid-cols-2">
-                                <!-- card item 1 -->
-                                <!-- card item 2 -->
-                            </div>
-
-                            <!-- pagination -->
-                            <div class="flex justify-center">
                                 <div
-                                    class="flex items-center gap-x-2 sm:gap-x-3"
+                                    class="text-mobile-b3 text-textPrimary sm:order-1 sm:col-span-3 sm:text-b3 sm:text-textSecondary"
                                 >
-                                    <div class="cursor-pointer">
-                                        <svg
-                                            class="h-8 w-8 fill-accent-1 sm:h-6 sm:w-6"
+                                    Найдено 2052 товаров
+                                </div>
+                            </div>
+                            <!-- cards with filters (for dekstop only) -->
+                            <div
+                                class="flex sm:grid sm:grid-cols-12 sm:gap-x-5"
+                            >
+                                <!-- filters (for desktop only) -->
+                                <div
+                                    class="hidden sm:col-span-3 sm:flex sm:flex-col sm:gap-y-5"
+                                >
+                                    <!-- input -->
+                                    <div class="relative rounded-xl">
+                                        <div
+                                            class="absolute left-[18px] top-1/2 -translate-y-1/2"
                                         >
-                                            <use
-                                                href="assets/icons/sprites.svg#arrow_left"
-                                            />
-                                        </svg>
+                                            <svg
+                                                class="h-5 w-5 stroke-textPrimary"
+                                            >
+                                                <use
+                                                    href="assets/icons/sprites.svg#search"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            placeholder="Артикул: i1234567890"
+                                            class="w-full rounded-xl bg-white py-[18.5px] pl-[46px] pr-[18px] text-b3 text-textPrimary"
+                                        />
                                     </div>
-                                    <div class="flex gap-x-1.5 sm:gap-x-3">
-                                        <a
-                                            href="#"
-                                            class="inline-flex cursor-pointer rounded-[4px] bg-white p-1.5 sm:rounded-[5px]"
+
+                                    <!-- categories -->
+                                    <div
+                                        class="flex flex-col gap-y-4 rounded-2xl border border-stroke-1 px-3.5 py-4"
+                                    >
+                                        <div
+                                            class="border-b-[1px] border-stroke-1 pb-1.5 text-b2 font-medium text-[#333333]"
+                                        >
+                                            Категории сантехники
+                                        </div>
+
+                                        <div
+                                            class="flex flex-col items-start gap-y-4"
+                                        >
+                                            <ul class="flex flex-col gap-y-2">
+                                                <li
+                                                    class="text-b3 text-accent-2"
+                                                >
+                                                    Все товары
+                                                </li>
+                                                <li class="text-b3">
+                                                    Труба гофрированная
+                                                </li>
+                                            </ul>
+                                            <div
+                                                class="flex items-center gap-x-2 border-b-[1px] border-dashed border-gray pb-1.5"
+                                            >
+                                                <div
+                                                    class="text-b3 text-textPrimary"
+                                                >
+                                                    Полный список
+                                                </div>
+                                                <div>
+                                                    <svg class="h-4 w-4">
+                                                        <use
+                                                            href="assets/icons/sprites.svg#arrow_right"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- reset filters -->
+                                    <div class="flex flex-col gap-y-3">
+                                        <div class="flex items-center gap-x-1">
+                                            <div class="text-b3 text-[#4F4F4F]">
+                                                Сбросить все фильтры
+                                            </div>
+                                            <div>
+                                                <svg class="h-6 w-6">
+                                                    <use
+                                                        href="assets/icons/sprites.svg#close"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul class="flex gap-x-2.5">
+                                            <li
+                                                class="flex items-center gap-x-1.5 rounded-[5px] bg-white px-2.5 py-[5px]"
+                                            >
+                                                <div
+                                                    class="text-b3 text-textPrimary"
+                                                >
+                                                    Для кухни
+                                                </div>
+                                                <div>
+                                                    <svg class="h-5 w-5">
+                                                        <use
+                                                            href="assets/icons/sprites.svg#close"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li
+                                                class="flex items-center gap-x-1.5 rounded-[5px] bg-white px-2.5 py-[5px]"
+                                            >
+                                                <div
+                                                    class="text-b3 text-textPrimary"
+                                                >
+                                                    Для кухни
+                                                </div>
+                                                <div>
+                                                    <svg class="h-5 w-5">
+                                                        <use
+                                                            href="assets/icons/sprites.svg#close"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- filters  -->
+                                    <div
+                                        class="flex flex-col gap-y-5 rounded-[10px] border border-stroke-1 px-3.5 py-5"
+                                    >
+                                        <div
+                                            class="flex gap-x-2 border-b-[1px] border-stroke-1 pb-2.5"
                                         >
                                             <div
-                                                class="flex h-3 w-3 items-center justify-center text-mobile-b2 text-gray sm:h-4 sm:w-4 sm:text-b3"
+                                                class="text-b2 font-medium text-[#333333]"
                                             >
-                                                1
+                                                Фильтры
                                             </div>
-                                        </a>
-                                        <a
-                                            href="#"
-                                            class="inline-flex cursor-pointer rounded-[4px] bg-white p-1.5 sm:rounded-[5px]"
+                                            <div>
+                                                <svg class="h-6 w-6">
+                                                    <use
+                                                        href="assets/icons/sprites.svg#arrow_right"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <!-- purpose -->
+                                        <div
+                                            class="flex flex-col gap-y-4 border-b-[1px] border-stroke-1 pb-5"
                                         >
                                             <div
-                                                class="flex h-3 w-3 items-center justify-center text-mobile-b2 text-accent-1 sm:h-4 sm:w-4 sm:text-b3"
+                                                class="text-b2 font-medium text-[#333333]"
                                             >
-                                                2
+                                                Назначение
                                             </div>
-                                        </a>
-                                    </div>
-                                    <div class="cursor-pointer">
-                                        <svg
-                                            class="h-8 w-8 fill-accent-1 sm:h-6 sm:w-6"
+                                            <ul class="flex flex-col gap-y-2">
+                                                <li>
+                                                    <label
+                                                        class="flex items-center gap-x-2"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            name="purpose"
+                                                        />
+                                                        <div
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                            Для ванной и душа
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label
+                                                        class="flex items-center gap-x-2"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            name="purpose"
+                                                        />
+                                                        <div
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                            Для ванной и душа
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- price -->
+                                        <div
+                                            class="flex flex-col gap-y-4 border-b-[1px] border-stroke-1 pb-5"
                                         >
-                                            <use
-                                                href="assets/icons/sprites.svg#arrow_right"
-                                            />
-                                        </svg>
+                                            <div class="text-b2 font-medium">
+                                                Цена
+                                                <span class="text-gray"
+                                                    >(₽)</span
+                                                >
+                                            </div>
+
+                                            <div
+                                                class="grid grid-cols-2 gap-x-2.5"
+                                            >
+                                                <input
+                                                    type="text"
+                                                    placeholder="0"
+                                                    class="placeholder-[#333333]"
+                                                    class="rounded-md border border-stroke-1 p-2.5"
+                                                />
+                                                <input
+                                                    type="text"
+                                                    placeholder="100 000"
+                                                    class="placeholder-[#333333]"
+                                                    class="rounded-md border border-stroke-1 p-2.5"
+                                                />
+                                            </div>
+
+                                            <!-- slider here -->
+                                        </div>
+
+                                        <!-- brand -->
+                                        <div
+                                            class="flex flex-col gap-y-4 border-b-[1px] border-stroke-1 pb-5"
+                                        >
+                                            <div
+                                                class="text-b2 font-medium text-[#333333]"
+                                            >
+                                                Бренд
+                                            </div>
+                                            <ul class="flex flex-col gap-y-2">
+                                                <li>
+                                                    <label
+                                                        class="flex items-center gap-x-2"
+                                                    >
+                                                        <input
+                                                            type="checkbox"
+                                                            name="purpose"
+                                                        />
+                                                        <div
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                            Comfort (23)
+                                                        </div>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div
+                                            class="flex flex-col items-center gap-y-5"
+                                        >
+                                            <!-- apply filters -->
+                                            <button
+                                                class="rounded-lg bg-accent-1 px-6 py-3 text-b3 font-medium text-fullWhite"
+                                            >
+                                                Применить фильтры
+                                            </button>
+
+                                            <!-- reset filters -->
+                                            <div
+                                                class="flex items-center gap-x-1"
+                                            >
+                                                <div
+                                                    class="text-b3 text-[#4F4F4F]"
+                                                >
+                                                    Сбросить все фильтры
+                                                </div>
+                                                <div>
+                                                    <svg class="h-6 w-6">
+                                                        <use
+                                                            href="assets/icons/sprites.svg#close"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- cards -->
+                                <div class="sm:col-span-9">
+                                    <div
+                                        class="grid grid-cols-2 gap-2.5 sm:grid-cols-9 sm:gap-5"
+                                    >
+                                        <div
+                                            class="flex flex-col justify-between gap-y-4 rounded-[10px] border border-stroke-2 sm:col-span-3 sm:gap-y-6 sm:px-4 sm:pb-6 sm:pt-4"
+                                        >
+                                            <div
+                                                class="flex flex-col gap-y-3 sm:gap-y-6"
+                                            >
+                                                <div
+                                                    class="relative sm:rounded-[10px] sm:border sm:border-stroke-2"
+                                                >
+                                                    <img
+                                                        src="assets/images/card-image.png"
+                                                        alt=""
+                                                    />
+                                                    <ul
+                                                        class="absolute left-2 top-2 flex gap-x-1 sm:left-4 sm:top-4"
+                                                    >
+                                                        <li
+                                                            class="rounded-[5px] bg-accent-2 px-1 py-0.5 text-mobile-b3 text-[#F2F2F2] sm:px-2 sm:py-1 sm:text-[12px]"
+                                                        >
+                                                            -20%
+                                                        </li>
+                                                    </ul>
+                                                    <ul
+                                                        class="absolute right-0 top-2 flex flex-col gap-y-1 sm:top-4 sm:gap-y-2.5"
+                                                    >
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 fill-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#comparison"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 stroke-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#wishlist"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-1 px-2 sm:gap-y-2 sm:px-0"
+                                                >
+                                                    <div
+                                                        class="text-mobile-b2 text-gray sm:text-c1"
+                                                    >
+                                                        Артикул: i007827
+                                                    </div>
+                                                    <div
+                                                        class="text-mobile-b2 text-[#333333] sm:text-b1"
+                                                    >
+                                                        <span
+                                                            class="font-medium"
+                                                            >Водонагреватель
+                                                            газовый</span
+                                                        >
+                                                        EDISSON H 20 D
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex flex-col gap-y-2 px-2 pb-3 sm:gap-y-4 sm:px-0 sm:pb-0"
+                                            >
+                                                <div
+                                                    class="flex flex-col gap-y-1.5"
+                                                >
+                                                    <div
+                                                        class="sm:flex sm:items-center sm:justify-between"
+                                                    >
+                                                        <div
+                                                            class="hidden text-c1 text-label sm:block"
+                                                        >
+                                                            В наличии
+                                                        </div>
+                                                        <div
+                                                            class="text-[10px] text-gray line-through sm:text-[14px]"
+                                                        >
+                                                            4200 ₽
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex items-end gap-x-0.5 sm:justify-end sm:gap-x-1"
+                                                    >
+                                                        <span
+                                                            class="text-b3 sm:text-h4"
+                                                            >3 360</span
+                                                        ><span
+                                                            class="text-b3 sm:text-h4"
+                                                            >₽</span
+                                                        ><span
+                                                            class="text-c1 text-gray"
+                                                            >/шт.</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-2 sm:flex-row sm:gap-x-3"
+                                                >
+                                                    <div
+                                                        class="flex items-center justify-between gap-x-2.5 rounded-md border border-stroke-1 sm:w-full"
+                                                    >
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#minus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                        <div
+                                                            class="text-c1 sm:text-b3"
+                                                        >
+                                                            1
+                                                        </div>
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#plus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button
+                                                        class="inline-flex items-center justify-center gap-x-1 rounded-[5px] bg-accent-1 fill-fullWhite py-2 text-c1 text-fullWhite sm:w-full sm:gap-x-2 sm:rounded-lg sm:py-3 sm:text-b3"
+                                                    >
+                                                        <svg
+                                                            class="h-3 w-3 sm:h-4 sm:w-4"
+                                                        >
+                                                            <use
+                                                                href="assets/icons/sprites.svg#bag"
+                                                            />
+                                                        </svg>
+                                                        <span>В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-between gap-y-4 rounded-[10px] border border-stroke-2 sm:col-span-3 sm:gap-y-6 sm:px-4 sm:pb-6 sm:pt-4"
+                                        >
+                                            <div
+                                                class="flex flex-col gap-y-3 sm:gap-y-6"
+                                            >
+                                                <div
+                                                    class="relative sm:rounded-[10px] sm:border sm:border-stroke-2"
+                                                >
+                                                    <img
+                                                        src="assets/images/card-image.png"
+                                                        alt=""
+                                                    />
+                                                    <ul
+                                                        class="absolute left-2 top-2 flex gap-x-1 sm:left-4 sm:top-4"
+                                                    >
+                                                        <li
+                                                            class="rounded-[5px] bg-accent-2 px-1 py-0.5 text-mobile-b3 text-[#F2F2F2] sm:px-2 sm:py-1 sm:text-[12px]"
+                                                        >
+                                                            -20%
+                                                        </li>
+                                                    </ul>
+                                                    <ul
+                                                        class="absolute right-0 top-2 flex flex-col gap-y-1 sm:top-4 sm:gap-y-2.5"
+                                                    >
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 fill-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#comparison"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 stroke-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#wishlist"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-1 px-2 sm:gap-y-2 sm:px-0"
+                                                >
+                                                    <div
+                                                        class="text-mobile-b2 text-gray sm:text-c1"
+                                                    >
+                                                        Артикул: i007827
+                                                    </div>
+                                                    <div
+                                                        class="text-mobile-b2 text-[#333333] sm:text-b1"
+                                                    >
+                                                        <span
+                                                            class="font-medium"
+                                                            >Водонагреватель
+                                                            газовый</span
+                                                        >
+                                                        EDISSON H 20 D
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex flex-col gap-y-2 px-2 pb-3 sm:gap-y-4 sm:px-0 sm:pb-0"
+                                            >
+                                                <div
+                                                    class="flex flex-col gap-y-1.5"
+                                                >
+                                                    <div
+                                                        class="sm:flex sm:items-center sm:justify-between"
+                                                    >
+                                                        <div
+                                                            class="hidden text-c1 text-label sm:block"
+                                                        >
+                                                            В наличии
+                                                        </div>
+                                                        <div
+                                                            class="text-[10px] text-gray line-through sm:text-[14px]"
+                                                        >
+                                                            4200 ₽
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex items-end gap-x-0.5 sm:justify-end sm:gap-x-1"
+                                                    >
+                                                        <span
+                                                            class="text-b3 sm:text-h4"
+                                                            >3 360</span
+                                                        ><span
+                                                            class="text-b3 sm:text-h4"
+                                                            >₽</span
+                                                        ><span
+                                                            class="text-c1 text-gray"
+                                                            >/шт.</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-2 sm:flex-row sm:gap-x-3"
+                                                >
+                                                    <div
+                                                        class="flex items-center justify-between gap-x-2.5 rounded-md border border-stroke-1 sm:w-full"
+                                                    >
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#minus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                        <div
+                                                            class="text-c1 sm:text-b3"
+                                                        >
+                                                            1
+                                                        </div>
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#plus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button
+                                                        class="inline-flex items-center justify-center gap-x-1 rounded-[5px] bg-accent-1 fill-fullWhite py-2 text-c1 text-fullWhite sm:w-full sm:gap-x-2 sm:rounded-lg sm:py-3 sm:text-b3"
+                                                    >
+                                                        <svg
+                                                            class="h-3 w-3 sm:h-4 sm:w-4"
+                                                        >
+                                                            <use
+                                                                href="assets/icons/sprites.svg#bag"
+                                                            />
+                                                        </svg>
+                                                        <span>В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-between gap-y-4 rounded-[10px] border border-stroke-2 sm:col-span-3 sm:gap-y-6 sm:px-4 sm:pb-6 sm:pt-4"
+                                        >
+                                            <div
+                                                class="flex flex-col gap-y-3 sm:gap-y-6"
+                                            >
+                                                <div
+                                                    class="relative sm:rounded-[10px] sm:border sm:border-stroke-2"
+                                                >
+                                                    <img
+                                                        src="assets/images/card-image.png"
+                                                        alt=""
+                                                    />
+                                                    <ul
+                                                        class="absolute left-2 top-2 flex gap-x-1 sm:left-4 sm:top-4"
+                                                    >
+                                                        <li
+                                                            class="rounded-[5px] bg-accent-2 px-1 py-0.5 text-mobile-b3 text-[#F2F2F2] sm:px-2 sm:py-1 sm:text-[12px]"
+                                                        >
+                                                            -20%
+                                                        </li>
+                                                    </ul>
+                                                    <ul
+                                                        class="absolute right-0 top-2 flex flex-col gap-y-1 sm:top-4 sm:gap-y-2.5"
+                                                    >
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 fill-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#comparison"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 stroke-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#wishlist"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-1 px-2 sm:gap-y-2 sm:px-0"
+                                                >
+                                                    <div
+                                                        class="text-mobile-b2 text-gray sm:text-c1"
+                                                    >
+                                                        Артикул: i007827
+                                                    </div>
+                                                    <div
+                                                        class="text-mobile-b2 text-[#333333] sm:text-b1"
+                                                    >
+                                                        <span
+                                                            class="font-medium"
+                                                            >Водонагреватель
+                                                            газовый</span
+                                                        >
+                                                        EDISSON H 20 D
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex flex-col gap-y-2 px-2 pb-3 sm:gap-y-4 sm:px-0 sm:pb-0"
+                                            >
+                                                <div
+                                                    class="flex flex-col gap-y-1.5"
+                                                >
+                                                    <div
+                                                        class="sm:flex sm:items-center sm:justify-between"
+                                                    >
+                                                        <div
+                                                            class="hidden text-c1 text-label sm:block"
+                                                        >
+                                                            В наличии
+                                                        </div>
+                                                        <div
+                                                            class="text-[10px] text-gray line-through sm:text-[14px]"
+                                                        >
+                                                            4200 ₽
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex items-end gap-x-0.5 sm:justify-end sm:gap-x-1"
+                                                    >
+                                                        <span
+                                                            class="text-b3 sm:text-h4"
+                                                            >3 360</span
+                                                        ><span
+                                                            class="text-b3 sm:text-h4"
+                                                            >₽</span
+                                                        ><span
+                                                            class="text-c1 text-gray"
+                                                            >/шт.</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-2 sm:flex-row sm:gap-x-3"
+                                                >
+                                                    <div
+                                                        class="flex items-center justify-between gap-x-2.5 rounded-md border border-stroke-1 sm:w-full"
+                                                    >
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#minus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                        <div
+                                                            class="text-c1 sm:text-b3"
+                                                        >
+                                                            1
+                                                        </div>
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#plus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button
+                                                        class="inline-flex items-center justify-center gap-x-1 rounded-[5px] bg-accent-1 fill-fullWhite py-2 text-c1 text-fullWhite sm:w-full sm:gap-x-2 sm:rounded-lg sm:py-3 sm:text-b3"
+                                                    >
+                                                        <svg
+                                                            class="h-3 w-3 sm:h-4 sm:w-4"
+                                                        >
+                                                            <use
+                                                                href="assets/icons/sprites.svg#bag"
+                                                            />
+                                                        </svg>
+                                                        <span>В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-between gap-y-4 rounded-[10px] border border-stroke-2 sm:col-span-3 sm:gap-y-6 sm:px-4 sm:pb-6 sm:pt-4"
+                                        >
+                                            <div
+                                                class="flex flex-col gap-y-3 sm:gap-y-6"
+                                            >
+                                                <div
+                                                    class="relative sm:rounded-[10px] sm:border sm:border-stroke-2"
+                                                >
+                                                    <img
+                                                        src="assets/images/card-image.png"
+                                                        alt=""
+                                                    />
+                                                    <ul
+                                                        class="absolute left-2 top-2 flex gap-x-1 sm:left-4 sm:top-4"
+                                                    >
+                                                        <li
+                                                            class="rounded-[5px] bg-accent-2 px-1 py-0.5 text-mobile-b3 text-[#F2F2F2] sm:px-2 sm:py-1 sm:text-[12px]"
+                                                        >
+                                                            -20%
+                                                        </li>
+                                                    </ul>
+                                                    <ul
+                                                        class="absolute right-0 top-2 flex flex-col gap-y-1 sm:top-4 sm:gap-y-2.5"
+                                                    >
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 fill-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#comparison"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                        <li
+                                                            class="rounded-s-[5px] border-y-[1px] border-l-[1px] border-stroke-2 stroke-gray p-1 sm:rounded-s-lg sm:p-2"
+                                                        >
+                                                            <svg
+                                                                class="h-4 w-4 sm:h-6 sm:w-6"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#wishlist"
+                                                                />
+                                                            </svg>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-1 px-2 sm:gap-y-2 sm:px-0"
+                                                >
+                                                    <div
+                                                        class="text-mobile-b2 text-gray sm:text-c1"
+                                                    >
+                                                        Артикул: i007827
+                                                    </div>
+                                                    <div
+                                                        class="text-mobile-b2 text-[#333333] sm:text-b1"
+                                                    >
+                                                        <span
+                                                            class="font-medium"
+                                                            >Водонагреватель
+                                                            газовый</span
+                                                        >
+                                                        EDISSON H 20 D
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex flex-col gap-y-2 px-2 pb-3 sm:gap-y-4 sm:px-0 sm:pb-0"
+                                            >
+                                                <div
+                                                    class="flex flex-col gap-y-1.5"
+                                                >
+                                                    <div
+                                                        class="sm:flex sm:items-center sm:justify-between"
+                                                    >
+                                                        <div
+                                                            class="hidden text-c1 text-label sm:block"
+                                                        >
+                                                            В наличии
+                                                        </div>
+                                                        <div
+                                                            class="text-[10px] text-gray line-through sm:text-[14px]"
+                                                        >
+                                                            4200 ₽
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="flex items-end gap-x-0.5 sm:justify-end sm:gap-x-1"
+                                                    >
+                                                        <span
+                                                            class="text-b3 sm:text-h4"
+                                                            >3 360</span
+                                                        ><span
+                                                            class="text-b3 sm:text-h4"
+                                                            >₽</span
+                                                        ><span
+                                                            class="text-c1 text-gray"
+                                                            >/шт.</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="flex flex-col gap-y-2 sm:flex-row sm:gap-x-3"
+                                                >
+                                                    <div
+                                                        class="flex items-center justify-between gap-x-2.5 rounded-md border border-stroke-1 sm:w-full"
+                                                    >
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#minus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                        <div
+                                                            class="text-c1 sm:text-b3"
+                                                        >
+                                                            1
+                                                        </div>
+                                                        <button class="p-2">
+                                                            <svg
+                                                                class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
+                                                            >
+                                                                <use
+                                                                    href="assets/icons/sprites.svg#plus"
+                                                                />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <button
+                                                        class="inline-flex items-center justify-center gap-x-1 rounded-[5px] bg-accent-1 fill-fullWhite py-2 text-c1 text-fullWhite sm:w-full sm:gap-x-2 sm:rounded-lg sm:py-3 sm:text-b3"
+                                                    >
+                                                        <svg
+                                                            class="h-3 w-3 sm:h-4 sm:w-4"
+                                                        >
+                                                            <use
+                                                                href="assets/icons/sprites.svg#bag"
+                                                            />
+                                                        </svg>
+                                                        <span>В корзину</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- pagination -->
+                                    <div
+                                        class="mt-8 flex justify-center border-t-[1px] border-stroke-1 pt-4 sm:mt-12 sm:pt-6"
+                                    >
+                                        <div
+                                            class="flex items-center gap-x-2 sm:gap-x-3"
+                                        >
+                                            <div class="cursor-pointer">
+                                                <svg
+                                                    class="h-8 w-8 fill-accent-1 sm:h-6 sm:w-6"
+                                                >
+                                                    <use
+                                                        href="assets/icons/sprites.svg#arrow_left"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div
+                                                class="flex gap-x-1.5 sm:gap-x-3"
+                                            >
+                                                <a
+                                                    href="#"
+                                                    class="inline-flex cursor-pointer rounded-[4px] bg-white p-1.5 sm:rounded-[5px]"
+                                                >
+                                                    <div
+                                                        class="flex h-3 w-3 items-center justify-center text-mobile-b2 text-gray sm:h-4 sm:w-4 sm:text-b3"
+                                                    >
+                                                        1
+                                                    </div>
+                                                </a>
+                                                <a
+                                                    href="#"
+                                                    class="inline-flex cursor-pointer rounded-[4px] bg-white p-1.5 sm:rounded-[5px]"
+                                                >
+                                                    <div
+                                                        class="flex h-3 w-3 items-center justify-center text-mobile-b2 text-accent-1 sm:h-4 sm:w-4 sm:text-b3"
+                                                    >
+                                                        2
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="cursor-pointer">
+                                                <svg
+                                                    class="h-8 w-8 fill-accent-1 sm:h-6 sm:w-6"
+                                                >
+                                                    <use
+                                                        href="assets/icons/sprites.svg#arrow_right"
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

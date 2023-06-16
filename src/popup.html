@@ -14,48 +14,80 @@
         <title>Бетар Волга - PopUp</title>
     </head>
     <body>
+        <!-- оставьте заявку -->
         <div
-            class="relative flex flex-col gap-y-6 rounded-[10px] bg-accent-1-opacity px-2.5 py-8"
+            class="relative flex flex-col gap-y-6 rounded-[10px] bg-accent-1-opacity px-2.5 py-8 sm:rounded-[20px] sm:p-12"
         >
-            <div class="absolute right-2.5 top-2.5 cursor-pointer">
-                <svg class="h-4 w-4">
+            <div
+                class="absolute right-2.5 top-2.5 cursor-pointer sm:right-4 sm:top-4"
+            >
+                <svg class="h-4 w-4 sm:h-8 sm:w-8">
                     <use href="assets/icons/sprites.svg#close" />
                 </svg>
             </div>
             <div class="flex flex-col gap-y-4">
-                <div class="text-center text-b1 font-medium">
+                <div class="text-center text-b1 font-medium sm:text-h3">
                     Оставьте заявку
                 </div>
-                <div class="text-center text-c1 text-textPrimary">
+                <p class="text-center text-c1 text-textPrimary sm:text-b3">
                     Мы свяжемся с вами в ближайшее время
-                </div>
+                </p>
             </div>
             <div class="flex flex-col gap-y-2.5">
                 <input
                     type="text"
                     placeholder="Имя"
-                    class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray bg-transparent"
+                    class="bg-transparent rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:rounded-[10px] sm:p-4 sm:text-[14px]"
                 />
                 <input
                     type="text"
                     placeholder="Телефон"
-                    class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray bg-transparent"
+                    class="bg-transparent rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:rounded-[10px] sm:p-4 sm:text-[14px]"
                 />
                 <input
                     type="text"
                     placeholder="Ваш вопрос (по желанию)"
-                    class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray bg-transparent"
+                    class="bg-transparent rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:rounded-[10px] sm:p-4 sm:text-[14px]"
                 />
                 <button
-                    class="rounded-md bg-accent-1 py-2 text-mobile-b1 text-fullWhite"
+                    class="rounded-md bg-accent-1 py-2 text-mobile-b1 text-fullWhite sm:rounded-lg sm:py-3 sm:text-b1"
                 >
                     Отправить
                 </button>
             </div>
-            <p class="text-center text-mobile-b2 text-textPrimary">
+            <p class="text-center text-mobile-b2 text-textPrimary sm:text-c1">
                 Нажимая на кнопку, вы соглашаетесь<br />
                 с политикой конфиденциальности
             </p>
+        </div>
+
+        <!-- спасибо -->
+        <div
+            class="relative flex flex-col gap-y-6 rounded-[10px] bg-accent-1-opacity px-2.5 py-8 sm:rounded-[20px] sm:p-12 sm:items-center"
+        >
+            <div
+                class="absolute right-2.5 top-2.5 cursor-pointer sm:right-4 sm:top-4"
+            >
+                <svg class="h-4 w-4 sm:h-8 sm:w-8">
+                    <use href="assets/icons/sprites.svg#close" />
+                </svg>
+            </div>
+            <div class="flex flex-col gap-y-4">
+                <div
+                    class="text-center text-b1 font-medium text-label sm:text-h3"
+                >
+                    Спасибо.
+                </div>
+                <p class="text-center text-c1 text-textPrimary sm:text-b3">
+                    Ваша заявка отправлена. Наш менеджер<br />скоро свяжется с
+                    вами
+                </p>
+            </div>
+            <button
+                class="rounded-md bg-accent-1 py-2 text-mobile-b1 text-fullWhite sm:rounded-lg sm:py-3 sm:text-b1 sm:px-14"
+            >
+                Вернуться в каталог
+            </button>
         </div>
     </body>
 </html>

@@ -15,355 +15,168 @@
     </head>
     <body>
         <div class="page">
-            <header id="header" class="header">
-                <div class="hidden bg-[#E6EBEF] sm:block">
-                    <div class="mx-auto max-w-screen-xl">
-                        <div class="grid h-12 grid-cols-4 items-center">
-                            <div
-                                class="col-span-1 flex items-center gap-x-2 fill-textSecondary text-b2"
-                            >
-                                <svg class="h-6 w-6">
-                                    <use href="assets/icons/sprites.svg#geo" />
-                                </svg>
-                                <span>Волгоград</span>
-                            </div>
-                            <nav class="col-span-2">
-                                <ul class="flex gap-x-10 text-b2">
-                                    <li><a href="#">Покупателям</a></li>
-                                    <li><a href="#">О нас</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                </ul>
-                            </nav>
-                            <div
-                                class="col-span-1 flex items-center gap-x-[60px]"
-                            >
-                                <div class="flex items-center gap-x-5 text-b2">
-                                    <div>Вход</div>
-                                    <div
-                                        class="h-3.5 w-px bg-textSecondary"
-                                    ></div>
-                                    <div class="text-textPrimary">
-                                        Регистрация
-                                    </div>
-                                </div>
-                                <ul class="flex gap-x-4 stroke-textSecondary">
-                                    <li>
-                                        <a href="#">
-                                            <svg class="h-6 w-6">
-                                                <use
-                                                    href="assets/icons/sprites.svg#telegram"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <svg class="h-6 w-6">
-                                                <use
-                                                    href="assets/icons/sprites.svg#whatsapp"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <!-- header -->
+            <main id="main" class="main">
+                <section class="mb-5">
+                    <div class="flex items-center gap-x-1.5">
+                        <a
+                            href="index.html"
+                            class="inline-flex text-mobile-b2 font-medium text-gray sm:text-b3"
+                            >Главная</a
+                        >
+                        <span class="text-mobile-b2 text-gray sm:text-b3"
+                            >/</span
+                        >
+                        <a
+                            href="cart.html"
+                            class="inline-flex text-mobile-b2 font-medium text-textSecondary sm:text-b3"
+                            >Корзина</a
+                        >
                     </div>
-                </div>
-                <div class="mx-auto max-w-screen-xl">
-                    <div
-                        class="grid h-11 grid-cols-3 bg-accent-1-opacity p-2.5 sm:h-[92px] sm:grid-cols-4 sm:bg-fullWhite"
-                    >
-                        <div class="flex items-center gap-x-[10px] sm:hidden">
-                            <div>
-                                <svg class="h-6 w-6">
-                                    <use href="assets/icons/sprites.svg#menu" />
-                                </svg>
-                            </div>
-                            <a href="#">
-                                <svg class="h-4 w-4">
-                                    <use
-                                        href="assets/icons/sprites.svg#phone"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
-                        <div
-                            class="flex justify-center sm:col-span-1 sm:items-center sm:justify-start sm:gap-x-6"
-                        >
-                            <a href="index.html">
-                                <img
-                                    src="assets/images/logo.svg"
-                                    alt=""
-                                    class="w-[70px] sm:h-10 sm:w-auto"
-                                />
-                            </a>
+                </section>
+
+                <section>
+                    <div class="sm:grid sm:grid-cols-12 sm:gap-x-5 flex flex-col gap-y-5">
+                        <div class="flex flex-col sm:col-span-8">
                             <div
-                                class="hidden text-b2 font-medium text-[#333333] sm:block"
+                                class="relative flex items-start gap-x-5 border-b-[1px] border-[#E0E0E0] pb-4 sm:grid sm:grid-cols-8"
                             >
-                                Сантехника<br />и хозтовары
-                            </div>
-                        </div>
-                        <div
-                            class="hidden items-center gap-x-5 sm:col-span-2 sm:flex"
-                        >
-                            <a
-                                href="catalog.html"
-                                class="inline-flex items-center gap-x-3 rounded-lg bg-accent-1 stroke-fullWhite px-5 py-2.5 text-[14px] font-medium text-[#F2F2F2]"
-                            >
-                                <svg class="h-6 w-6">
-                                    <use
-                                        href="assets/icons/sprites.svg#burger"
-                                    />
-                                </svg>
-                                <span>Каталог</span>
-                            </a>
-                            <div
-                                class="relative flex w-full items-center gap-x-3 rounded-[6px] border border-stroke-1 pr-3"
-                            >
-                                <div
-                                    class="absolute left-3 top-1/2 -translate-y-1/2"
-                                >
-                                    <svg class="h-6 w-6">
+                                <div class="absolute right-0 top-0">
+                                    <svg class="h-4 w-4 sm:h-6 sm:w-6">
                                         <use
-                                            href="assets/icons/sprites.svg#search"
+                                            href="assets/icons/sprites.svg#close"
                                         />
                                     </svg>
                                 </div>
-                                <input
-                                    type="text"
-                                    placeholder="Поиск по каталогу"
-                                    class="h-11 w-full pl-12 text-b3 placeholder-gray"
-                                />
-                                <div class="h-5 w-px bg-stroke-1"></div>
-                                <button class="px-5 text-c1 text-accent-1">
-                                    Найти
-                                </button>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-end gap-x-[10px]">
-                            <a
-                                href="404.html"
-                                class="hidden rounded-full border border-stroke-1 p-2.5 sm:inline-flex"
-                            >
-                                <svg
-                                    class="h-4 w-4 stroke-textPrimary sm:h-6 sm:w-6"
-                                >
-                                    <use
-                                        href="assets/icons/sprites.svg#comparison"
-                                    />
-                                </svg>
-                            </a>
-                            <a
-                                href="404.html"
-                                class="inline-flex rounded-full sm:border sm:border-stroke-1 sm:p-2.5"
-                            >
-                                <svg
-                                    class="h-4 w-4 stroke-textPrimary sm:h-6 sm:w-6"
-                                >
-                                    <use
-                                        href="assets/icons/sprites.svg#wishlist"
-                                    />
-                                </svg>
-                            </a>
-                            <a
-                                href="cart.html"
-                                class="relative inline-flex items-end rounded-full sm:border sm:border-stroke-1 sm:p-2.5"
-                            >
                                 <div
-                                    class="-mr-0.5 flex h-[13px] w-[13px] items-center justify-center rounded-full bg-accent-2 text-[8px] tracking-tighter text-fullWhite sm:absolute sm:-right-2 sm:-top-0.5 sm:mr-0 sm:h-[20px] sm:w-[20px] sm:text-[10px] sm:tracking-normal"
+                                    class="rounded-[5px] border border-stroke-1 sm:col-span-2 sm:rounded-2xl"
                                 >
-                                    0
-                                </div>
-                                <svg
-                                    class="h-4 w-4 fill-textPrimary sm:h-6 sm:w-6"
-                                >
-                                    <use href="assets/icons/sprites.svg#bag" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden sm:block">
-                    <div
-                        class="mx-auto flex h-20 max-w-screen-xl items-center justify-between border-t-[1px] border-stroke-1"
-                    >
-                        <nav
-                            class="flex items-center space-x-8 text-b2 text-textSecondary"
-                        >
-                            <ul class="flex items-center space-x-8">
-                                <li>
-                                    <a href="catalog.html">Водоснабжение</a>
-                                </li>
-                                <li><a href="catalog.html">Отопление</a></li>
-                                <li><a href="catalog.html">Сантехника</a></li>
-                            </ul>
-                            <span class="h-3.5 w-px bg-gray"></span>
-                            <ul class="flex items-center space-x-8">
-                                <li>
-                                    <a
-                                        href="catalog.html"
-                                        class="flex items-center space-x-2 text-accent-2"
-                                    >
-                                        <svg class="h-6 w-6">
-                                            <use
-                                                href="assets/icons/sprites.svg#promo"
-                                            />
-                                        </svg>
-                                        <span>Акции</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="catalog.html">Сезонные товары</a>
-                                </li>
-                                <li><a href="catalog.html">Новинки</a></li>
-                            </ul>
-                        </nav>
-
-                        <div class="flex items-center space-x-3">
-                            <span class="text-b3 text-[#828282]"
-                                >пн-пт 9:00–19:00</span
-                            >
-                            <a href="#" class="text-b2 text-textSecondary"
-                                >+7 962 760-04-84</a
-                            >
-                            <a
-                                href="#"
-                                class="rounded-lg border border-stroke-1 px-3.5 py-1.5 text-b2 text-accent-1"
-                                >Обратный звонок</a
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="flex h-[60px] items-center bg-fullWhite px-2.5 sm:hidden"
-                >
-                    <div class="relative w-full">
-                        <div class="absolute left-1.5 top-1/2 -translate-y-1/2">
-                            <svg class="h-4 w-4">
-                                <use href="assets/icons/sprites.svg#search" />
-                            </svg>
-                        </div>
-                        <input
-                            type="text"
-                            placeholder="Поиск по каталогу"
-                            class="w-full rounded-[10px] border border-stroke-1 py-2.5 pl-8 pr-1.5 text-c1 placeholder-gray"
-                        />
-                    </div>
-                </div>
-            </header>
-
-            <div
-                class="mx-auto my-10 flex max-w-screen-xl items-center space-x-2 text-b3 text-gray"
-            >
-                <span>Главная</span><span>/</span>
-                <span class="text-textSecondary">Корзина</span>
-            </div>
-
-            <main>
-                <section class="mx-auto max-w-screen-xl">
-                    <div
-                        class="mb-10 flex justify-between border-b-[1px] border-stroke-1 pb-5"
-                    >
-                        <div class="flex w-2/3 items-center justify-between">
-                            <div class="flex items-start gap-x-2">
-                                <h2 class="text-h2">Корзина</h2>
-                                <span class="text-b3 text-textPrimary">3</span>
-                            </div>
-                            <div class="flex items-center gap-x-4">
-                                <svg class="h-6 w-6 stroke-textPrimary">
-                                    <use href="assets/icons/sprites.svg#seal" />
-                                </svg>
-                                <svg class="h-6 w-6 stroke-textPrimary">
-                                    <use
-                                        href="assets/icons/sprites.svg#share"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="flex w-1/3 items-center justify-end">
-                            <button
-                                class="rounded-lg border border-stroke-1 px-3.5 py-1.5 text-b2 text-textPrimary"
-                            >
-                                Очистить корзину
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="w-2/3">
-                            <div class="flex flex-col">
-                                <div class="flex">
                                     <img
                                         src="assets/images/cart-image.png"
                                         alt=""
-                                        class="mr-5 rounded-2xl border border-stroke-1"
+                                        class="h-[80px] w-[80px] rounded-[5px] sm:h-full sm:w-full sm:rounded-2xl"
                                     />
+                                </div>
+                                <div
+                                    class="flex flex-col sm:col-span-6 sm:grid sm:grid-cols-6"
+                                >
                                     <div
-                                        class="mr-16 flex flex-col items-start gap-y-4"
+                                        class="flex flex-col items-start gap-y-6 sm:col-span-3"
                                     >
                                         <div class="flex flex-col gap-y-2">
                                             <div class="text-c1 text-gray">
                                                 Артикул: i007827
                                             </div>
-                                            <div class="text-b1 text-[#333333]">
-                                                <span class="font-medium"
-                                                    >Водонагреватель
-                                                    газовый</span
+                                            <div
+                                                class="text-mobile-b1 text-[#333333] sm:text-b1"
+                                            >
+                                                <span class="sm:font-medium"
+                                                    >Водонагреватель газовый</span
                                                 ><br />
-                                                <span>EDISSON H 20 D</span>
+                                                EDISSON H 20 D
                                             </div>
                                         </div>
-                                        <div class="flex items-start gap-x-4">
-                                            <div
-                                                class="rounded-[5px] bg-accent-2 px-2 py-1 text-[12px] text-[#F2F2F2]"
-                                            >
-                                                -20%
-                                            </div>
-                                            <div class="flex flex-col gap-y-2">
+                                        <div class="flex flex-col gap-y-2">
+                                            <div class="flex flex-col gap-y-1.5">
                                                 <div
-                                                    class="text-[14px] text-gray line-through"
+                                                    class="flex items-start gap-x-3 sm:flex-row"
                                                 >
-                                                    9 990 ₽
+                                                    <div
+                                                        class="rounded-[4px] bg-accent-2 px-1 py-0.5 text-mobile-b3 text-[#F2F2F2] sm:rounded-[5px] sm:px-2 sm:py-1 sm:text-[12px]"
+                                                    >
+                                                        -20%
+                                                    </div>
+                                                    <div
+                                                        class="sm:flex sm:flex-col sm:gap-y-2"
+                                                    >
+                                                        <div
+                                                            class="text-[10px] text-gray sm:text-[14px]"
+                                                        >
+                                                            23 370 ₽
+                                                        </div>
+                                                        <div
+                                                            class="hidden gap-x-0.5 sm:flex sm:items-end sm:gap-x-1"
+                                                        >
+                                                            <span
+                                                                class="text-mobile-b2 font-medium text-gray sm:text-h4 sm:font-normal sm:text-textSecondary"
+                                                                >7 790</span
+                                                            ><span
+                                                                class="text-mobile-b2 font-medium text-gray sm:text-h4 sm:font-normal sm:text-textSecondary"
+                                                                >₽</span
+                                                            ><span
+                                                                class="text-mobile-b2 font-medium text-gray sm:text-c1 sm:font-normal"
+                                                                >/шт.</span
+                                                            >
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div
-                                                    class="flex items-end gap-x-1"
-                                                >
-                                                    <span class="text-h4"
-                                                        >7 790</span
+                                                <div class="sm:hidden">
+                                                    <div
+                                                        class="flex gap-x-0.5 text-b1 font-medium"
                                                     >
-                                                    <span class="text-h4"
-                                                        >₽</span
+                                                        <span>18 696</span
+                                                        ><span>₽</span>
+                                                    </div>
+                                                    <div class="flex gap-x-0.5">
+                                                        <span
+                                                            class="text-mobile-b2 font-medium text-gray"
+                                                            >7 790</span
+                                                        ><span
+                                                            class="text-mobile-b2 font-medium text-gray"
+                                                            >₽</span
+                                                        ><span
+                                                            class="text-mobile-b2 font-medium text-gray"
+                                                            >/шт.</span
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="flex items-center rounded-[5px] border border-stroke-1 sm:hidden"
+                                            >
+                                                <div class="p-2">
+                                                    <svg
+                                                        class="h-3 w-3 stroke-accent-1"
                                                     >
-                                                    <span
-                                                        class="text-c1 text-gray"
-                                                        >/шт.</span
+                                                        <use
+                                                            href="assets/icons/sprites.svg#minus"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                                <div class="px-5 text-c1">1</div>
+                                                <div class="p-2">
+                                                    <svg
+                                                        class="h-3 w-3 stroke-accent-1"
                                                     >
+                                                        <use
+                                                            href="assets/icons/sprites.svg#plus"
+                                                        />
+                                                    </svg>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex flex-col">
+                                    <div
+                                        class="hidden sm:col-span-3 sm:flex sm:flex-col sm:items-start sm:gap-y-6"
+                                    >
                                         <div
-                                            class="flex h-10 items-center justify-between rounded-lg border border-stroke-1"
+                                            class="flex items-center rounded-[5px] border border-stroke-1 sm:rounded-lg"
                                         >
-                                            <div
-                                                class="flex h-10 w-10 items-center justify-center"
-                                            >
+                                            <div class="p-2 sm:p-3">
                                                 <svg
-                                                    class="h-4 w-4 stroke-accent-1"
+                                                    class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
                                                 >
                                                     <use
                                                         href="assets/icons/sprites.svg#minus"
                                                     />
                                                 </svg>
                                             </div>
-                                            <div class="text-b3">1</div>
-                                            <div
-                                                class="flex h-10 w-10 items-center justify-center"
-                                            >
+                                            <div class="px-4 text-c1 sm:text-b3">
+                                                1
+                                            </div>
+                                            <div class="p-2 sm:p-3">
                                                 <svg
-                                                    class="h-4 w-4 stroke-accent-1"
+                                                    class="h-3 w-3 stroke-accent-1 sm:h-4 sm:w-4"
                                                 >
                                                     <use
                                                         href="assets/icons/sprites.svg#plus"
@@ -371,452 +184,129 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <div class="text-[12px] text-[#828282]">
-                                            Стоимость за количество
-                                        </div>
-                                        <div class="flex items-start gap-x-4">
-                                            <div
-                                                class="rounded-[5px] bg-accent-2 px-2 py-1 text-[12px] text-[#F2F2F2]"
-                                            >
-                                                -20%
+                                        <div class="flex flex-col gap-y-4">
+                                            <div class="text-[12px] text-[#828282]">
+                                                Стоимость за количество
                                             </div>
-                                            <div class="flex flex-col gap-y-2">
+                                            <div class="flex items-start gap-x-4">
                                                 <div
-                                                    class="text-[14px] text-gray line-through"
+                                                    class="rounded-[4px] bg-accent-2 px-1 py-0.5 text-mobile-b3 text-[#F2F2F2] sm:rounded-[5px] sm:px-2 sm:py-1 sm:text-[12px]"
                                                 >
-                                                    23 370 ₽
+                                                    -20%
                                                 </div>
-                                                <div
-                                                    class="flex items-end gap-x-1"
-                                                >
-                                                    <span class="text-h3"
-                                                        >18 696</span
+                                                <div class="flex flex-col gap-y-2">
+                                                    <div
+                                                        class="text-[10px] text-gray sm:text-[14px]"
                                                     >
-                                                    <span class="text-h3"
-                                                        >₽</span
+                                                        23 370 ₽
+                                                    </div>
+                                                    <div
+                                                        class="flex items-end gap-x-1"
                                                     >
-                                                    <span
-                                                        class="text-c1 text-gray"
-                                                        >/шт.</span
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <svg class="h-6 w-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#close"
-                                        />
-                                    </svg>
-                                </div>
-                                <div class="flex">
-                                    <img
-                                        src="assets/images/cart-image.png"
-                                        alt=""
-                                        class="mr-5 rounded-2xl border border-stroke-1"
-                                    />
-                                    <div
-                                        class="mr-16 flex flex-col items-start gap-y-4"
-                                    >
-                                        <div class="flex flex-col gap-y-2">
-                                            <div class="text-c1 text-gray">
-                                                Артикул: i007827
-                                            </div>
-                                            <div class="text-b1 text-[#333333]">
-                                                <span class="font-medium"
-                                                    >Водонагреватель
-                                                    газовый</span
-                                                ><br />
-                                                <span>EDISSON H 20 D</span>
-                                            </div>
-                                        </div>
-                                        <div class="flex items-start gap-x-4">
-                                            <div
-                                                class="rounded-[5px] bg-accent-2 px-2 py-1 text-[12px] text-[#F2F2F2]"
-                                            >
-                                                -20%
-                                            </div>
-                                            <div class="flex flex-col gap-y-2">
-                                                <div
-                                                    class="text-[14px] text-gray line-through"
-                                                >
-                                                    9 990 ₽
-                                                </div>
-                                                <div
-                                                    class="flex items-end gap-x-1"
-                                                >
-                                                    <span class="text-h4"
-                                                        >7 790</span
-                                                    >
-                                                    <span class="text-h4"
-                                                        >₽</span
-                                                    >
-                                                    <span
-                                                        class="text-c1 text-gray"
-                                                        >/шт.</span
-                                                    >
+                                                        <span class="text-h3"
+                                                            >18 696</span
+                                                        ><span class="text-h3"
+                                                            >₽</span
+                                                        ><span
+                                                            class="text-c1 text-gray"
+                                                            >/шт.</span
+                                                        >
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex flex-col">
-                                        <div
-                                            class="flex h-10 items-center justify-between rounded-lg border border-stroke-1"
-                                        >
-                                            <div
-                                                class="flex h-10 w-10 items-center justify-center"
-                                            >
-                                                <svg
-                                                    class="h-4 w-4 stroke-accent-1"
-                                                >
-                                                    <use
-                                                        href="assets/icons/sprites.svg#minus"
-                                                    />
-                                                </svg>
-                                            </div>
-                                            <div class="text-b3">1</div>
-                                            <div
-                                                class="flex h-10 w-10 items-center justify-center"
-                                            >
-                                                <svg
-                                                    class="h-4 w-4 stroke-accent-1"
-                                                >
-                                                    <use
-                                                        href="assets/icons/sprites.svg#plus"
-                                                    />
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <div class="text-[12px] text-[#828282]">
-                                            Стоимость за количество
-                                        </div>
-                                        <div class="flex items-start gap-x-4">
-                                            <div
-                                                class="rounded-[5px] bg-accent-2 px-2 py-1 text-[12px] text-[#F2F2F2]"
-                                            >
-                                                -20%
-                                            </div>
-                                            <div class="flex flex-col gap-y-2">
-                                                <div
-                                                    class="text-[14px] text-gray line-through"
-                                                >
-                                                    23 370 ₽
-                                                </div>
-                                                <div
-                                                    class="flex items-end gap-x-1"
-                                                >
-                                                    <span class="text-h3"
-                                                        >18 696</span
-                                                    >
-                                                    <span class="text-h3"
-                                                        >₽</span
-                                                    >
-                                                    <span
-                                                        class="text-c1 text-gray"
-                                                        >/шт.</span
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <svg class="h-6 w-6">
-                                        <use
-                                            href="assets/icons/sprites.svg#close"
-                                        />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-1/3">
-                            <div class="rounded-[10px] bg-white px-5 py-10">
+                        <div
+                            class="flex flex-col gap-y-4 bg-white px-2.5 py-5 sm:col-span-4 sm:gap-y-8 sm:rounded-[10px] sm:px-6 sm:py-10"
+                        >
+                            <div class="flex flex-col gap-y-2 sm:gap-y-3">
                                 <div
-                                    class="flex justify-between text-b3 text-[#828282]"
+                                    class="flex flex-col gap-y-2 border-b-[1px] border-stroke-1 pb-2 sm:gap-y-3 sm:pb-3"
                                 >
-                                    <span>Количество</span>
-                                    <span>5</span>
+                                    <div class="flex items-center justify-between">
+                                        <div
+                                            class="text-c1 text-[#828282] sm:text-b3"
+                                        >
+                                            Количество
+                                        </div>
+                                        <div
+                                            class="text-mobile-b1 text-[#828282] sm:text-b3"
+                                        >
+                                            5
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <div
+                                            class="text-c1 text-[#828282] sm:text-b3"
+                                        >
+                                            Скидка
+                                        </div>
+                                        <div
+                                            class="text-mobile-b1 text-[#828282] sm:text-b3"
+                                        >
+                                            4 674 ₽
+                                        </div>
+                                    </div>
                                 </div>
-                                <div
-                                    class="flex justify-between text-b3 text-[#828282]"
-                                >
-                                    <span>Скидка</span>
-                                    <span>4 674 ₽</span>
-                                </div>
-                                <div
-                                    class="flex justify-between text-b2 font-medium"
-                                >
-                                    <span>Стоимость заказа</span>
-                                    <span class="text-accent-2"
-                                        >21 686, 40 ₽</span
+                                <div class="flex items-center justify-between">
+                                    <div
+                                        class="text-mobile-b1 sm:text-b2 sm:font-medium"
                                     >
+                                        Стоимость заказа
+                                    </div>
+                                    <div
+                                        class="text-mobile-b1 text-accent-2 sm:text-b2 sm:font-medium"
+                                    >
+                                        21 686, 40 ₽
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="flex flex-col gap-y-5">
                                 <div class="flex gap-x-2.5">
-                                    <div
-                                        class="relative rounded-lg border border-[#BDBDBD]"
-                                    >
+                                    <div class="relative w-full rounded-lg">
+                                        <div
+                                            class="absolute right-3 top-1/2 -translate-y-1/2 sm:right-4"
+                                        >
+                                            <svg class="h-4 w-4">
+                                                <use
+                                                    href="assets/icons/sprites.svg#promocode"
+                                                />
+                                            </svg>
+                                        </div>
                                         <input
                                             type="text"
                                             placeholder="Ваш промокод"
-                                            class="px-4 py-3"
+                                            class="w-full rounded-lg border border-[#BDBDBD] px-3 py-2 text-c1 text-gray sm:px-4 sm:py-3 sm:text-b3"
                                         />
-                                        <svg
-                                            class="absolute right-0 top-0 h-4 w-4"
-                                        >
-                                            <use
-                                                href="assets/icons/sprites.svg#promocode"
-                                            />
-                                        </svg>
                                     </div>
                                     <button
-                                        class="rounded-lg border border-accent-1 px-6 py-3 text-b2 font-medium text-accent-1"
+                                        class="rounded-md border border-accent-1 px-6 py-2 text-mobile-b1 text-accent-1 sm:py-3 sm:text-b2 sm:font-medium"
                                     >
                                         Применить
                                     </button>
                                 </div>
-                                <a
-                                    href="ordering.html"
-                                    class="medium inline-flex w-full justify-center rounded-lg bg-accent-1 py-4 text-[15px] text-fullWhite"
-                                >
-                                    Перейти к оформлению
-                                </a>
+                                <div class="flex flex-col gap-y-3 sm:gap-y-5">
+                                    <button
+                                        class="w-full rounded-lg bg-accent-1 py-3 text-b3 font-medium text-fullWhite sm:rounded-[10px] sm:py-4 sm:text-[15px]"
+                                    >
+                                        Оформить заказ
+                                    </button>
+                                    <p
+                                        class="text-center text-mobile-b2 text-[#828282] sm:text-[12px]"
+                                    >
+                                        Нажимая на кнопку, вы соглашаетесь<br />
+                                        с политикой конфиденциальности
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
-
-            <footer
-                id="footer"
-                class="footer rounded-t-[10px] bg-textSecondary fill-white px-2.5 py-8 text-white sm:rounded-t-[40px] sm:px-0 sm:py-20"
-            >
-                <div
-                    class="mx-auto flex max-w-screen-xl flex-col gap-y-5 sm:gap-y-12"
-                >
-                    <div
-                        class="flex flex-col gap-y-5 sm:grid sm:grid-cols-4 sm:gap-x-5"
-                    >
-                        <div class="flex flex-col gap-y-5 sm:justify-between">
-                            <div class="flex flex-col gap-y-5 sm:gap-y-12">
-                                <div
-                                    class="flex gap-x-6 sm:flex-col sm:gap-x-0 sm:gap-y-6"
-                                >
-                                    <a href="#" class="inline-flex">
-                                        <img
-                                            src="assets/images/logo_dark.svg"
-                                            alt="Logo Dark"
-                                            class="h-7 sm:h-10"
-                                        />
-                                    </a>
-                                    <div class="text-c1 sm:text-b2">
-                                        Сантехника<br class="sm:hidden" />
-                                        и хозтовары
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex items-center gap-x-6 text-c1 sm:text-b2"
-                                >
-                                    <div class="cursor-pointer">Вход</div>
-                                    <div
-                                        class="block h-[10px] w-px bg-white"
-                                    ></div>
-                                    <div class="cursor-pointer">
-                                        Регистрация
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="flex items-center gap-x-2 text-c1 sm:text-b3"
-                            >
-                                <svg class="h-4 w-4">
-                                    <use href="assets/icons/sprites.svg#geo" />
-                                </svg>
-                                <div>Волгоград, пр. Дорожников, 12Г</div>
-                            </div>
-                        </div>
-
-                        <div
-                            class="flex flex-col gap-y-5 sm:order-4 sm:gap-y-8"
-                        >
-                            <div class="flex flex-col">
-                                <div
-                                    class="mb-[18px] border-b-[1px] border-textPrimary pb-1.5 text-c1 sm:mb-8 sm:pb-2 sm:text-b3"
-                                >
-                                    Связаться с нами
-                                </div>
-                                <div class="flex flex-col gap-y-3">
-                                    <a
-                                        href="#"
-                                        class="inline-flex text-b1 font-medium sm:text-h4"
-                                        >+7 962 760-04-84</a
-                                    >
-                                    <div
-                                        class="flex items-center gap-x-3 text-c1 sm:text-b3"
-                                    >
-                                        <div>пн-пт 9:00–19:00</div>
-                                        <div
-                                            class="block h-3.5 w-px bg-white"
-                                        ></div>
-                                        <div class="cursor-pointer">
-                                            Обратный звонок
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="flex flex-col">
-                                <div
-                                    class="mb-[18px] border-b-[1px] border-textPrimary pb-1.5 text-c1 sm:mb-8 sm:pb-2.5 sm:text-b3"
-                                >
-                                    Написать нам
-                                </div>
-                                <div class="flex items-center gap-x-6">
-                                    <ul class="flex items-center gap-x-2">
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="inline-flex rounded-full border border-textPrimary p-2 sm:p-3"
-                                            >
-                                                <svg
-                                                    class="h-4 w-4 stroke-accent-1 sm:h-6 sm:w-6"
-                                                >
-                                                    <use
-                                                        href="assets/icons/sprites.svg#whatsapp"
-                                                    />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="#"
-                                                class="inline-flex rounded-full border border-textPrimary p-2 sm:p-3"
-                                            >
-                                                <svg
-                                                    class="h-4 w-4 stroke-accent-1 sm:h-6 sm:w-6"
-                                                >
-                                                    <use
-                                                        href="assets/icons/sprites.svg#telegram"
-                                                    />
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="text-c1 sm:text-b3">
-                                        betar-vlg.opt@mail.ru
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div
-                                class="mb-[18px] flex cursor-pointer items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:cursor-auto sm:pb-2"
-                            >
-                                <div
-                                    class="text-mobile-b1 text-accent-1 sm:text-b3 sm:text-white"
-                                >
-                                    Каталог
-                                </div>
-                                <div class="sm:hidden">
-                                    <svg class="h-6 w-6 fill-gray">
-                                        <use
-                                            href="assets/icons/sprites.svg#arrow_right"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <nav>
-                                <ul
-                                    class="flex flex-col gap-y-2 text-c1 sm:text-b2"
-                                >
-                                    <li>
-                                        <a href="catalog.html">Все товары</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Товары со скидкой (%)</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Сезонные</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Популярные</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Новинки</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Водоснабжение</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Отопление</a>
-                                    </li>
-                                    <li>
-                                        <a href="catalog.html">Сантехника</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div>
-                            <div
-                                class="mb-[18px] flex cursor-pointer items-center justify-between border-b-[1px] border-textPrimary pb-1.5 sm:mb-8 sm:cursor-auto sm:pb-2"
-                            >
-                                <div
-                                    class="text-mobile-b1 text-accent-1 sm:text-b3 sm:text-white"
-                                >
-                                    Информация
-                                </div>
-                                <div class="sm:hidden">
-                                    <svg class="h-6 w-6 fill-gray">
-                                        <use
-                                            href="assets/icons/sprites.svg#arrow_right"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                            <nav>
-                                <ul
-                                    class="flex flex-col gap-y-2 text-c1 sm:text-b2"
-                                >
-                                    <li>
-                                        <a href="#">Доставка и оплата</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Возврат / обмен</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">О нас</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Частые вопросы</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Блог</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div
-                        class="sm:border-t-[1px] sm:border-textPrimary sm:pt-6"
-                    >
-                        <ul
-                            class="flex flex-col gap-y-3 text-c1 sm:grid sm:grid-cols-4 sm:text-b3"
-                        >
-                            <li class="sm:order-2">
-                                <a href="policy.html">Политика конфиденциальности</a>
-                            </li>
-                            <li class="sm:order-3">
-                                <a href="#">Договор оферты</a>
-                            </li>
-                            <li class="sm:order-4">
-                                <a href="#">Разработка сайта</a>
-                            </li>
-                            <li
-                                class="text-mobile-b2 text-[#828282] sm:order-1 sm:text-b3"
-                            >
-                                © 2023 БЕТАР-Волга
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
+            <!-- footer -->
         </div>
     </body>
 </html>

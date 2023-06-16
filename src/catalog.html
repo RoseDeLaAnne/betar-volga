@@ -16,238 +16,941 @@
     <body>
         <div class="page">
             <!-- header -->
-            <main id="main" class="main">
-                <section>
-                    <!-- headline -->
-                    <div
-                        class="border-b-[1px] border-[#E0E0E0] pb-3 text-mobile-h2 sm:pb-4 sm:text-h2"
-                    >
-                        Каталог
-                    </div>
-                    <!-- grid cols -->
-                    <ul
-                        class="grid grid-cols-2 gap-2.5 sm:grid-cols-4 sm:gap-x-5"
-                    >
-                        <li
-                            class="flex rounded-[10px] bg-accent-1-opacity p-4 sm:h-[100px] sm:rounded-[14px] sm:p-6"
+            <main id="main" class="main px-2.5 sm:px-0">
+                <!-- breadcrumbs -->
+                <section class="mb-5">
+                    <div class="flex items-center gap-x-1.5">
+                        <a
+                            href="#"
+                            class="inline-flex text-mobile-b2 font-medium text-gray sm:text-b3"
+                            >Главная</a
                         >
-                            <div
-                                class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                            >
-                                Товары<br class="sm:hidden" />
-                                со скидкой
-                            </div>
-                        </li>
-                    </ul>
+                        <div class="text-mobile-b2 text-gray sm:text-b3">/</div>
+                        <a
+                            href="#"
+                            class="inline-flex text-mobile-b2 font-medium text-textSecondary sm:text-b3"
+                            >Каталог</a
+                        >
+                    </div>
+                </section>
 
-                    <div
-                        class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-x-5"
-                    >
-                        <!-- left block -->
-                        <div class="flex flex-col gap-y-4 sm:col-span-3">
-                            <div class="flex flex-col gap-y-4">
-                                <!-- input -->
-                                <div class="relative">
-                                    <div
-                                        class="absolute left-0 top-1/2 -translate-y-1/2"
+                <section>
+                    <div class="flex flex-col gap-y-8">
+                        <div class="flex flex-col gap-y-5">
+                            <!-- headline -->
+                            <div
+                                class="border-b-[1px] border-[#E0E0E0] pb-3 text-mobile-h2 sm:pb-4 sm:text-h2"
+                            >
+                                Каталог
+                            </div>
+                            <!-- grid cols -->
+                            <ul
+                                class="grid grid-cols-2 grid-rows-2 gap-2.5 sm:grid-cols-4 sm:gap-x-5 sm:grid-rows-none"
+                            >
+                                <li
+                                    class="rounded-[10px] sm:h-[100px] sm:rounded-[14px]"
+                                >
+                                    <a
+                                        href="#"
+                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
                                     >
-                                        <svg class="h-4 w-4 sm:h-5 sm:w-5">
+                                        <div
+                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                        >
+                                            Товары<br class="sm:hidden" />
+                                            со скидкой
+                                        </div>
+                                    </a>
+                                </li>
+                                <li
+                                    class="rounded-[10px] sm:h-[100px] sm:rounded-[14px]"
+                                >
+                                    <a
+                                        href="#"
+                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                    >
+                                        <div
+                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                        >
+                                            Товары<br class="sm:hidden" />
+                                            со скидкой
+                                        </div>
+                                    </a>
+                                </li>
+                                <li
+                                    class="rounded-[10px] sm:h-[100px] sm:rounded-[14px]"
+                                >
+                                    <a
+                                        href="#"
+                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                    >
+                                        <div
+                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                        >
+                                            Товары<br class="sm:hidden" />
+                                            со скидкой
+                                        </div>
+                                    </a>
+                                </li>
+                                <li
+                                    class="rounded-[10px] sm:h-[100px] sm:rounded-[14px]"
+                                >
+                                    <a
+                                        href="#"
+                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                    >
+                                        <div
+                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                        >
+                                            Товары<br class="sm:hidden" />
+                                            со скидкой
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="flex flex-col gap-y-6 sm:grid sm:grid-cols-12 sm:gap-x-5"
+                        >
+                            <!-- left block -->
+                            <div class="flex flex-col gap-y-4 sm:col-span-3">
+                                <div class="flex flex-col gap-y-4">
+                                    <!-- input -->
+                                    <div class="relative">
+                                        <div
+                                            class="absolute left-3 top-1/2 -translate-y-1/2"
+                                        >
+                                            <svg class="h-4 w-4 sm:h-5 sm:w-5">
+                                                <use
+                                                    href="assets/icons/sprites.svg#search"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            placeholder="Артикул: i1234567890"
+                                            class="w-full rounded-lg bg-white py-3.5 pl-9 pr-3 text-mobile-b2 placeholder-textPrimary sm:text-b3 sm:py-[18.5px] sm:pl-[46px] sm:pr-[18px] sm:rounded-xl"
+                                        />
+                                    </div>
+                                    <!-- ul list -->
+                                    <ul
+                                        class="flex gap-x-2.5 sm:flex-col sm:gap-y-5"
+                                    >
+                                        <li
+                                            class="rounded-lg sm:rounded-[10px]"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="flex cursor-pointer rounded-lg bg-accent-1 px-3.5 py-3 text-b3 font-medium text-white sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Сантехника</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="rounded-lg sm:rounded-[10px]"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Водоснабжение</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="h-0.5 w-8 bg-stroke-1 sm:hidden"
+                                ></div>
+                            </div>
+
+                            <!-- right block -->
+                            <div class="flex flex-col gap-y-2.5 sm:col-span-9">
+                                <div
+                                    class="flex cursor-pointer items-center justify-between rounded-lg bg-accent-1-opacity py-3 pl-4 pr-2 sm:pl-[30px] sm:pr-5"
+                                >
+                                    <div
+                                        class="text-b3 font-medium text-accent-1 sm:text-b1"
+                                    >
+                                        Все товары
+                                    </div>
+                                    <div>
+                                        <svg
+                                            class="h-6 w-6 fill-accent-1 sm:h-8 sm:w-8"
+                                        >
                                             <use
-                                                href="assets/icons/sprites.svg#search"
+                                                href="assets/icons/sprites.svg#arrow_right"
                                             />
                                         </svg>
                                     </div>
-                                    <input
-                                        type="text"
-                                        placeholder="Артикул: i1234567890"
-                                        class="text-mobile-b2 placeholder-textPrimary sm:text-b3"
-                                    />
                                 </div>
+
                                 <!-- ul list -->
                                 <ul
-                                    class="flex gap-x-2.5 sm:flex-col sm:gap-y-5"
+                                    class="grid grid-cols-2 gap-2.5 sm:grid-cols-9"
                                 >
                                     <li
-                                        class="rounded-lg bg-accent-1 px-3.5 py-3 text-b3 font-medium text-white sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                        class="h-[110px] rounded-lg sm:col-span-5 sm:row-span-2 sm:h-auto sm:rounded-2xl"
                                     >
-                                        Сантехника
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-1.5"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Для кухни
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Для ванной и душа
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Для раковины и
+                                                        умывальника
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Проточные смесители
+                                                    </li>
+                                                </ul>
+                                                <div
+                                                    class="h-px w-full bg-stroke-1"
+                                                ></div>
+                                                <ul
+                                                    class="flex flex-col gap-y-1.5"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Comfort
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        IDDIS
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        MILARDO
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        SOLONE
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        ZEGOR
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
                                     </li>
                                     <li
-                                        class="rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-56 sm:rounded-2xl"
                                     >
-                                        Водоснабжение
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-56 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:row-span-3 sm:h-auto sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:row-span-3 sm:h-auto sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Gebo и аналоги
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-48 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-5 sm:row-span-2 sm:h-auto sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-48 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-40 sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Gebo и аналоги
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-9 sm:h-[488px] sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:gap-y-[30px] sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-5 sm:row-span-3 sm:h-auto sm:rounded-2xl"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:gap-y-[30px] sm:rounded-2xl sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="hidden flex-col gap-y-3 sm:flex"
+                                            >
+                                                <ul
+                                                    class="flex flex-col gap-y-2"
+                                                >
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                    <li
+                                                        class="text-b3 text-textPrimary"
+                                                    >
+                                                        Рычаг
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-[150px] sm:rounded-[14px]"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-[14px] sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-[150px] sm:rounded-[14px]"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-[14px] sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li
+                                        class="h-[110px] rounded-lg sm:col-span-4 sm:h-[150px] sm:rounded-[14px]"
+                                    >
+                                        <a
+                                            href="#"
+                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:rounded-[14px] sm:p-6"
+                                        >
+                                            <div
+                                                class="flex w-full flex-col gap-y-1"
+                                            >
+                                                <div
+                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                >
+                                                    Смесители
+                                                </div>
+                                                <div
+                                                    class="text-mobile-b2 text-gray sm:text-b2"
+                                                >
+                                                    0000
+                                                </div>
+                                            </div>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="h-0.5 w-8 bg-stroke-1 sm:hidden"></div>
-                        </div>
-
-                        <!-- right block -->
-                        <div class="sm:col-span-9">
-                            <div
-                                class="flex items-center bg-accent-1-opacity py-3 pl-4 pr-2 sm:justify-between sm:pl-[30px] sm:pr-5"
-                            >
-                                <div
-                                    class="text-b3 font-medium text-accent-1 sm:text-b1"
-                                >
-                                    Все товары
-                                </div>
-                                <div>
-                                    <svg class="h-6 w-6 sm:h-8 sm:w-8">
-                                        <use
-                                            href="assets/icons/sprites.svg#arrow_right"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-
-                            <!-- ul list -->
-                            <ul class="grid grid-cols-2 gap-2.5 sm:grid-cols-9">
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-5 sm:row-span-2 sm:h-auto sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:flex-row sm:justify-between"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-4 sm:h-56 sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-4 sm:h-56 sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-3 sm:row-span-3 sm:h-auto sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-3 sm:row-span-3 sm:h-auto sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-3 sm:h-40 sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-3 sm:h-40 sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                                <li
-                                    class="h-[110px] rounded-lg bg-[#ECF0F4] p-4 sm:col-span-3 sm:h-40 sm:rounded-2xl"
-                                >
-                                    <div
-                                        class="flex flex-col gap-y-1 sm:gap-y-3"
-                                    >
-                                        <div
-                                            class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                        >
-                                            Смесители
-                                        </div>
-                                        <div
-                                            class="text-mobile-b2 text-gray sm:text-b2"
-                                        >
-                                            0000
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </section>
