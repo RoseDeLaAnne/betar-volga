@@ -15,7 +15,7 @@
     </head>
     <body>
         <!-- оставьте заявку -->
-        <div
+        <form
             class="relative flex flex-col gap-y-6 rounded-[10px] bg-accent-1-opacity px-2.5 py-8 sm:rounded-[20px] sm:p-12"
         >
             <div
@@ -59,14 +59,16 @@
                 Нажимая на кнопку, вы соглашаетесь<br />
                 с политикой конфиденциальности
             </p>
-        </div>
+        </form>
 
         <!-- спасибо -->
         <div
-            class="relative flex flex-col gap-y-6 rounded-[10px] bg-accent-1-opacity px-2.5 py-8 sm:rounded-[20px] sm:p-12 sm:items-center"
+            class="relative flex flex-col gap-y-6 rounded-[10px] bg-accent-1-opacity px-2.5 py-8 sm:items-center sm:rounded-[20px] sm:px-32 sm:py-12"
+            id="pop-up-thanks"
         >
             <div
                 class="absolute right-2.5 top-2.5 cursor-pointer sm:right-4 sm:top-4"
+                id="pop-up-thanks-close"
             >
                 <svg class="h-4 w-4 sm:h-8 sm:w-8">
                     <use href="assets/icons/sprites.svg#close" />
@@ -83,11 +85,12 @@
                     вами
                 </p>
             </div>
-            <button
-                class="rounded-md bg-accent-1 py-2 text-mobile-b1 text-fullWhite sm:rounded-lg sm:py-3 sm:text-b1 sm:px-14"
+            <a
+                href="catalog.html"
+                class="inline-flex rounded-md bg-accent-1 py-2 text-mobile-b1 text-fullWhite sm:rounded-lg sm:px-14 sm:py-3 sm:text-b3 sm:font-medium"
             >
                 Вернуться в каталог
-            </button>
+            </a>
         </div>
     </body>
 </html>

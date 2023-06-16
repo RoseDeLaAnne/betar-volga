@@ -11,6 +11,11 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js"></script>
         <title>Бетар Волга - Pagination</title>
     </head>
     <body>
@@ -366,25 +371,23 @@
                                                     >(₽)</span
                                                 >
                                             </div>
-
                                             <div
                                                 class="grid grid-cols-2 gap-x-2.5"
                                             >
                                                 <input
                                                     type="text"
                                                     placeholder="0"
-                                                    class="placeholder-[#333333]"
-                                                    class="rounded-md border border-stroke-1 p-2.5"
+                                                    class="placeholder-[#333333] rounded-md border border-stroke-1 p-2.5"
+                                                    id="slider-value1"
                                                 />
                                                 <input
                                                     type="text"
                                                     placeholder="100 000"
-                                                    class="placeholder-[#333333]"
-                                                    class="rounded-md border border-stroke-1 p-2.5"
+                                                    class="placeholder-[#333333] rounded-md border border-stroke-1 p-2.5"
+                                                    id="slider-value2"
                                                 />
                                             </div>
-
-                                            <!-- slider here -->
+                                            <div id="slider"></div>
                                         </div>
 
                                         <!-- brand -->
@@ -1107,5 +1110,7 @@
             </main>
             <!-- footer -->
         </div>
+
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

@@ -5,6 +5,8 @@
 @layer base {
     body {
         font-family: "Inter", sans-serif;
+
+        color: #1d1e20;
     }
 }
 
@@ -26,3 +28,39 @@
 .bg-transparent {
     background: transparent;
 }
+
+.bg-pop-up {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.input:checked ~ .rounded-border {
+    border-color: #2d88d6 !important;
+}
+
+.input:checked ~ .rounded-border div {
+    display: flex !important;
+}
+
+/* #slider {
+    height: 10px;
+    border: none;
+    background-color: #ECF0F4;
+}
+
+#slider .noUi-handle {
+    background-color: #2D88D6;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+}
+
+#slider .noUi-connect {
+    border: none;
+    background-color: #2d88d6;
+}
+
+#slider .noUi-target:before,
+#slider .noUi-target:after {
+  display: none;
+} */
