@@ -41,6 +41,14 @@
     display: flex !important;
 }
 
+.input:checked ~ .active {
+    display: flex !important;
+}
+
+.input:not(:checked) ~ .non-active {
+    display: flex !important;
+}
+
 /* #slider {
     height: 10px;
     border: none;

@@ -763,10 +763,6 @@ body {
   display: block;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
@@ -871,12 +867,20 @@ body {
   height: 13px;
 }
 
+.h-\[14px\] {
+  height: 14px;
+}
+
 .h-\[1px\] {
   height: 1px;
 }
 
 .h-\[263px\] {
   height: 263px;
+}
+
+.h-\[52px\] {
+  height: 52px;
 }
 
 .h-\[55px\] {
@@ -887,12 +891,12 @@ body {
   height: 60px;
 }
 
-.h-\[80px\] {
-  height: 80px;
+.h-\[7\.5px\] {
+  height: 7.5px;
 }
 
-.h-\[88px\] {
-  height: 88px;
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-\[calc\(100vh-640px\)\] {
@@ -907,20 +911,12 @@ body {
   height: 1px;
 }
 
-.h-\[14px\] {
-  height: 14px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[52px\] {
-  height: 52px;
-}
-
 .max-h-0 {
   max-height: 0px;
+}
+
+.max-h-48 {
+  max-height: 12rem;
 }
 
 .max-h-64 {
@@ -929,6 +925,14 @@ body {
 
 .max-h-96 {
   max-height: 24rem;
+}
+
+.max-h-\[592px\] {
+  max-height: 592px;
+}
+
+.max-h-32 {
+  max-height: 8rem;
 }
 
 .min-h-\[16px\] {
@@ -1023,8 +1027,16 @@ body {
   width: 13px;
 }
 
+.w-\[52px\] {
+  width: 52px;
+}
+
 .w-\[55px\] {
   width: 55px;
+}
+
+.w-\[7\.5px\] {
+  width: 7.5px;
 }
 
 .w-\[70px\] {
@@ -1033,10 +1045,6 @@ body {
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-\[88px\] {
-  width: 88px;
 }
 
 .w-\[calc\(100\%-20px\)\] {
@@ -1055,16 +1063,16 @@ body {
   width: 1px;
 }
 
-.w-\[52px\] {
-  width: 52px;
-}
-
 .min-w-\[100px\] {
   min-width: 100px;
 }
 
 .min-w-\[16px\] {
   min-width: 16px;
+}
+
+.max-w-desktop {
+  max-width: 1360px;
 }
 
 .max-w-screen-xl {
@@ -1573,12 +1581,108 @@ body {
   background-image: url('/src/assets/icons/catalog-1.svg');
 }
 
+.bg-\[url\(\'\/src\/assets\/icons\/catalog-2\.svg\'\)\] {
+  background-image: url('/src/assets/icons/catalog-2.svg');
+}
+
+.bg-\[url\(\'\/src\/assets\/icons\/catalog-3\.svg\'\)\] {
+  background-image: url('/src/assets/icons/catalog-3.svg');
+}
+
+.bg-\[url\(\'\/src\/assets\/icons\/catalog-4\.svg\'\)\] {
+  background-image: url('/src/assets/icons/catalog-4.svg');
+}
+
 .bg-\[url\(\'\/src\/assets\/icons\/delivery\.svg\'\)\] {
   background-image: url('/src/assets/icons/delivery.svg');
 }
 
 .bg-\[url\(\'\/src\/assets\/icons\/yourServiceCenter\.svg\'\)\] {
   background-image: url('/src/assets/icons/yourServiceCenter.svg');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-10\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-10.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-11\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-11.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-12\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-12.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-13\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-13.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-14\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-14.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-15\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-15.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-16\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-16.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-17\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-17.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-18\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-18.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-19\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-19.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-2\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-2.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-20\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-20.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-21\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-21.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-22\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-22.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-3\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-3.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-4\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-4.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-5\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-5.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-6\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-6.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-7\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-7.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-8\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-8.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/catalog-item-9\.png\'\)\] {
+  background-image: url('/src/assets/images/catalog-item-9.png');
 }
 
 .bg-\[url\(\'\/src\/assets\/images\/category-item-1\.png\'\)\] {
@@ -1603,6 +1707,90 @@ body {
 
 .bg-\[url\(\'\/src\/assets\/images\/category-item-6\.png\'\)\] {
   background-image: url('/src/assets/images/category-item-6.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/else-catalog-item-1\.png\'\)\] {
+  background-image: url('/src/assets/images/else-catalog-item-1.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/else-catalog-item-2\.png\'\)\] {
+  background-image: url('/src/assets/images/else-catalog-item-2.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/else-catalog-item-3\.png\'\)\] {
+  background-image: url('/src/assets/images/else-catalog-item-3.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/else-catalog-item-4\.png\'\)\] {
+  background-image: url('/src/assets/images/else-catalog-item-4.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/else-catalog-item-5\.png\'\)\] {
+  background-image: url('/src/assets/images/else-catalog-item-5.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/heating-catalog-item-1\.png\'\)\] {
+  background-image: url('/src/assets/images/heating-catalog-item-1.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/heating-catalog-item-2\.png\'\)\] {
+  background-image: url('/src/assets/images/heating-catalog-item-2.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/heating-catalog-item-3\.png\'\)\] {
+  background-image: url('/src/assets/images/heating-catalog-item-3.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/heating-catalog-item-4\.png\'\)\] {
+  background-image: url('/src/assets/images/heating-catalog-item-4.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/metering-catalog-item-1\.png\'\)\] {
+  background-image: url('/src/assets/images/metering-catalog-item-1.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/metering-catalog-item-2\.png\'\)\] {
+  background-image: url('/src/assets/images/metering-catalog-item-2.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/metering-catalog-item-3\.png\'\)\] {
+  background-image: url('/src/assets/images/metering-catalog-item-3.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/pipes-catalog-item-1\.png\'\)\] {
+  background-image: url('/src/assets/images/pipes-catalog-item-1.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/pipes-catalog-item-2\.png\'\)\] {
+  background-image: url('/src/assets/images/pipes-catalog-item-2.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/pipes-catalog-item-3\.png\'\)\] {
+  background-image: url('/src/assets/images/pipes-catalog-item-3.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/water-catalog-item-1\.png\'\)\] {
+  background-image: url('/src/assets/images/water-catalog-item-1.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/water-catalog-item-2\.png\'\)\] {
+  background-image: url('/src/assets/images/water-catalog-item-2.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/water-catalog-item-3\.png\'\)\] {
+  background-image: url('/src/assets/images/water-catalog-item-3.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/water-catalog-item-4\.png\'\)\] {
+  background-image: url('/src/assets/images/water-catalog-item-4.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/water-catalog-item-5\.png\'\)\] {
+  background-image: url('/src/assets/images/water-catalog-item-5.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/water-catalog-item-6\.png\'\)\] {
+  background-image: url('/src/assets/images/water-catalog-item-6.png');
 }
 
 .bg-cover {
@@ -1914,6 +2102,14 @@ body {
   padding-bottom: 1.25rem;
 }
 
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-1\.5 {
+  padding-left: 0.375rem;
+}
+
 .pl-12 {
   padding-left: 3rem;
 }
@@ -1988,14 +2184,6 @@ body {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pl-1 {
-  padding-left: 0.25rem;
-}
-
-.pl-1\.5 {
-  padding-left: 0.375rem;
 }
 
 .text-center {
@@ -2258,6 +2446,14 @@ body {
   display: flex !important;
 }
 
+.input:checked ~ .active {
+  display: flex !important;
+}
+
+.input:not(:checked) ~ .non-active {
+  display: flex !important;
+}
+
 /* #slider {
     height: 10px;
     border: none;
@@ -2346,12 +2542,16 @@ body {
   fill: #E84E1B;
 }
 
+.group:hover .group-hover\:fill-gray {
+  fill: #A5A8AD;
+}
+
 .group:hover .group-hover\:fill-stroke-2 {
   fill: #E1E3E5;
 }
 
-.group:hover .group-hover\:fill-gray {
-  fill: #A5A8AD;
+.group:hover .group-hover\:stroke-accent-1 {
+  stroke: #2D88D6;
 }
 
 .group:hover .group-hover\:stroke-accent-2 {
@@ -2360,6 +2560,11 @@ body {
 
 .group:hover .group-hover\:stroke-stroke-2 {
   stroke: #E1E3E5;
+}
+
+.group:hover .group-hover\:text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(165 168 173 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -2581,6 +2786,10 @@ body {
     height: 1.5rem;
   }
 
+  .sm\:h-7 {
+    height: 1.75rem;
+  }
+
   .sm\:h-8 {
     height: 2rem;
   }
@@ -2591,6 +2800,10 @@ body {
 
   .sm\:h-\[100px\] {
     height: 100px;
+  }
+
+  .sm\:h-\[11\.64px\] {
+    height: 11.64px;
   }
 
   .sm\:h-\[150px\] {
@@ -2625,6 +2838,10 @@ body {
     height: 50px;
   }
 
+  .sm\:h-\[88px\] {
+    height: 88px;
+  }
+
   .sm\:h-\[92px\] {
     height: 92px;
   }
@@ -2635,14 +2852,6 @@ body {
 
   .sm\:h-full {
     height: 100%;
-  }
-
-  .sm\:h-7 {
-    height: 1.75rem;
-  }
-
-  .sm\:h-\[88px\] {
-    height: 88px;
   }
 
   .sm\:max-h-64 {
@@ -2717,6 +2926,10 @@ body {
     width: 100px;
   }
 
+  .sm\:w-\[11\.64px\] {
+    width: 11.64px;
+  }
+
   .sm\:w-\[20px\] {
     width: 20px;
   }
@@ -2733,16 +2946,16 @@ body {
     width: 50px;
   }
 
+  .sm\:w-\[88px\] {
+    width: 88px;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
 
   .sm\:w-full {
     width: 100%;
-  }
-
-  .sm\:w-\[88px\] {
-    width: 88px;
   }
 
   .sm\:min-w-\[32px\] {

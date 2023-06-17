@@ -71,7 +71,11 @@ module.exports = {
             textPrimary: "#6A6B70",
             textSecondary: "#1D1E20",
         },
-        extend: {},
+        extend: {
+            maxWidth: {
+                'desktop': '1360px'
+            }
+        },
     },
     plugins: [],
 };

@@ -17,22 +17,23 @@
         <div class="page">
             <!-- header -->
             <main id="main" class="main px-2.5 sm:px-0">
-                <!-- breadcrumbs -->
-                <section class="mb-5">
+                <div class="mb-5">
                     <div class="flex items-center gap-x-1.5">
                         <a
-                            href="#"
+                            href="index.html"
                             class="inline-flex text-mobile-b2 font-medium text-gray sm:text-b3"
                             >Главная</a
                         >
-                        <div class="text-mobile-b2 text-gray sm:text-b3">/</div>
+                        <span class="text-mobile-b2 text-gray sm:text-b3"
+                            >/</span
+                        >
                         <a
-                            href="#"
+                            href="catalog.html"
                             class="inline-flex text-mobile-b2 font-medium text-textSecondary sm:text-b3"
                             >Каталог</a
                         >
                     </div>
-                </section>
+                </div>
 
                 <section>
                     <div class="flex flex-col gap-y-8">
@@ -45,14 +46,14 @@
                             </div>
                             <!-- grid cols -->
                             <ul
-                                class="grid grid-cols-2 grid-rows-2 gap-2.5 sm:grid-cols-4 sm:gap-x-5 sm:grid-rows-none"
+                                class="grid grid-cols-2 grid-rows-2 gap-2.5 sm:grid-cols-4 sm:grid-rows-none sm:gap-x-5"
                             >
                                 <li
                                     class="rounded-[10px] sm:h-[100px] sm:rounded-[14px]"
                                 >
                                     <a
                                         href="#"
-                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 transition-colors hover:bg-white sm:h-full sm:rounded-[14px] sm:p-6"
                                     >
                                         <div
                                             class="text-mobile-b1 sm:text-b1 sm:font-medium"
@@ -67,13 +68,12 @@
                                 >
                                     <a
                                         href="#"
-                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                        class="flex rounded-[10px] bg-accent-2-opacity bg-[url('/src/assets/icons/catalog-2.svg')] bg-right bg-no-repeat p-4 transition-colors hover:bg-white sm:h-full sm:rounded-[14px] sm:p-6"
                                     >
                                         <div
                                             class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                         >
-                                            Товары<br class="sm:hidden" />
-                                            со скидкой
+                                            Новинки
                                         </div>
                                     </a>
                                 </li>
@@ -82,13 +82,12 @@
                                 >
                                     <a
                                         href="#"
-                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-3.svg')] bg-right bg-no-repeat p-4 transition-colors hover:bg-white sm:h-full sm:rounded-[14px] sm:p-6"
                                     >
                                         <div
                                             class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                         >
-                                            Товары<br class="sm:hidden" />
-                                            со скидкой
+                                            Популярные
                                         </div>
                                     </a>
                                 </li>
@@ -97,13 +96,12 @@
                                 >
                                     <a
                                         href="#"
-                                        class="flex rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/catalog-1.svg')] bg-right bg-no-repeat p-4 sm:h-full sm:rounded-[14px] sm:p-6"
+                                        class="flex rounded-[10px] bg-accent-2-opacity bg-[url('/src/assets/icons/catalog-4.svg')] bg-right bg-no-repeat p-4 transition-colors hover:bg-white sm:h-full sm:rounded-[14px] sm:p-6"
                                     >
                                         <div
                                             class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                         >
-                                            Товары<br class="sm:hidden" />
-                                            со скидкой
+                                            Сезонные
                                         </div>
                                     </a>
                                 </li>
@@ -114,13 +112,15 @@
                         >
                             <!-- left block -->
                             <div class="flex flex-col gap-y-4 sm:col-span-3">
-                                <div class="flex flex-col gap-y-4">
+                                <div class="flex flex-col gap-y-4 sm:gap-y-5">
                                     <!-- input -->
                                     <div class="relative">
                                         <div
                                             class="absolute left-3 top-1/2 -translate-y-1/2"
                                         >
-                                            <svg class="h-4 w-4 sm:h-5 sm:w-5">
+                                            <svg
+                                                class="h-4 w-4 stroke-textPrimary sm:h-5 sm:w-5"
+                                            >
                                                 <use
                                                     href="assets/icons/sprites.svg#search"
                                                 />
@@ -140,8 +140,26 @@
                                             class="rounded-lg sm:rounded-[10px]"
                                         >
                                             <a
-                                                href="#"
-                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                href="catalog.html"
+                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium  transition-colors hover:border-accent-1 sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Сантехника</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="rounded-lg sm:rounded-[10px]"
+                                        >
+                                            <a
+                                                href="water-catalog.html"
+                                                class="flex cursor-pointer rounded-lg border border-accent-1 bg-accent-1 px-3.5 py-3 text-b3 font-medium transition-colors text-white sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Водоснабжение</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="rounded-lg sm:rounded-[10px]"
+                                        >
+                                            <a
+                                                href="heating-catalog.html"
+                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium transition-colors hover:border-accent-1 hover:text-accent-1 sm:rounded-[10px] sm:p-5 sm:text-b1"
                                                 >Отопление</a
                                             >
                                         </li>
@@ -149,9 +167,27 @@
                                             class="rounded-lg sm:rounded-[10px]"
                                         >
                                             <a
-                                                href="#"
-                                                class="flex cursor-pointer rounded-lg bg-accent-1 px-3.5 py-3 text-b3 font-medium text-white sm:rounded-[10px] sm:p-5 sm:text-b1"
-                                                >Водоснабжение</a
+                                                href="pipes-catalog.html"
+                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium transition-colors hover:border-accent-1 hover:text-accent-1 sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Трубы и фитинги</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="rounded-lg sm:rounded-[10px]"
+                                        >
+                                            <a
+                                                href="metering-catalog.html"
+                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium transition-colors hover:border-accent-1 hover:text-accent-1 sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Приборы учёта</a
+                                            >
+                                        </li>
+                                        <li
+                                            class="rounded-lg sm:rounded-[10px]"
+                                        >
+                                            <a
+                                                href="else-catalog.html"
+                                                class="flex cursor-pointer rounded-lg border border-stroke-2 bg-fullWhite px-3.5 py-3 text-b3 font-medium transition-colors hover:border-accent-1 hover:text-accent-1 sm:rounded-[10px] sm:p-5 sm:text-b1"
+                                                >Что ещё у нас есть</a
                                             >
                                         </li>
                                     </ul>
@@ -162,7 +198,7 @@
                             </div>
 
                             <!-- right block -->
-                            <div class="flex flex-col gap-y-2.5 sm:col-span-9">
+                            <div class="flex flex-col gap-y-2.5 sm:col-span-9 sm:gap-y-5">
                                 <div
                                     class="flex cursor-pointer items-center justify-between rounded-lg bg-accent-1-opacity py-3 pl-4 pr-2 sm:pl-[30px] sm:pr-5"
                                 >
@@ -184,22 +220,221 @@
 
                                 <!-- ul list -->
                                 <ul
-                                    class="grid grid-cols-2 gap-2.5 sm:grid-cols-9"
+                                    class="grid grid-cols-2 gap-2.5 sm:grid-cols-9 sm:gap-5"
                                 >
+                                    <div
+                                        class="grid grid-cols-2 sm:col-span-9 sm:gap-x-5"
+                                    >
+                                        <li
+                                            class="h-[110px] rounded-lg sm:h-[488px] sm:rounded-2xl"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="flex h-full rounded-lg bg-white p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6 bg-[url('/src/assets/images/water-catalog-item-1.png')] bg-right bg-no-repeat"
+                                            >
+                                                <div
+                                                    class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                                >
+                                                    <div
+                                                        class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                    >
+                                                    Насосы и комплектующие
+                                                    </div>
+                                                    <div
+                                                        class="text-mobile-b2 text-gray sm:text-b2"
+                                                    >
+                                                        0000
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="hidden flex-col gap-y-3 sm:flex"
+                                                >
+                                                    <ul
+                                                        class="flex flex-col gap-y-1.5"
+                                                    >
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Фланцы
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Манометры
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Гидроаккумуляторы
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Скважинные винтовые насосы
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Дренажные насосы
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Контроллеры и реле
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Канализационные насосы
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Насосные станции
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Насосы вибрационные
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Насосы для повышения давления
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Насосы поверхностные
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Скважинные насосы
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Фекальные насосы (для грязной воды)
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Циркуляционные насосы
+                                                        </li>
+                                                        
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="h-[110px] rounded-lg sm:h-[488px] sm:rounded-2xl"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="flex h-full rounded-lg bg-accent-1-opacity p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6 bg-[url('/src/assets/images/water-catalog-item-2.png')] bg-right bg-no-repeat"
+                                            >
+                                                <div
+                                                    class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                                >
+                                                    <div
+                                                        class="text-mobile-b1 sm:text-b1 sm:font-medium"
+                                                    >
+                                                    Запорная арматура и фильтры
+                                                    </div>
+                                                    <div
+                                                        class="text-mobile-b2 text-gray sm:text-b2"
+                                                    >
+                                                        0000
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="hidden flex-col gap-y-3 sm:flex"
+                                                >
+                                                    <ul
+                                                        class="flex flex-col gap-y-1.5"
+                                                    >
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Клапана балансировочные
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Кран ПНД резьбовой
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Обратные клапана
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Задвижки
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Комплектующие
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Сетчатые фильтры
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Краны пивные и водоразборные
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Краны мини
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Краны шаровые трехходовые
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        С накидной гайкой
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Угловые краны
+                                                        </li>
+                                                        <li
+                                                            class="text-b3 text-textPrimary"
+                                                        >
+                                                        Вентили
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </div>
                                     <li
-                                        class="h-[110px] rounded-lg sm:h-[488px] sm:rounded-2xl sm:col-span-4"
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:row-span-2 sm:h-auto sm:rounded-2xl"
                                     >
                                         <a
                                             href="#"
-                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                            class="flex h-full rounded-lg bg-white p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6 bg-[url('/src/assets/images/water-catalog-item-3.png')] bg-right bg-no-repeat"
                                         >
                                             <div
-                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                                class="flex w-full flex-col gap-y-1 sm:gap-y-3"
                                             >
                                                 <div
                                                     class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                                 >
-                                                    Смесители
+                                                Системы фильтрации воды
                                                 </div>
                                                 <div
                                                     class="text-mobile-b2 text-gray sm:text-b2"
@@ -211,52 +446,47 @@
                                                 class="hidden flex-col gap-y-3 sm:flex"
                                             >
                                                 <ul
-                                                    class="flex flex-col gap-y-1.5"
+                                                    class="flex flex-col gap-y-2"
                                                 >
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Рычаг
+                                                    Картриджи
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для кухни
+                                                    Комплектующие для фильтров
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для ванной и душа
+                                                    Наборы картриджей
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для раковины и
-                                                        умывальника
+                                                    Соль и реагенты
                                                     </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Проточные смесители
-                                                    </li>
+                                                    
                                                 </ul>
                                             </div>
                                         </a>
                                     </li>
                                     <li
-                                        class="h-[110px] rounded-lg sm:h-[488px] sm:rounded-2xl sm:col-span-4"
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:row-span-2 sm:h-auto sm:rounded-2xl"
                                     >
                                         <a
                                             href="#"
-                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                            class="flex h-full rounded-lg bg-accent-1-opacity p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6 bg-[url('/src/assets/images/water-catalog-item-4.png')] bg-right bg-no-repeat"
                                         >
                                             <div
-                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                                class="flex w-full flex-col gap-y-1 sm:gap-y-3"
                                             >
                                                 <div
                                                     class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                                 >
-                                                    Смесители
+                                                Крепёж и хомуты
                                                 </div>
                                                 <div
                                                     class="text-mobile-b2 text-gray sm:text-b2"
@@ -268,52 +498,52 @@
                                                 class="hidden flex-col gap-y-3 sm:flex"
                                             >
                                                 <ul
-                                                    class="flex flex-col gap-y-1.5"
+                                                    class="flex flex-col gap-y-2"
                                                 >
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Рычаг
+                                                    Крепление для бойлера
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для кухни
+                                                    Крепления для сантехники
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для ванной и душа
+                                                    Хомуты ремонтные
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для раковины и
-                                                        умывальника
+                                                    Планки монтажные
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Проточные смесители
+                                                    Хомуты
                                                     </li>
+                                                    
                                                 </ul>
                                             </div>
                                         </a>
                                     </li>
                                     <li
-                                        class="h-[110px] rounded-lg sm:h-auto sm:rounded-2xl sm:col-span-3 sm:row-span-2"
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-[250px] sm:rounded-2xl"
                                     >
                                         <a
                                             href="#"
-                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                            class="flex h-full rounded-lg bg-accent-2-opacity p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6 bg-[url('/src/assets/images/water-catalog-item-5.png')] bg-right bg-no-repeat"
                                         >
                                             <div
-                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                                class="flex w-full flex-col gap-y-1 sm:gap-y-3"
                                             >
                                                 <div
                                                     class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                                 >
-                                                    Смесители
+                                                Дымоотведение и вентиляция
                                                 </div>
                                                 <div
                                                     class="text-mobile-b2 text-gray sm:text-b2"
@@ -330,47 +560,37 @@
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Рычаг
+                                                    Воздухоотводы
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для кухни
+                                                    Площадки торцевые
                                                     </li>
                                                     <li
                                                         class="text-b3 text-textPrimary"
                                                     >
-                                                        Для ванной и душа
+                                                    Фланцы
                                                     </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для раковины и
-                                                        умывальника
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Проточные смесители
-                                                    </li>
+                                                    
                                                 </ul>
                                             </div>
                                         </a>
                                     </li>
                                     <li
-                                        class="h-[110px] rounded-lg sm:h-auto sm:rounded-2xl sm:col-span-3 sm:row-span-2"
+                                        class="h-[110px] rounded-lg sm:col-span-3 sm:h-[250px] sm:rounded-2xl"
                                     >
                                         <a
                                             href="#"
-                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
+                                            class="flex h-full rounded-lg bg-white p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6 bg-[url('/src/assets/images/water-catalog-item-6.png')] bg-right bg-no-repeat"
                                         >
                                             <div
-                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
+                                                class="flex w-full flex-col gap-y-1 sm:gap-y-3"
                                             >
                                                 <div
                                                     class="text-mobile-b1 sm:text-b1 sm:font-medium"
                                                 >
-                                                    Смесители
+                                                Комплектующие
                                                 </div>
                                                 <div
                                                     class="text-mobile-b2 text-gray sm:text-b2"
@@ -378,154 +598,7 @@
                                                     0000
                                                 </div>
                                             </div>
-                                            <div
-                                                class="hidden flex-col gap-y-3 sm:flex"
-                                            >
-                                                <ul
-                                                    class="flex flex-col gap-y-1.5"
-                                                >
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Рычаг
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для кухни
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для ванной и душа
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для раковины и
-                                                        умывальника
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Проточные смесители
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li
-                                        class="h-[110px] rounded-lg sm:h-[250px] sm:rounded-2xl sm:col-span-3"
-                                    >
-                                        <a
-                                            href="#"
-                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
-                                        >
-                                            <div
-                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
-                                            >
-                                                <div
-                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                                >
-                                                    Смесители
-                                                </div>
-                                                <div
-                                                    class="text-mobile-b2 text-gray sm:text-b2"
-                                                >
-                                                    0000
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="hidden flex-col gap-y-3 sm:flex"
-                                            >
-                                                <ul
-                                                    class="flex flex-col gap-y-1.5"
-                                                >
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Рычаг
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для кухни
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для ванной и душа
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для раковины и
-                                                        умывальника
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Проточные смесители
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li
-                                        class="h-[110px] rounded-lg sm:h-[250px] sm:rounded-2xl sm:col-span-3"
-                                    >
-                                        <a
-                                            href="#"
-                                            class="flex h-full rounded-lg bg-[#ECF0F4] p-4 sm:flex-col sm:items-start sm:justify-between sm:rounded-2xl sm:p-6"
-                                        >
-                                            <div
-                                                class="flex w-full flex-col gap-y-1 sm:flex-row sm:justify-between"
-                                            >
-                                                <div
-                                                    class="text-mobile-b1 sm:text-b1 sm:font-medium"
-                                                >
-                                                    Смесители
-                                                </div>
-                                                <div
-                                                    class="text-mobile-b2 text-gray sm:text-b2"
-                                                >
-                                                    0000
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="hidden flex-col gap-y-3 sm:flex"
-                                            >
-                                                <ul
-                                                    class="flex flex-col gap-y-1.5"
-                                                >
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Рычаг
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для кухни
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для ванной и душа
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Для раковины и
-                                                        умывальника
-                                                    </li>
-                                                    <li
-                                                        class="text-b3 text-textPrimary"
-                                                    >
-                                                        Проточные смесители
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            
                                         </a>
                                     </li>
                                 </ul>
