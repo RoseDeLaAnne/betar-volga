@@ -34,3 +34,20 @@ const itemShowContent = (name) => {
     document.getElementById(`content-${name}`).classList.remove('hidden')
     
 }
+
+const openImage = (id) => {
+    const mainItemImage = document.getElementById('main-item-image');
+
+    console.log(mainItemImage.src = `assets/images/catalog-item-${id}.png`)
+}
+
+window.addEventListener('scroll', function() {
+    var contentBlock = document.getElementById('cart-image-below');
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (scrollPosition >= 500) {
+      contentBlock.style.display = 'block';
+    } else {
+      contentBlock.style.display = 'none';
+    }
+  });

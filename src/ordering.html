@@ -322,8 +322,8 @@
                     </svg>
                 </div>
             </div>
-            <header id="header" class="header">
-                <div class="hidden bg-[#E6EBEF] sm:block">
+            <header id="header" class="header w-full">
+                <div class="overflow-hidden bg-[#E6EBEF] sm:block transition-all" id="header-level-1">
                     <div class="mx-auto max-w-desktop">
                         <div class="grid h-12 grid-cols-12 items-center">
                             <div class="col-span-3 flex items-center">
@@ -407,7 +407,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto max-w-desktop">
+                <div class="mx-auto max-w-desktop" id="header-level-2">
                     <div
                         class="grid h-11 grid-cols-2 bg-accent-1-opacity p-2.5 sm:h-[92px] sm:grid-cols-12 sm:bg-fullWhite"
                     >
@@ -544,7 +544,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden sm:block">
+                <div class="overflow-hidden sm:block bg-fullWhite transition-all" id="header-level-3">
                     <div
                         class="mx-auto flex h-20 max-w-desktop items-center justify-between border-t-[1px] border-stroke-1"
                     >
@@ -1711,6 +1711,7 @@
             </footer>
         </div>
 
+        <script src="assets/js/header.js"></script>
         <script src="assets/js/sideMenu.js"></script>
         <script src="assets/js/leaveARequest.js"></script>
         <script src="assets/js/thanks.js"></script>
