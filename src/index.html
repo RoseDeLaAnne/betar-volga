@@ -15,6 +15,220 @@
     </head>
     <body>
         <div class="page">
+            <!-- side-menu -->
+            <div class="fixed top-0 -left-full w-screen h-screen flex justify-between bg-textSecondary z-40 transition-all" id="side-menu">                
+                <div
+                    class="flex h-full w-60 flex-col rounded-r-[10px] bg-white px-2.5 pb-11 pt-3.5"
+                    
+                >
+                    <div class="flex cursor-pointer items-center gap-x-2">
+                        <div>
+                            <svg class="h-4 w-4 transition-colors">
+                                <use href="assets/icons/sprites.svg#geo" />
+                            </svg>
+                        </div>
+                        <span class="- text-c1 transition-colors">Волгоград</span>
+                    </div>
+                    <span class="mb-4 mt-8 h-px w-full bg-stroke-2"></span>
+                    <div class="flex flex-col items-start gap-y-4">
+                        <a
+                            href="catalog.html"
+                            class="inline-flex items-center gap-x-2 rounded-[5px] border border-accent-1 bg-accent-1 px-2.5 py-1.5 transition-colors"
+                        >
+                            <div>
+                                <svg
+                                    class="h-4 w-4 stroke-fullWhite transition-colors"
+                                >
+                                    <use href="assets/icons/sprites.svg#burger" />
+                                </svg>
+                            </div>
+                            <span
+                                class="text-mobile-b1 text-[#F2F2F2] transition-colors"
+                                >Каталог</span
+                            >
+                        </a>
+                        <nav>
+                            <ul class="flex flex-col gap-y-2">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-flex items-center gap-x-2"
+                                    >
+                                        <div>
+                                            <svg class="h-4 w-4">
+                                                <use
+                                                    href="assets/icons/sprites.svg#promo"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <span class="text-c1 text-accent-2"
+                                            >Акции</span
+                                        >
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-c1 transition-colors"
+                                        >Сезонные товары</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-c1 transition-colors"
+                                        >Новинки</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <span class="h-px w-full bg-stroke-2"></span>
+                        <nav>
+                            <ul class="flex flex-col gap-y-2">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-c1 transition-colors"
+                                        >Покупателям</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-c1 transition-colors"
+                                        >О нас</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-c1 transition-colors"
+                                        >Контакты</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                        <span class="h-px w-full bg-stroke-2"></span>
+                        <ul class="flex gap-x-2">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="inline-flex rounded-full border border-stroke-1 p-2.5"
+                                >
+                                    <div>
+                                        <svg
+                                            class="h-4 w-4 fill-textPrimary transition-colors"
+                                        >
+                                            <use
+                                                href="assets/icons/sprites.svg#comparison"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="inline-flex rounded-full border border-stroke-1 p-2.5"
+                                >
+                                    <div>
+                                        <svg
+                                            class="h-4 w-4 stroke-textPrimary transition-colors"
+                                        >
+                                            <use
+                                                href="assets/icons/sprites.svg#wishlist"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="relative inline-flex rounded-full border border-stroke-1 p-2.5"
+                                >
+                                    <span
+                                        class="absolute right-0 top-0 inline-flex h-[13px] w-[13px] items-center justify-center rounded-full bg-accent-2 text-[8px] text-fullWhite"
+                                        >0</span
+                                    >
+                                    <div>
+                                        <svg
+                                            class="h-4 w-4 fill-textPrimary transition-colors"
+                                        >
+                                            <use
+                                                href="assets/icons/sprites.svg#bag"
+                                            />
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="h-px w-full bg-stroke-2"></span>
+                        <div class="flex flex-col gap-y-4">
+                            <ul class="flex gap-x-2">
+                                <li>
+                                    <a href="#" class="inline-flex">
+                                        <div>
+                                            <svg
+                                                class="h-4 w-4 stroke-textSecondary"
+                                            >
+                                                <use
+                                                    href="assets/icons/sprites.svg#telegram"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="inline-flex">
+                                        <div>
+                                            <svg
+                                                class="h-4 w-4 stroke-textSecondary"
+                                            >
+                                                <use
+                                                    href="assets/icons/sprites.svg#whatsapp"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="flex flex-col items-start gap-y-2.5">
+                                <div class="5 flex items-center gap-x-2">
+                                    <a
+                                        href="#"
+                                        class="inline-flex text-c1 transition-colors"
+                                        >+7 962 760-04-84</a
+                                    >
+                                    <div class="text-mobile-b3 text-[#828282]">
+                                        пн-пт 9:00–19:00
+                                    </div>
+                                </div>
+                                <button
+                                    class="inline-flex rounded-[5px] border border-stroke-1 px-2.5 py-[5px] text-mobile-b1 text-accent-1 transition-colors"
+                                >
+                                    Обратный звонок
+                                </button>
+                            </div>
+                        </div>
+                        <span class="h-px w-full bg-stroke-2"></span>
+                        <div class="flex items-center gap-x-2.5">
+                            <a href="#" class="inline-flex text-c1">Вход</a>
+                            <div class="h-2.5 w-px bg-stroke-2"></div>
+                            <a href="#" class="inline-flex text-c1 text-gray"
+                                >Регистрация</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="cursor-pointer" onclick="closeMenu()">
+                    <svg class="h-12 w-12 transition-colors fill-white">
+                        <use href="assets/icons/sprites.svg#close" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- pop-ups -->
             <div
                 class="bg-pop-up fixed bottom-0 left-0 right-0 top-0 z-40 flex hidden items-center justify-center"
                 id="pop-up-leave-a-request"
@@ -108,12 +322,16 @@
                 </div>
             </div>
 
-            <div class="relative mx-auto max-w-desktop">
+            <!-- catalog pop-up -->
+            <div
+                class="invisible relative z-40 mx-auto max-w-desktop opacity-0 transition-all"
+                id="catalog-pop-up"
+            >
                 <div
                     class="absolute left-0 top-32 z-40 grid grid-cols-12 rounded-[20px] bg-fullWhite"
                 >
                     <ul
-                        class="col-span-3 flex flex-col gap-y-4 border-r-[1px] border-stroke-1 bg-white py-5 pl-5 rounded-l-[20px]"
+                        class="col-span-3 flex flex-col gap-y-4 rounded-l-[20px] border-r-[1px] border-stroke-1 bg-white py-5 pl-5"
                     >
                         <li>
                             <a
@@ -417,7 +635,7 @@
                         class="grid h-11 grid-cols-3 bg-accent-1-opacity p-2.5 sm:h-[92px] sm:grid-cols-12 sm:bg-fullWhite"
                     >
                         <div class="flex items-center gap-x-[10px] sm:hidden">
-                            <div>
+                            <div onclick="openMenu()">
                                 <svg class="h-6 w-6">
                                     <use href="assets/icons/sprites.svg#menu" />
                                 </svg>
@@ -449,16 +667,23 @@
                         <div
                             class="hidden items-center gap-x-5 sm:col-span-6 sm:flex"
                         >
-                            <div class="relative">
+                            <div>
                                 <div
-                                    class="inline-flex items-center gap-x-3 rounded-lg border border-accent-1 bg-accent-1 stroke-fullWhite px-5 py-2.5 text-[14px] font-medium text-[#F2F2F2] transition-all hover:bg-opacity-0 hover:stroke-accent-1 hover:text-accent-1"
+                                    class="inline-flex cursor-pointer items-center gap-x-3 rounded-lg border border-accent-1 bg-accent-1 stroke-fullWhite px-5 py-2.5 text-[14px] font-medium text-[#F2F2F2] transition-all hover:bg-opacity-0 hover:stroke-accent-1 hover:text-accent-1"
+                                    onclick="openCatalog()"
+                                    id="catalog"
                                 >
-                                    <svg class="h-6 w-6">
+                                    <svg class="h-6 w-6" id="catalog-svg">
                                         <use
                                             href="assets/icons/sprites.svg#burger"
+                                            id="catalog-svg-use"
                                         />
                                     </svg>
-                                    <span>Каталог</span>
+                                    <span
+                                        id="catalog-span"
+                                        class="transition-colors"
+                                        >Каталог</span
+                                    >
                                 </div>
                             </div>
                             <div
@@ -467,7 +692,7 @@
                                 <div
                                     class="absolute left-3 top-1/2 -translate-y-1/2"
                                 >
-                                    <svg class="h-6 w-6">
+                                    <svg class="h-6 w-6 stroke-textSecondary">
                                         <use
                                             href="assets/icons/sprites.svg#search"
                                         />
@@ -613,7 +838,7 @@
                 >
                     <div class="relative w-full">
                         <div class="absolute left-1.5 top-1/2 -translate-y-1/2">
-                            <svg class="h-4 w-4">
+                            <svg class="h-4 w-4 stroke-textSecondary">
                                 <use href="assets/icons/sprites.svg#search" />
                             </svg>
                         </div>
@@ -3295,5 +3520,7 @@
         <script src="assets/js/thanks.js"></script>
         <script src="assets/js/answeredTheMostFrequentlyAskedQuestions.js"></script>
         <script src="assets/js/footer.js"></script>
+        <script src="assets/js/catalog.js"></script>
+        <script src="assets/js/sideMenu.js"></script>
     </body>
 </html>

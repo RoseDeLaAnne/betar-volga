@@ -72,3 +72,41 @@
 #slider .noUi-target:after {
   display: none;
 } */
+
+#side-menu-background {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* custom-scrollbar */
+
+.scroll-x-content {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.scrollbar-x {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 2px; /* Adjust as needed */
+    width: 100%;
+    background-color: none;
+}
+
+.thumb-x {
+    background-color: #CFD2D7;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 35px; /* Adjust thumb height */
+    opacity: 0.5; /* Adjust thumb opacity */
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+.thumb-x:hover {
+    opacity: 0.8; /* Adjust hover opacity */
+}

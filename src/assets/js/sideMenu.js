@@ -1,3 +1,20 @@
+var body = document.body;
+var sideMenu = document.getElementById("side-menu");
+
+const openMenu = () => {
+    body.classList.add("h-full");
+    body.classList.add("overflow-y-hidden");
+    sideMenu.classList.remove("-left-full");
+    sideMenu.classList.add("left-0");
+};
+
+const closeMenu = () => {
+    sideMenu.classList.add("-left-full");
+    sideMenu.classList.remove("left-0");
+    body.classList.remove("h-full");
+    body.classList.remove("overflow-y-hidden");
+};
+
 const openUl = (name, level) => {
     var span = document.getElementById(`side-menu-${name}-ul-${level}-span`);
     var svg = document.getElementById(`side-menu-${name}-ul-${level}-svg`);
