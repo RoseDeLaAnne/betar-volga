@@ -1,14 +1,29 @@
-const inputOnChange = (event, name) => {
+const inputOnChange = (event, name, name2) => {
     var label = document.getElementById(`label-${name}`);
 
-    console.log(event.target.checked)
+    var inputsSubject = document.getElementsByName(`${name2}`);
 
-    if (event.target.checked) {
-        label.classList.remove('bg-white')
-        label.classList.add('bg-accent-1-opacity')
-    } else {
-        label.classList.add('bg-white')
-        label.classList.remove('bg-accent-1-opacity')
+    // if (event.target.checked) {
+    //     label.classList.remove('bg-white')
+    //     label.classList.add('bg-accent-1-opacity')
+    // } else {
+    //     label.classList.add('bg-white')
+    //     label.classList.remove('bg-accent-1-opacity')
+    // }
+
+    if (name === 'subject-legal-entities') {
+        document.getElementById('inn-organization').classList.remove('hidden')
+        document.getElementById('name-of-the-organization').classList.remove('hidden')
+        document.getElementById('for-new-clients-section').classList.remove('hidden')
+    } else if (name === 'subject-individuals') {
+        document.getElementById('inn-organization').classList.add('hidden')
+        document.getElementById('name-of-the-organization').classList.add('hidden')
+        document.getElementById('for-new-clients-section').classList.add('hidden')
+    } else if (name === 'delivery-pickup') {
+        document.getElementById('pickup-section').classList.remove('hidden');
+    } 
+    else if (name === 'delivery-courier') {
+        document.getElementById('pickup-section').classList.add('hidden');
     }
 }
 

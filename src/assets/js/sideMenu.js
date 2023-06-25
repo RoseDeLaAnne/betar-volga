@@ -15,6 +15,20 @@ const closeMenu = () => {
     body.classList.remove("overflow-y-hidden");
 };
 
+const openCart = () => {
+    // body.classList.add("h-full");
+    // body.classList.add("overflow-y-hidden");
+    document.getElementById('cart-side').classList.remove("-right-full");
+    document.getElementById('cart-side').classList.add("right-0");
+};
+
+const closeCart = () => {
+    document.getElementById('cart-side').classList.add("-right-full");
+    document.getElementById('cart-side').classList.remove("right-0");
+    // body.classList.remove("h-full");
+    // body.classList.remove("overflow-y-hidden");
+};
+
 const openUl = (name, level) => {
     var span = document.getElementById(`side-menu-${name}-ul-${level}-span`);
     var svg = document.getElementById(`side-menu-${name}-ul-${level}-svg`);

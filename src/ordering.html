@@ -666,7 +666,7 @@
                                 class="flex gap-x-2 border-b-[1px] border-[#E0E0E0] pb-3 sm:gap-x-5 sm:pb-5"
                             >
                                 <label
-                                    class="flex gap-x-2 rounded-lg bg-white px-[15px] py-2.5 sm:gap-x-2.5 sm:rounded-[10px]"
+                                    class="flex gap-x-2 rounded-lg bg-accent-1-opacity px-[15px] py-2.5 sm:gap-x-2.5 sm:rounded-[10px]"
                                     id="label-subject-individuals"
                                 >
                                     <input
@@ -674,7 +674,7 @@
                                         name="subject"
                                         class="input order-2 hidden"
                                         checked
-                                        onchange="inputOnChange(event, 'subject-individuals')"
+                                        onchange="inputOnChange(event, 'subject-individuals', 'subject')"
                                     />
                                     <div
                                         class="rounded-border order-1 flex h-4 w-4 items-center justify-center rounded-full border border-gray sm:h-[22px] sm:w-[22px]"
@@ -693,14 +693,14 @@
                                     >
                                 </label>
                                 <label
-                                    class="flex gap-x-2 rounded-lg bg-accent-1-opacity px-[15px] py-2.5 sm:gap-x-2.5 sm:rounded-[10px]"
+                                    class="flex gap-x-2 rounded-lg bg-white px-[15px] py-2.5 sm:gap-x-2.5 sm:rounded-[10px]"
                                     id="label-subject-legal-entities"
                                 >
                                     <input
                                         type="radio"
                                         name="subject"
                                         class="input order-2 hidden"
-                                        onchange="inputOnChange('subject-legal-entities')"
+                                        onchange="inputOnChange(event, 'subject-legal-entities', 'subject')"
                                     />
                                     <div
                                         class="rounded-border order-1 flex h-4 w-4 items-center justify-center rounded-full border border-gray sm:h-[22px] sm:w-[22px]"
@@ -731,12 +731,14 @@
                                     <input
                                         type="text"
                                         placeholder="ИНН организации"
-                                        class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:col-span-4 sm:rounded-[10px] sm:p-4 sm:text-b3"
+                                        class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:col-span-4 sm:rounded-[10px] sm:p-4 sm:text-b3 hidden"
+                                        id="inn-organization"
                                     />
                                     <input
                                         type="text"
                                         placeholder="Название организации"
-                                        class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:col-span-4 sm:rounded-[10px] sm:p-4 sm:text-b3"
+                                        class="rounded-lg border border-stroke-1 p-3 text-c1 placeholder-gray sm:col-span-4 sm:rounded-[10px] sm:p-4 sm:text-b3 hidden"
+                                        id="name-of-the-organization"
                                     />
                                     <input
                                         type="text"
@@ -762,7 +764,8 @@
                             </div>
                             <!-- hidden block -->
                             <div
-                                class="flex flex-col gap-y-3 border-b-[1px] border-[#E0E0E0] pb-3 sm:items-start sm:gap-y-6 sm:pb-8"
+                                class="flex flex-col gap-y-3 border-b-[1px] border-[#E0E0E0] pb-3 sm:items-start sm:gap-y-6 sm:pb-8 hidden"
+                                id="for-new-clients-section"
                             >
                                 <div
                                     class="flex cursor-pointer items-center justify-between rounded-lg border border-stroke-1 px-3 py-2.5 sm:gap-x-3 sm:rounded-[10px] sm:px-5 sm:py-3"
@@ -898,7 +901,7 @@
                                                 type="radio"
                                                 name="delivery"
                                                 class="input order-2 hidden"
-                                                onchange="inputOnChange('delivery-courier')"
+                                                onchange="inputOnChange(event, 'delivery-courier')"
                                                 checked
                                             />
                                             <div
@@ -921,8 +924,7 @@
                                                 type="radio"
                                                 name="delivery"
                                                 class="input order-2 hidden"
-                                                onchange="inputOnChange('delivery-pickup')"
-                                                checked
+                                                onchange="inputOnChange(event, 'delivery-pickup')"
                                             />
                                             <div
                                                 class="rounded-border order-1 flex h-4 w-4 items-center justify-center rounded-full border border-gray sm:h-[22px] sm:w-[22px]"
@@ -981,7 +983,7 @@
                                     </textarea>
                                 </div>
                                 <!-- hidden block -->
-                                <div class="flex flex-col gap-y-4 sm:w-4/5">
+                                <div class="flex flex-col gap-y-4 sm:w-4/5 hidden" id="pickup-section">
                                     <div
                                         class="hidden text-b2 font-medium text-textPrimary sm:block"
                                     >
@@ -1040,7 +1042,7 @@
                                 </div>
                             </div>
                             <div
-                                class="flex flex-col gap-y-3 sm:gap-y-6 sm:border-b-[1px] sm:border-stroke-1 sm:pb-8"
+                                class="flex flex-col gap-y-3 sm:gap-y-6"
                             >
                                 <div class="text-b2 font-medium sm:text-h3">
                                     Способ оплаты
@@ -1056,7 +1058,7 @@
                                             type="radio"
                                             name="payment-method"
                                             class="input order-2 hidden"
-                                            onchange="inputOnChange('payment-method-online')"
+                                            onchange="inputOnChange(event, 'payment-method-online')"
                                             checked
                                         />
                                         <div
@@ -1083,7 +1085,7 @@
                                             type="radio"
                                             name="payment-method"
                                             class="input order-2 hidden"
-                                            onchange="inputOnChange('payment-method-courier')"
+                                            onchange="inputOnChange(event, 'payment-method-courier')"
                                         />
                                         <div
                                             class="rounded-border order-1 flex h-4 w-4 items-center justify-center rounded-full border border-gray sm:h-[22px] sm:w-[22px]"
@@ -1109,7 +1111,7 @@
                                             type="radio"
                                             name="payment-method"
                                             class="input order-2 hidden"
-                                            onchange="inputOnChange('payment-method-fps')"
+                                            onchange="inputOnChange(event, 'payment-method-fps')"
                                         />
                                         <div
                                             class="rounded-border order-1 flex h-4 w-4 items-center justify-center rounded-full border border-gray sm:h-[22px] sm:w-[22px]"
