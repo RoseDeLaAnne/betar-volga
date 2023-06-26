@@ -25,7 +25,6 @@ const swiperGoods = new Swiper(".swiper-container-goods", {
 });
 
 const swiperCertificates = new Swiper(".swiper-container-certificates", {
-    allowTouchMove: false,
     navigation: {
         nextEl: ".swiper-button-next-certificates",
         prevEl: ".swiper-button-prev-certificates",

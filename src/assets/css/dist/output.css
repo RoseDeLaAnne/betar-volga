@@ -581,12 +581,16 @@ body {
   position: relative;
 }
 
+.-left-\[120\%\] {
+  left: -120%;
+}
+
 .-left-full {
   left: -100%;
 }
 
-.-right-full {
-  right: -100%;
+.-right-\[120\%\] {
+  right: -120%;
 }
 
 .bottom-0 {
@@ -687,14 +691,6 @@ body {
 
 .top-\[92px\] {
   top: 92px;
-}
-
-.-left-\[120\%\] {
-  left: -120%;
-}
-
-.-right-\[120\%\] {
-  right: -120%;
 }
 
 .z-40 {
@@ -2512,6 +2508,11 @@ body {
   height: 512px !important;
 }
 
+.swiper-container-certificates {
+  padding-bottom: 26px !important;
+  padding-left: 90px;
+}
+
 .swiper-pagination-bullet {
   margin: 0 !important;
   width: 6px !important;
@@ -2567,6 +2568,22 @@ body {
   font-size: 10px !important;
 }
 
+.swiper-button-prev-certificates,
+.swiper-button-next-certificates {
+  position: absolute !important;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 100;
+}
+
+.swiper-button-prev-certificates {
+  left: 0;
+}
+
+.swiper-button-next-certificates {
+  right: 0;
+}
+
 .swiper-pagination {
   width: auto !important;
   display: flex;
@@ -2581,6 +2598,11 @@ body {
 .swiper-pagination-certificates,
 .swiper-pagination-goods {
   justify-content: center !important;
+}
+
+.swiper-pagination-certificates {
+  margin-top: 24px !important;
+  padding-right: 90px;
 }
 
 #cart-side {
