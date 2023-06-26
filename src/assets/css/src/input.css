@@ -87,6 +87,10 @@
     opacity: 0.8; /* Adjust hover opacity */
 }
 
+#cart-side {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
 /* swiper/styles */
 /* reset */
 

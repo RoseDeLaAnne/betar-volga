@@ -693,6 +693,10 @@ body {
   top: 220px;
 }
 
+.top-\[92px\] {
+  top: 92px;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -942,6 +946,10 @@ body {
 
 .h-\[calc\(100\%-\$\{headerHeight\}px\)\] {
   height: calc(100% - ${headerHeight}px);
+}
+
+.h-\[calc\(100\%-104px\)\] {
+  height: calc(100% - 104px);
 }
 
 .h-\[calc\(100\%-220px\)\] {
@@ -2499,6 +2507,10 @@ body {
   /* Adjust hover opacity */
 }
 
+#cart-side {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 /* swiper/styles */
 
 /* reset */
@@ -3746,6 +3758,10 @@ body {
 
   .lg\:top-\[220px\] {
     top: 220px;
+  }
+
+  .lg\:top-\[104px\] {
+    top: 104px;
   }
 
   .lg\:order-1 {
