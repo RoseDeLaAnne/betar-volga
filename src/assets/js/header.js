@@ -18,6 +18,10 @@ function toggleFixedHeader() {
 
     scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
+    cartSide.classList.add(`h-[calc(100%-${headerHeight}px)]`)
+    cartSideBlock.classList.add(`h-[calc(100%-${headerHeight}px)]`)
+    cartSide.classList.add(`top-[${headerHeight}px]`)
+
     if (scrollPosition > lastScrollPosition) {
         // Scrolling down
         scrollDirection = "down";
@@ -32,11 +36,11 @@ function toggleFixedHeader() {
             headerLevel3.classList.remove("max-h-64");
             headerLevel3.classList.add("max-h-0");
 
-            cartSide.classList.add(`h-[calc(100%-${headerHeight}px)]`)
+            // cartSide.classList.add(`h-[calc(100%-${headerHeight}px)]`)
             // cartSide.classList.remove('h-[calc(100%-220px)]')
-            cartSideBlock.classList.add(`h-[calc(100%-${headerHeight}px)]`)
+            // cartSideBlock.classList.add(`h-[calc(100%-${headerHeight}px)]`)
             // cartSideBlock.classList.remove('h-[calc(100%-220px)]')
-            cartSide.classList.add(`top-[${headerHeight}px]`)
+            // cartSide.classList.add(`top-[${headerHeight}px]`)
             // cartSide.classList.remove('top-[220px]')
 
             // catalogPopUpBlock.classList.remove('top-[220px]')
@@ -51,11 +55,11 @@ function toggleFixedHeader() {
         headerLevel3.classList.remove("max-h-0");
         headerLevel3.classList.add("max-h-64");
 
-        cartSide.classList.remove(`h-[calc(100%-${headerHeight}px)]`)
+        // cartSide.classList.remove(`h-[calc(100%-${headerHeight}px)]`)
         // cartSide.classList.add('h-[calc(100%-220px)]')
-        cartSideBlock.classList.remove(`h-[calc(100%-${headerHeight}px)]`)
+        // cartSideBlock.classList.remove(`h-[calc(100%-${headerHeight}px)]`)
         // cartSideBlock.classList.add('h-[calc(100%-220px)]')
-        cartSide.classList.remove(`top-[${headerHeight}px]`)
+        // cartSide.classList.remove(`top-[${headerHeight}px]`)
         // cartSide.classList.add('top-[220px]')
 
         catalogPopUpBlock.classList.remove(`top-[${headerHeight}px]`)
