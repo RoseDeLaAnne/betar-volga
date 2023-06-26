@@ -14,6 +14,8 @@ const cartSideBlock = document.getElementById('cart-side-block')
 const catalogPopUpBlock = document.getElementById('catalog-pop-up-block')
 
 function toggleFixedHeader() {
+    console.log(headerHeight)
+
     scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
     if (scrollPosition > lastScrollPosition) {
@@ -30,15 +32,15 @@ function toggleFixedHeader() {
             headerLevel3.classList.remove("max-h-64");
             headerLevel3.classList.add("max-h-0");
 
-            cartSide.classList.add('h-[calc(100%-92px)]')
-            cartSide.classList.remove('h-[calc(100%-220px)]')
-            cartSideBlock.classList.add('h-[calc(100%-92px)]')
-            cartSideBlock.classList.remove('h-[calc(100%-220px)]')
-            cartSide.classList.add('top-[92px]')
-            cartSide.classList.remove('top-[220px]')
+            cartSide.classList.add(`h-[calc(100%-${headerHeight}px)]`)
+            // cartSide.classList.remove('h-[calc(100%-220px)]')
+            cartSideBlock.classList.add(`h-[calc(100%-${headerHeight}px)]`)
+            // cartSideBlock.classList.remove('h-[calc(100%-220px)]')
+            cartSide.classList.add(`top-[${headerHeight}px]`)
+            // cartSide.classList.remove('top-[220px]')
 
-            catalogPopUpBlock.classList.remove('top-[220px]')
-            catalogPopUpBlock.classList.add('top-[92px]')
+            // catalogPopUpBlock.classList.remove('top-[220px]')
+            catalogPopUpBlock.classList.add(`top-[${headerHeight}px]`)
         }
     } else {
         // Scrolling up
@@ -49,15 +51,15 @@ function toggleFixedHeader() {
         headerLevel3.classList.remove("max-h-0");
         headerLevel3.classList.add("max-h-64");
 
-        cartSide.classList.remove('h-[calc(100%-92px)]')
-        cartSide.classList.add('h-[calc(100%-220px)]')
-        cartSideBlock.classList.remove('h-[calc(100%-92px)]')
-        cartSideBlock.classList.add('h-[calc(100%-220px)]')
-        cartSide.classList.remove('top-[92px]')
-        cartSide.classList.add('top-[220px]')
+        cartSide.classList.remove(`h-[calc(100%-${headerHeight}px)]`)
+        // cartSide.classList.add('h-[calc(100%-220px)]')
+        cartSideBlock.classList.remove(`h-[calc(100%-${headerHeight}px)]`)
+        // cartSideBlock.classList.add('h-[calc(100%-220px)]')
+        cartSide.classList.remove(`top-[${headerHeight}px]`)
+        // cartSide.classList.add('top-[220px]')
 
-        catalogPopUpBlock.classList.remove('top-[92px]')
-        catalogPopUpBlock.classList.add('top-[220px]')
+        catalogPopUpBlock.classList.remove(`top-[${headerHeight}px]`)
+        // catalogPopUpBlock.classList.add('top-[220px]')
     }
 
     lastScrollPosition = scrollPosition;

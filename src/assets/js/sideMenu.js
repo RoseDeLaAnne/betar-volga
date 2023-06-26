@@ -29,6 +29,11 @@ const closeCart = () => {
     // body.classList.remove("overflow-y-hidden");
 };
 
+const openSideCatalogMenu = () => {
+    document.getElementById('side-menu-catalog-button').classList.add('hidden')
+    document.getElementById('side-menu-catalog-menu').classList.remove('hidden')
+}
+
 const openUl = (name, level) => {
     var span = document.getElementById(`side-menu-${name}-ul-${level}-span`);
     var svg = document.getElementById(`side-menu-${name}-ul-${level}-svg`);
