@@ -689,6 +689,14 @@ body {
   top: 92px;
 }
 
+.-left-\[120\%\] {
+  left: -120%;
+}
+
+.-right-\[120\%\] {
+  right: -120%;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -2496,9 +2504,9 @@ body {
   overflow: hidden;
 }
 
-.swiper-container-popular-brands {
-  overflow: visible
-}
+/* .swiper-container-popular-brands {
+    overflow: visible
+} */
 
 .swiper-container-carousel {
   height: 512px !important;

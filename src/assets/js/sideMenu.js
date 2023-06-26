@@ -4,12 +4,12 @@ var sideMenu = document.getElementById("side-menu");
 const openMenu = () => {
     body.classList.add("h-full");
     body.classList.add("overflow-y-hidden");
-    sideMenu.classList.remove("-left-full");
+    sideMenu.classList.remove("-left-[120%]");
     sideMenu.classList.add("left-0");
 };
 
 const closeMenu = () => {
-    sideMenu.classList.add("-left-full");
+    sideMenu.classList.add("-left-[120%]");
     sideMenu.classList.remove("left-0");
     body.classList.remove("h-full");
     body.classList.remove("overflow-y-hidden");
@@ -18,12 +18,12 @@ const closeMenu = () => {
 const openCart = () => {
     // body.classList.add("h-full");
     // body.classList.add("overflow-y-hidden");
-    document.getElementById('cart-side').classList.remove("-right-full");
+    document.getElementById('cart-side').classList.remove("-right-[120%]");
     document.getElementById('cart-side').classList.add("right-0");
 };
 
 const closeCart = () => {
-    document.getElementById('cart-side').classList.add("-right-full");
+    document.getElementById('cart-side').classList.add("-right-[120%]");
     document.getElementById('cart-side').classList.remove("right-0");
     // body.classList.remove("h-full");
     // body.classList.remove("overflow-y-hidden");

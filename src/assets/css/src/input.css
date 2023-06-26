@@ -96,9 +96,9 @@
     overflow: hidden;
 }
 
-.swiper-container-popular-brands {
+/* .swiper-container-popular-brands {
     overflow: visible
-}
+} */
 
 .swiper-container-carousel {
     height: 512px !important;
