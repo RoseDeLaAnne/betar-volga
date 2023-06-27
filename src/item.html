@@ -796,12 +796,13 @@
                 >
                     <ul
                         id="catalog-ul-1"
-                        class="col-span-3 flex flex-col gap-y-4 rounded-l-[20px] border-r-[1px] border-stroke-1 bg-white py-5 pl-5"
+                        class="relative col-span-3 flex flex-col gap-y-4 rounded-l-[20px] border-r-[1px] border-stroke-1 bg-white py-5 pl-5 group/firstul"
                     >
-                        <li>
+                        <span class="hidden absolute top-0 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-full z-20 group-hover/firstul:block"></span>
+                        <li class="group/first z-30">
                             <a
                                 href="#"
-                                class="flex items-center gap-x-4 border-r-[1.5px] border-accent-1"
+                                class="flex items-center gap-x-4 group-hover/first:border-r-[1.5px] group-hover/first:border-accent-1 transition-all"
                             >
                                 <div>
                                     <svg class="lg:h-8 lg:w-8">
@@ -811,14 +812,130 @@
                                     </svg>
                                 </div>
                                 <div
-                                    class="text-accent-1 lg:text-b1 lg:font-medium"
+                                    class="group-hover/first:text-accent-1 lg:text-b1 group-hover/first:font-medium"
                                 >
                                     Сантехника
                                 </div>
                             </a>
+                            <ul class="invisible opacity-0 group-hover/first:visible group-hover/first:opacity-100 absolute top-6 right-[calc(-100%-1px)] transition-all w-full flex flex-col gap-y-3 pl-5 items-start group/secondul">
+                                <span class="hidden absolute -top-6 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-[544px] z-20 group-hover/secondul:block"></span>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители2</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Фитинги</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Концевики</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Удлинители</a>
+                                </li>
+                                <!-- <li class="inline-flex gap-x-2 pb-1.5 border-gray border-b-[1px] border-dashed items-center cursor-pointer" onclick="fullList('plumbing')" id="ul-plumbing-full-list">
+                                    <span class="text-b2 text-textPrimary">Полный список</span>
+                                    <svg class="w-4 h-4">
+                                        <use href="assets/icons/sprites.svg#arrow_bottom" />
+                                    </svg>
+                                </li> -->
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-x-4">
+                        <li class="group/first z-30">
+                            <a
+                                href="#"
+                                class="flex items-center gap-x-4 group-hover/first:border-r-[1.5px] group-hover/first:border-accent-1 transition-all"
+                            >
                                 <div>
                                     <svg class="lg:h-8 lg:w-8">
                                         <use
@@ -826,11 +943,131 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="lg:text-b1">Водоснабжение</div>
+                                <div
+                                    class="group-hover/first:text-accent-1 lg:text-b1 group-hover/first:font-medium"
+                                >
+                                Водоснабжение
+                                </div>
                             </a>
+                            <ul class="invisible opacity-0 group-hover/first:visible group-hover/first:opacity-100 absolute top-6 right-[calc(-100%-1px)] transition-all w-full flex flex-col gap-y-3 pl-5 items-start group/secondul">
+                                <span class="hidden absolute -top-6 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-[544px] z-20 group-hover/secondul:block"></span>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители2</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Фитинги</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Концевики</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Удлинители</a>
+                                </li>
+                                <!-- <li class="inline-flex gap-x-2 pb-1.5 border-gray border-b-[1px] border-dashed items-center cursor-pointer" onclick="fullList('plumbing')" id="ul-plumbing-full-list">
+                                    <span class="text-b2 text-textPrimary">Полный список</span>
+                                    <svg class="w-4 h-4">
+                                        <use href="assets/icons/sprites.svg#arrow_bottom" />
+                                    </svg>
+                                </li> -->
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-x-4">
+                        <li class="group/first z-30">
+                            <a
+                                href="#"
+                                class="flex items-center gap-x-4 group-hover/first:border-r-[1.5px] group-hover/first:border-accent-1 transition-all"
+                            >
                                 <div>
                                     <svg class="lg:h-8 lg:w-8">
                                         <use
@@ -838,11 +1075,131 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="lg:text-b1">Отопление</div>
+                                <div
+                                    class="group-hover/first:text-accent-1 lg:text-b1 group-hover/first:font-medium"
+                                >
+                                Отопление
+                                </div>
                             </a>
+                            <ul class="invisible opacity-0 group-hover/first:visible group-hover/first:opacity-100 absolute top-6 right-[calc(-100%-1px)] transition-all w-full flex flex-col gap-y-3 pl-5 items-start group/secondul">
+                                <span class="hidden absolute -top-6 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-[544px] z-20 group-hover/secondul:block"></span>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители2</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Фитинги</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Концевики</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Удлинители</a>
+                                </li>
+                                <!-- <li class="inline-flex gap-x-2 pb-1.5 border-gray border-b-[1px] border-dashed items-center cursor-pointer" onclick="fullList('plumbing')" id="ul-plumbing-full-list">
+                                    <span class="text-b2 text-textPrimary">Полный список</span>
+                                    <svg class="w-4 h-4">
+                                        <use href="assets/icons/sprites.svg#arrow_bottom" />
+                                    </svg>
+                                </li> -->
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-x-4">
+                        <li class="group/first z-30">
+                            <a
+                                href="#"
+                                class="flex items-center gap-x-4 group-hover/first:border-r-[1.5px] group-hover/first:border-accent-1 transition-all"
+                            >
                                 <div>
                                     <svg class="lg:h-8 lg:w-8">
                                         <use
@@ -850,11 +1207,131 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="lg:text-b1">Трубы и фитинги</div>
+                                <div
+                                    class="group-hover/first:text-accent-1 lg:text-b1 group-hover/first:font-medium"
+                                >
+                                Трубы и фитинги
+                                </div>
                             </a>
+                            <ul class="invisible opacity-0 group-hover/first:visible group-hover/first:opacity-100 absolute top-6 right-[calc(-100%-1px)] transition-all w-full flex flex-col gap-y-3 pl-5 items-start group/secondul">
+                                <span class="hidden absolute -top-6 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-[544px] z-20 group-hover/secondul:block"></span>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители2</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Фитинги</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Концевики</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Удлинители</a>
+                                </li>
+                                <!-- <li class="inline-flex gap-x-2 pb-1.5 border-gray border-b-[1px] border-dashed items-center cursor-pointer" onclick="fullList('plumbing')" id="ul-plumbing-full-list">
+                                    <span class="text-b2 text-textPrimary">Полный список</span>
+                                    <svg class="w-4 h-4">
+                                        <use href="assets/icons/sprites.svg#arrow_bottom" />
+                                    </svg>
+                                </li> -->
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-x-4">
+                        <li class="group/first z-30">
+                            <a
+                                href="#"
+                                class="flex items-center gap-x-4 group-hover/first:border-r-[1.5px] group-hover/first:border-accent-1 transition-all"
+                            >
                                 <div>
                                     <svg class="lg:h-8 lg:w-8">
                                         <use
@@ -862,11 +1339,131 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="lg:text-b1">Приборы учёта</div>
+                                <div
+                                    class="group-hover/first:text-accent-1 lg:text-b1 group-hover/first:font-medium"
+                                >
+                                Приборы учёта
+                                </div>
                             </a>
+                            <ul class="invisible opacity-0 group-hover/first:visible group-hover/first:opacity-100 absolute top-6 right-[calc(-100%-1px)] transition-all w-full flex flex-col gap-y-3 pl-5 items-start group/secondul">
+                                <span class="hidden absolute -top-6 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-[544px] z-20 group-hover/secondul:block"></span>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители2</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Фитинги</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Концевики</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Удлинители</a>
+                                </li>
+                                <!-- <li class="inline-flex gap-x-2 pb-1.5 border-gray border-b-[1px] border-dashed items-center cursor-pointer" onclick="fullList('plumbing')" id="ul-plumbing-full-list">
+                                    <span class="text-b2 text-textPrimary">Полный список</span>
+                                    <svg class="w-4 h-4">
+                                        <use href="assets/icons/sprites.svg#arrow_bottom" />
+                                    </svg>
+                                </li> -->
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#" class="flex items-center gap-x-4">
+                        <li class="group/first z-30">
+                            <a
+                                href="#"
+                                class="flex items-center gap-x-4 group-hover/first:border-r-[1.5px] group-hover/first:border-accent-1 transition-all"
+                            >
                                 <div>
                                     <svg class="lg:h-8 lg:w-8">
                                         <use
@@ -874,186 +1471,136 @@
                                         />
                                     </svg>
                                 </div>
-                                <div class="lg:text-b1">Доп. товары</div>
+                                <div
+                                    class="group-hover/first:text-accent-1 lg:text-b1 group-hover/first:font-medium"
+                                >
+                                Доп. товары
+                                </div>
                             </a>
+                            <ul class="invisible opacity-0 group-hover/first:visible group-hover/first:opacity-100 absolute top-6 right-[calc(-100%-1px)] transition-all w-full flex flex-col gap-y-3 pl-5 items-start group/secondul">
+                                <span class="hidden absolute -top-6 right-[calc(-100%-1px)] bg-stroke-1 w-[1px] h-[544px] z-20 group-hover/secondul:block"></span>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="group/second w-full z-30">
+                                    <a
+                                        href="#"
+                                        class="flex group-hover/second:border-r-[1.5px] group-hover/second:border-accent-1 text-b2 group-hover/second:font-medium group-hover/second:text-accent-1 transition-all"
+                                        >Смесители2</a
+                                    >
+                                    <ul class="invisible opacity-0 group-hover/second:visible group-hover/second:opacity-100 absolute top-0 right-[calc(-100%-1px)] flex w-full flex-col gap-y-3 transition-all pl-5">
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Рычаг2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1">Для кухни2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для ванной и душа2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Для раковины и умывальника2</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#" class="flex text-b2 hover:text-accent-1 hover:font-medium transition-all hover:border-r-[1.5px] hover:border-accent-1"
+                                                >Проточные смесители2</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Фитинги</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Концевики</a>
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li class="w-full group/second">
+                                    <a href="#" class="flex text-b2 hover:border-accent-1 hover:text-accent-1 transition-all hover:border-r-[1.5px] hover:font-medium">Удлинители</a>
+                                </li>
+                                <!-- <li class="inline-flex gap-x-2 pb-1.5 border-gray border-b-[1px] border-dashed items-center cursor-pointer" onclick="fullList('plumbing')" id="ul-plumbing-full-list">
+                                    <span class="text-b2 text-textPrimary">Полный список</span>
+                                    <svg class="w-4 h-4">
+                                        <use href="assets/icons/sprites.svg#arrow_bottom" />
+                                    </svg>
+                                </li> -->
+                            </ul>
                         </li>
                     </ul>
                     <div
-                        class="col-span-3 border-r-[1px] border-stroke-1 py-5 pl-5"
+                        class="col-span-3 py-5 pl-5"
                     >
-                        <div class="hidden flex-col items-start gap-y-3" id="catalog-nested-ul-plumbing">
-                            <ul class="flex w-full flex-col gap-y-3">
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="flex border-r-[1.5px] border-accent-1 text-b2 font-medium text-accent-1"
-                                        >Смесители</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Труба гофрированная</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Врезки для ёмкостей</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Комплектующие для смесителей</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Прокладки, кольца, сантех. наборы</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Трубки для смесителя</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Регуляторы давления</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2">Фитинги</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2">Концевики</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Фитинги резьбовые латунные</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2">Удлинители</a>
-                                </li>
-                            </ul>
-                            <div
-                                class="flex cursor-pointer items-center gap-x-2 border-b-[1px] border-dashed border-gray"
-                            >
-                                <div class="text-b3 text-textPrimary">
-                                    Полный список
-                                </div>
-                                <svg class="h-4 w-4">
-                                    <use
-                                        href="assets/icons/sprites.svg#arrow_right"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="hidden flex-col items-start gap-y-3" id="catalog-nested-ul-water-supply">
-                            <ul class="flex w-full flex-col gap-y-3">
-                                <li>
-                                    <a
-                                        href="#"
-                                        class="flex border-r-[1.5px] border-accent-1 text-b2 font-medium text-accent-1"
-                                        >Смесители</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Труба гофрированная</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Врезки для ёмкостей</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Комплектующие для смесителей</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Прокладки, кольца, сантех. наборы</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Трубки для смесителя</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Регуляторы давления</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2">Фитинги</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2">Концевики</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2"
-                                        >Фитинги резьбовые латунные</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="#" class="flex text-b2">Удлинители</a>
-                                </li>
-                            </ul>
-                            <div
-                                class="flex cursor-pointer items-center gap-x-2 border-b-[1px] border-dashed border-gray"
-                            >
-                                <div class="text-b3 text-textPrimary">
-                                    Полный список
-                                </div>
-                                <svg class="h-4 w-4">
-                                    <use
-                                        href="assets/icons/sprites.svg#arrow_right"
-                                    />
-                                </svg>
-                            </div>
-                        </div>
+
                     </div>
                     <div
-                        class="col-span-3 flex flex-col items-start gap-y-3 border-r-[1px] border-stroke-1 py-5 pl-5"
+                        class="col-span-3 flex flex-col items-start gap-y-3 py-5 pl-5"
                     >
-                        <ul class="flex w-full flex-col gap-y-3">
-                            <li>
-                                <a href="#" class="flex text-b2">Рычаг</a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2">Для кухни</a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Для ванной и душа</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Для раковины и умывальника</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Проточные смесители</a
-                                >
-                            </li>
-                        </ul>
-                        <div
-                            class="flex hidden cursor-pointer items-center gap-x-2 border-b-[1px] border-dashed border-gray"
-                        >
-                            <div class="text-b3 text-textPrimary">
-                                Полный список
-                            </div>
-                            <svg class="h-4 w-4">
-                                <use
-                                    href="assets/icons/sprites.svg#arrow_right"
-                                />
-                            </svg>
-                        </div>
+
                     </div>
                     <div class="col-span-3 p-5">
                         <div

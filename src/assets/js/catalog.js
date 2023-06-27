@@ -28,3 +28,12 @@ const openCatalog = () => {
     document.getElementById('catalog-pop-up').classList.toggle('visible')
     document.getElementById('catalog-pop-up').classList.toggle('invisible')
 }
+
+const fullList = (name) => {
+    const ul = document.getElementById(`ul-${name}`);
+
+    ul.classList.remove('max-h-[400px]')
+    ul.classList.add('max-h-[1024px]')
+    ul.classList.remove('overflow-hidden')
+    ul.classList.add('overflow-y-auto')
+}
