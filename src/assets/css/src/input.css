@@ -262,8 +262,10 @@
 
 /* grid - when swiper disable */
 
-.grid-hidden {
-    display: none !important;
+@media (max-width: 1024px) {
+    .grid-hidden {
+        display: none !important;
+    }
 }
 
 /* ul */

@@ -3,59 +3,95 @@ module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
         fontSize: {
-            'h1': ['64px', {
-                lineHeight: '110%',
-                letterSpacing: '0em',
-                fontWeight: '400',
-            }],
-            'h2': ['48px', {
-                lineHeight: '110%',
-                letterSpacing: '-0.05em',
-                fontWeight: '500',
-            }],
-            'h3': ['32px', {
-                lineHeight: '110%',
-                letterSpacing: '-0.04em',
-                fontWeight: '500',
-            }],
-            'h4': ['24px', {
-                lineHeight: '110%',
-                letterSpacing: '-0.02em',
-                fontWeight: '400',
-            }],
-            'b1': ['18px', {
-                lineHeight: '130%',
-                letterSpacing: '0em',
-                fontWeight: '400',
-            }],
-            'b2': ['15px', {
-                lineHeight: '140%',
-                letterSpacing: '0em',
-                fontWeight: '400',
-            }],
-            'b3': ['14px', {
-                lineHeight: '120%',
-                letterSpacing: '0em',
-                fontWeight: '400',
-            }],
-            'c1': ['12px', {
-                letterSpacing: '0em',
-                fontWeight: '400',
-            }],
-            'mobile-h2': ['24px', {
-                lineHeight: '100%',
-                letterSpacing: '-0.02em',
-                fontWeight: '500',
-            }],
-            'mobile-b1': ['12px', {
-                fontWeight: '500',
-            }],
-            'mobile-b2': ['10px', {
-                fontWeight: '400',
-            }],
-            'mobile-b3': ['8px', {
-                fontWeight: '400',
-            }],
+            h1: [
+                "64px",
+                {
+                    lineHeight: "110%",
+                    letterSpacing: "0em",
+                    fontWeight: "400",
+                },
+            ],
+            h2: [
+                "48px",
+                {
+                    lineHeight: "110%",
+                    letterSpacing: "-0.05em",
+                    fontWeight: "500",
+                },
+            ],
+            h3: [
+                "32px",
+                {
+                    lineHeight: "110%",
+                    letterSpacing: "-0.04em",
+                    fontWeight: "500",
+                },
+            ],
+            h4: [
+                "24px",
+                {
+                    lineHeight: "110%",
+                    letterSpacing: "-0.02em",
+                    fontWeight: "400",
+                },
+            ],
+            b1: [
+                "18px",
+                {
+                    lineHeight: "130%",
+                    letterSpacing: "0em",
+                    fontWeight: "400",
+                },
+            ],
+            b2: [
+                "15px",
+                {
+                    lineHeight: "140%",
+                    letterSpacing: "0em",
+                    fontWeight: "400",
+                },
+            ],
+            b3: [
+                "14px",
+                {
+                    lineHeight: "120%",
+                    letterSpacing: "0em",
+                    fontWeight: "400",
+                },
+            ],
+            c1: [
+                "12px",
+                {
+                    letterSpacing: "0em",
+                    fontWeight: "400",
+                },
+            ],
+            "mobile-h2": [
+                "24px",
+                {
+                    lineHeight: "100%",
+                    letterSpacing: "-0.02em",
+                    fontWeight: "500",
+                },
+            ],
+            "mobile-b1": [
+                "12px",
+                {
+                    fontWeight: "500",
+                },
+            ],
+            "mobile-b2": [
+                "10px",
+                {
+                    fontWeight: "400",
+                },
+            ],
+            "mobile-b3": [
+                "8px",
+                {
+                    fontWeight: "400",
+                },
+            ],
         },
         colors: {
             "accent-1": "#2D88D6",
@@ -73,8 +109,8 @@ module.exports = {
         },
         extend: {
             maxWidth: {
-                'desktop': '1360px'
-            }
+                desktop: "1360px",
+            },
         },
     },
     plugins: [],
