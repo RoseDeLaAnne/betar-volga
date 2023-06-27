@@ -15,10 +15,18 @@ const inputOnChange = (event, name, name2) => {
         document.getElementById('inn-organization').classList.remove('hidden')
         document.getElementById('name-of-the-organization').classList.remove('hidden')
         document.getElementById('for-new-clients-section').classList.remove('hidden')
+        document.getElementById('label-payment-method-from-a-client-account').classList.remove('hidden')
+        document.getElementById('label-payment-method-online').classList.add('hidden')
+        document.getElementById('label-payment-method-courier').classList.add('hidden')
+        document.getElementById('label-payment-method-fps').classList.add('hidden')
     } else if (name === 'subject-individuals') {
         document.getElementById('inn-organization').classList.add('hidden')
         document.getElementById('name-of-the-organization').classList.add('hidden')
         document.getElementById('for-new-clients-section').classList.add('hidden')
+        document.getElementById('label-payment-method-from-a-client-account').classList.add('hidden')
+        document.getElementById('label-payment-method-online').classList.remove('hidden')
+        document.getElementById('label-payment-method-courier').classList.remove('hidden')
+        document.getElementById('label-payment-method-fps').classList.remove('hidden')
     } else if (name === 'delivery-pickup') {
         document.getElementById('pickup-section').classList.remove('hidden');
     } 

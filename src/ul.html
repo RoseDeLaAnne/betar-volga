@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
+            #mainList {
+                padding-right: 20px;
+                list-style-type: none;
+            }
+
+            #mainList li {
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+
+            #mainList ul {
+                padding-left: 20px;
+                list-style-type: none;
+            }
+
+            #mainList ul li {
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="mainList">
+                <li>Item 1</li>
+                <li>
+                    Item 2
+                    <ul>
+                        <li>Subitem 1</li>
+                        <li>Subitem 2</li>
+                    </ul>
+                </li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <script>
+            var mainListItems = document.querySelectorAll("#mainList > li");
+
+            for (var i = 0; i < mainListItems.length; i++) {
+                mainListItems[i].addEventListener("mouseenter", function () {
+                    var sublist = this.querySelector("ul");
+                    if (sublist) {
+                        sublist.style.display = "block";
+                    }
+                });
+
+                mainListItems[i].addEventListener("mouseleave", function () {
+                    var sublist = this.querySelector("ul");
+                    if (sublist) {
+                        sublist.style.display = "none";
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

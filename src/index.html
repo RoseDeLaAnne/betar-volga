@@ -883,7 +883,7 @@
 
             <!-- catalog pop-up -->
             <div
-                class="invisible relative z-40 mx-auto max-w-desktop opacity-0 transition-all"
+                class="relative z-40 mx-auto max-w-desktop transition-all invisible opacity-0"
                 id="catalog-pop-up"
             >
                 <div
@@ -891,6 +891,7 @@
                     id="catalog-pop-up-block"
                 >
                     <ul
+                        id="catalog-ul-1"
                         class="col-span-3 flex flex-col gap-y-4 rounded-l-[20px] border-r-[1px] border-stroke-1 bg-white py-5 pl-5"
                     >
                         <li>
@@ -974,72 +975,141 @@
                         </li>
                     </ul>
                     <div
-                        class="col-span-3 flex flex-col items-start gap-y-3 border-r-[1px] border-stroke-1 py-5 pl-5"
+                        class="col-span-3 border-r-[1px] border-stroke-1 py-5 pl-5"
                     >
-                        <ul class="flex w-full flex-col gap-y-3">
-                            <li>
-                                <a
-                                    href="#"
-                                    class="flex border-r-[1.5px] border-accent-1 text-b2 font-medium text-accent-1"
-                                    >Смесители</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Труба гофрированная</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Врезки для ёмкостей</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Комплектующие для смесителей</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Прокладки, кольца, сантех. наборы</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Трубки для смесителя</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Регуляторы давления</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2">Фитинги</a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2">Концевики</a>
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2"
-                                    >Фитинги резьбовые латунные</a
-                                >
-                            </li>
-                            <li>
-                                <a href="#" class="flex text-b2">Удлинители</a>
-                            </li>
-                        </ul>
-                        <div
-                            class="flex cursor-pointer items-center gap-x-2 border-b-[1px] border-dashed border-gray"
-                        >
-                            <div class="text-b3 text-textPrimary">
-                                Полный список
+                        <div class="hidden flex-col items-start gap-y-3" id="catalog-nested-ul-plumbing">
+                            <ul class="flex w-full flex-col gap-y-3">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="flex border-r-[1.5px] border-accent-1 text-b2 font-medium text-accent-1"
+                                        >Смесители</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2">Фитинги</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2">Концевики</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2">Удлинители</a>
+                                </li>
+                            </ul>
+                            <div
+                                class="flex cursor-pointer items-center gap-x-2 border-b-[1px] border-dashed border-gray"
+                            >
+                                <div class="text-b3 text-textPrimary">
+                                    Полный список
+                                </div>
+                                <svg class="h-4 w-4">
+                                    <use
+                                        href="assets/icons/sprites.svg#arrow_right"
+                                    />
+                                </svg>
                             </div>
-                            <svg class="h-4 w-4">
-                                <use
-                                    href="assets/icons/sprites.svg#arrow_right"
-                                />
-                            </svg>
+                        </div>
+                        <div class="hidden flex-col items-start gap-y-3" id="catalog-nested-ul-water-supply">
+                            <ul class="flex w-full flex-col gap-y-3">
+                                <li>
+                                    <a
+                                        href="#"
+                                        class="flex border-r-[1.5px] border-accent-1 text-b2 font-medium text-accent-1"
+                                        >Смесители</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Труба гофрированная</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Врезки для ёмкостей</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Комплектующие для смесителей</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Прокладки, кольца, сантех. наборы</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Трубки для смесителя</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Регуляторы давления</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2">Фитинги</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2">Концевики</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2"
+                                        >Фитинги резьбовые латунные</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="flex text-b2">Удлинители</a>
+                                </li>
+                            </ul>
+                            <div
+                                class="flex cursor-pointer items-center gap-x-2 border-b-[1px] border-dashed border-gray"
+                            >
+                                <div class="text-b3 text-textPrimary">
+                                    Полный список
+                                </div>
+                                <svg class="h-4 w-4">
+                                    <use
+                                        href="assets/icons/sprites.svg#arrow_right"
+                                    />
+                                </svg>
+                            </div>
                         </div>
                     </div>
                     <div
@@ -1105,6 +1175,7 @@
                 </div>
             </div>
 
+            <!-- header -->
             <header id="header" class="header z-40 w-full">
                 <div
                     class="hidden overflow-hidden bg-[#E6EBEF] transition-all lg:block"
@@ -1417,6 +1488,7 @@
                 </div>
             </header>
 
+            <!-- main -->
             <main id="main" class="main">
                 <!-- completed -->
                 <section>
@@ -2778,10 +2850,10 @@
                                 class="flex flex-col gap-y-[10px] lg:grid lg:grid-cols-12 lg:gap-5"
                             >
                                 <li
-                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-1.png')] bg-right-bottom bg-no-repeat p-4 lg:col-span-6 lg:row-span-2 lg:h-auto lg:p-10"
+                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-1.png')] bg-right-bottom bg-no-repeat p-4 lg:col-span-6 lg:row-span-2 lg:h-auto lg:p-10 bg-[length:144px] lg:bg-auto"
                                 >
                                     <ul
-                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
+                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:gap-2.5 lg:text-b3 lg:text-[#828282] w-2/3 lg:w-full"
                                     >
                                         <li
                                             class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
@@ -2842,10 +2914,10 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-2.png')] bg-right bg-no-repeat p-4 lg:col-span-6 lg:h-[284px] lg:p-10"
+                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-2.png')] lg:bg-right bg-no-repeat p-4 lg:col-span-6 lg:h-[284px] lg:p-10 bg-[length:384px] lg:bg-auto bg-right-top"
                                 >
                                     <ul
-                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:w-1/2 lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
+                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] w-1/2 lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
                                     >
                                         <li
                                             class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
@@ -2881,18 +2953,18 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-3.png')] bg-right bg-no-repeat p-4 lg:col-span-6 lg:h-[284px] lg:p-10"
+                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-3.png')] bg-right bg-no-repeat p-4 lg:col-span-6 lg:h-[284px] lg:p-10 bg-[length:384px] lg:bg-auto"
                                 >
                                     <ul
-                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:w-1/2 lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
+                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] w-1/2 lg:gap-2.5 lg:text-b3 lg:text-[#828282] "
                                     >
                                         <li
-                                            class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
+                                            class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5 whitespace-nowrap"
                                         >
                                             Радиаторы и комплектующие
                                         </li>
                                         <li
-                                            class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
+                                            class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5 whitespace-nowrap"
                                         >
                                             Газовые колонки
                                         </li>
@@ -2920,10 +2992,10 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-4.png')] bg-right-top bg-no-repeat p-4 lg:col-span-4 lg:h-[440px] lg:p-10"
+                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-4.png')] bg-right-top bg-no-repeat p-4 lg:col-span-4 lg:h-[440px] lg:p-10 bg-[length:256px] lg:bg-auto"
                                 >
                                     <ul
-                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:w-1/2 lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
+                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] w-1/2 lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
                                     >
                                         <li
                                             class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
@@ -2959,10 +3031,10 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-5.png')] bg-right bg-no-repeat p-4 lg:col-span-4 lg:h-[440px] lg:p-10"
+                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-5.png')] lg:bg-right bg-no-repeat p-4 lg:col-span-4 lg:h-[440px] lg:p-10 bg-[length:144px] lg:bg-auto bg-[top_2rem_right_0.5rem]"
                                 >
                                     <ul
-                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:w-2/3 lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
+                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:w-2/3 lg:gap-2.5 lg:text-b3 lg:text-[#828282] w-1/2"
                                     >
                                         <li
                                             class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
@@ -3003,10 +3075,10 @@
                                     </div>
                                 </li>
                                 <li
-                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-6.png')] bg-right bg-no-repeat p-4 lg:col-span-4 lg:h-[440px] lg:p-10"
+                                    class="flex h-[263px] flex-col items-start justify-between rounded-[10px] border border-stroke-2 bg-fullWhite bg-[url('/src/assets/images/category-item-6.png')] lg:bg-right bg-no-repeat p-4 lg:col-span-4 lg:h-[440px] lg:p-10 bg-[length:160px] lg:bg-auto bg-[top_2rem_right_0.5rem]"
                                 >
                                     <ul
-                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:gap-2.5 lg:text-b3 lg:text-[#828282]"
+                                        class="flex flex-wrap gap-[5px] text-mobile-b3 text-[#6A6B70] lg:gap-2.5 lg:text-b3 lg:text-[#828282] w-1/2 lg:w-full"
                                     >
                                         <li
                                             class="cursor-pointer rounded-[30px] border border-stroke-2 px-2 py-1 transition-all hover:border-gray lg:px-3.5 lg:py-1.5"
@@ -4023,7 +4095,7 @@
                             class="flex flex-col gap-y-[10px] lg:grid lg:grid-cols-12 lg:gap-x-5"
                         >
                             <div
-                                class="relative flex h-52 flex-col items-start justify-between rounded-[10px] bg-accent-2-opacity bg-[url('/src/assets/icons/delivery.svg')] bg-right-bottom bg-no-repeat p-6 lg:col-span-6 lg:h-80 lg:rounded-2xl lg:p-10"
+                                class="relative flex h-52 flex-col items-start justify-between rounded-[10px] bg-accent-2-opacity bg-[url('/src/assets/icons/delivery.svg')] bg-[right_4rem_bottom_0rem] bg-no-repeat p-6 lg:col-span-6 lg:h-80 lg:rounded-2xl lg:p-10"
                             >
                                 <div class="flex flex-col gap-y-3 lg:gap-y-4">
                                     <div class="text-b1 font-medium lg:text-h3">
@@ -4043,7 +4115,7 @@
                                 >
                             </div>
                             <div
-                                class="relative flex h-52 flex-col items-start justify-between rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/yourServiceCenter.svg')] bg-right-bottom bg-no-repeat p-6 lg:col-span-6 lg:h-80 lg:rounded-2xl lg:p-10"
+                                class="relative flex h-52 flex-col items-start justify-between rounded-[10px] bg-accent-1-opacity bg-[url('/src/assets/icons/yourServiceCenter.svg')] bg-[right_2rem_bottom_2rem] bg-no-repeat p-6 lg:col-span-6 lg:h-80 lg:rounded-2xl lg:p-10"
                             >
                                 <div class="flex flex-col gap-y-3 lg:gap-y-4">
                                     <div
@@ -4832,7 +4904,6 @@
                     </div>
                 </section>
             </main>
-
             <footer
                 id="footer"
                 class="footer rounded-t-[10px] bg-textSecondary fill-white px-2.5 py-8 text-white lg:rounded-t-[40px] lg:px-0 lg:py-20"
@@ -5170,5 +5241,6 @@
         <script src="assets/js/catalog.js"></script>
         <script src="assets/js/sideMenu.js"></script>
         <script src="assets/js/showMore.js"></script>
+        <script src="assets/js/ul.js"></script>
     </body>
 </html>

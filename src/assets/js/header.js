@@ -49,7 +49,7 @@ function toggleFixedHeader() {
             headerLevel3.classList.remove("max-h-64");
             headerLevel3.classList.add("max-h-0");
 
-            catalogPopUpBlock.classList.add(`top-[${headerHeight}px]`);
+            catalogPopUpBlock.classList.add(`top-[92px]`);
         }
     } else {
         // Scrolling up
@@ -78,7 +78,7 @@ function toggleFixedHeader() {
         headerLevel3.classList.remove("max-h-0");
         headerLevel3.classList.add("max-h-64");
 
-        catalogPopUpBlock.classList.remove(`top-[${headerHeight}px]`);
+        catalogPopUpBlock.classList.remove(`top-[92px]`);
     }
 
     lastScrollPosition = scrollPosition;
