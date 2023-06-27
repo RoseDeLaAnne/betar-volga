@@ -705,14 +705,6 @@ body {
   order: 3;
 }
 
-.-order-last {
-  order: -9999;
-}
-
-.-order-first {
-  order: 9999;
-}
-
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -988,6 +980,10 @@ body {
   min-height: 55px;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1082,10 +1078,6 @@ body {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .min-w-\[16px\] {
@@ -1601,24 +1593,8 @@ body {
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[right_0\.5rem_\] {
-  background-color: right 0.5rem;
-}
-
-.bg-\[top_1rem_right_\] {
-  background-color: top 1rem right;
-}
-
-.bg-\[right_4rem_bottom_0rme\] {
-  background-color: right 4rem bottom 0rme;
-}
-
-.bg-\[right_4rem_bottom_0ree\] {
-  background-color: right 4rem bottom 0ree;
+.bg-\[bottom_\] {
+  background-color: bottom;
 }
 
 .bg-\[url\(\'\/src\/assets\/icons\/catalog-1\.svg\'\)\] {
@@ -1837,20 +1813,32 @@ body {
   background-image: url('/src/assets/images/water-catalog-item-6.png');
 }
 
+.bg-\[length\:100px\] {
+  background-size: 100px;
+}
+
+.bg-\[length\:144px\] {
+  background-size: 144px;
+}
+
+.bg-\[length\:160px\] {
+  background-size: 160px;
+}
+
+.bg-\[length\:256px\] {
+  background-size: 256px;
+}
+
 .bg-\[length\:32px\] {
   background-size: 32px;
 }
 
-.bg-\[length\:64px\] {
-  background-size: 64px;
+.bg-\[length\:384px\] {
+  background-size: 384px;
 }
 
-.bg-\[length\:80px\] {
-  background-size: 80px;
-}
-
-.bg-\[length\:100px\] {
-  background-size: 100px;
+.bg-\[length\:40px\] {
+  background-size: 40px;
 }
 
 .bg-\[length\:48px\] {
@@ -1861,64 +1849,20 @@ body {
   background-size: 56px;
 }
 
-.bg-\[length\:40px\] {
-  background-size: 40px;
+.bg-\[length\:64px\] {
+  background-size: 64px;
 }
 
-.bg-\[length\:px\] {
-  background-size: px;
+.bg-\[length\:80px\] {
+  background-size: 80px;
 }
 
 .bg-\[length\:86px\] {
   background-size: 86px;
 }
 
-.bg-\[length\:96px\] {
-  background-size: 96px;
-}
-
-.bg-\[length\:256pxpx\] {
-  background-size: 256pxpx;
-}
-
-.bg-\[length\:256px\] {
-  background-size: 256px;
-}
-
-.bg-\[length\:128px\] {
-  background-size: 128px;
-}
-
-.bg-\[length\:196px\] {
-  background-size: 196px;
-}
-
-.bg-\[length\:512px\] {
-  background-size: 512px;
-}
-
-.bg-\[length\:384px\] {
-  background-size: 384px;
-}
-
-.bg-\[length\:144px\] {
-  background-size: 144px;
-}
-
-.bg-\[length\:164px\] {
-  background-size: 164px;
-}
-
-.bg-\[length\:160px\] {
-  background-size: 160px;
-}
-
 .bg-\[bottom_0\.5rem_right_0\.5rem\] {
   background-position: bottom 0.5rem right 0.5rem;
-}
-
-.bg-\[bottom_1\.5rem_right_1\.5rem\] {
-  background-position: bottom 1.5rem right 1.5rem;
 }
 
 .bg-\[bottom_1rem_right_1rem\] {
@@ -1929,20 +1873,24 @@ body {
   background-position: center right 1rem;
 }
 
+.bg-\[right_0\.5rem_bottom_0\.5rem\] {
+  background-position: right 0.5rem bottom 0.5rem;
+}
+
 .bg-\[right_1rem_bottom_1rem\] {
   background-position: right 1rem bottom 1rem;
 }
 
-.bg-\[right_2rem\] {
-  background-position: right 2rem;
+.bg-\[right_2rem_bottom_2rem\] {
+  background-position: right 2rem bottom 2rem;
 }
 
-.bg-\[right_top_6rem\] {
-  background-position: right top 6rem;
+.bg-\[right_4rem_bottom_0rem\] {
+  background-position: right 4rem bottom 0rem;
 }
 
-.bg-\[top_7rem_right_1\.5rem\] {
-  background-position: top 7rem right 1.5rem;
+.bg-\[top_2rem_right_0\.5rem\] {
+  background-position: top 2rem right 0.5rem;
 }
 
 .bg-right {
@@ -1957,60 +1905,8 @@ body {
   background-position: right top;
 }
 
-.bg-\[right_0\.5rem_bottom_0\.5rem\] {
-  background-position: right 0.5rem bottom 0.5rem;
-}
-
-.bg-\[right_0\.5rem_bottom_1rem\] {
-  background-position: right 0.5rem bottom 1rem;
-}
-
-.bg-\[right\] {
-  background-position: right;
-}
-
-.bg-\[center_right_2rem\] {
-  background-position: center right 2rem;
-}
-
-.bg-\[center_right_1\.5rem\] {
-  background-position: center right 1.5rem;
-}
-
-.bg-\[right_-1rem\] {
-  background-position: right -1rem;
-}
-
-.bg-\[right_-2rem\] {
-  background-position: right -2rem;
-}
-
-.bg-\[top_1rem_right_1rem\] {
-  background-position: top 1rem right 1rem;
-}
-
-.bg-\[top_1rem_right_0\.5rem\] {
-  background-position: top 1rem right 0.5rem;
-}
-
-.bg-\[top_2rem_right_0\.5rem\] {
-  background-position: top 2rem right 0.5rem;
-}
-
-.bg-\[right_4rem_bottom\] {
-  background-position: right 4rem bottom;
-}
-
-.bg-\[right_4rem_bottom_0rem\] {
-  background-position: right 4rem bottom 0rem;
-}
-
-.bg-\[right_4rem_bottom_2rem\] {
-  background-position: right 4rem bottom 2rem;
-}
-
-.bg-\[right_2rem_bottom_2rem\] {
-  background-position: right 2rem bottom 2rem;
+.bg-\[bottom_0rem_right_1rem\] {
+  background-position: bottom 0rem right 1rem;
 }
 
 .bg-no-repeat {
@@ -2921,10 +2817,6 @@ body {
   .sm\:bg-\[length\:100px\] {
     background-size: 100px;
   }
-
-  .sm\:bg-\[length\:64px\] {
-    background-size: 64px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -3212,10 +3104,6 @@ body {
 
   .lg\:min-h-\[32px\] {
     min-height: 32px;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
   }
 
   .lg\:w-1\/4 {
@@ -3629,12 +3517,24 @@ body {
     background-size: auto;
   }
 
-  .lg\:bg-\[length\:64px\] {
-    background-size: 64px;
+  .lg\:bg-\[bottom_1\.5rem_right_1\.5rem\] {
+    background-position: bottom 1.5rem right 1.5rem;
+  }
+
+  .lg\:bg-\[bottom_1rem_right_1rem\] {
+    background-position: bottom 1rem right 1rem;
+  }
+
+  .lg\:bg-\[center_right_1rem\] {
+    background-position: center right 1rem;
   }
 
   .lg\:bg-\[center_right_2rem\] {
     background-position: center right 2rem;
+  }
+
+  .lg\:bg-\[right_2rem\] {
+    background-position: right 2rem;
   }
 
   .lg\:bg-\[right_top_6rem\] {
@@ -3645,40 +3545,28 @@ body {
     background-position: right top 8rem;
   }
 
+  .lg\:bg-\[top_7rem_right_1\.5rem\] {
+    background-position: top 7rem right 1.5rem;
+  }
+
   .lg\:bg-right {
     background-position: right;
-  }
-
-  .lg\:bg-\[center_right_1rem\] {
-    background-position: center right 1rem;
-  }
-
-  .lg\:bg-right-top {
-    background-position: right top;
   }
 
   .lg\:bg-right-bottom {
     background-position: right bottom;
   }
 
-  .lg\:bg-\[right_2rem\] {
-    background-position: right 2rem;
+  .lg\:bg-right-top {
+    background-position: right top;
   }
 
-  .lg\:bg-\[bottom_1rem_right_1rem\] {
-    background-position: bottom 1rem right 1rem;
+  .lg\:bg-\[right_4rem_bottom_0rem\] {
+    background-position: right 4rem bottom 0rem;
   }
 
-  .lg\:bg-\[bottom_1\.5rem_right_1\.5rem\] {
-    background-position: bottom 1.5rem right 1.5rem;
-  }
-
-  .lg\:bg-\[top_7rem_right_1\.5rem\] {
-    background-position: top 7rem right 1.5rem;
-  }
-
-  .lg\:bg-top {
-    background-position: top;
+  .lg\:bg-\[right_2rem_bottom_2rem\] {
+    background-position: right 2rem bottom 2rem;
   }
 
   .lg\:p-10 {
