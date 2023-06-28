@@ -91,6 +91,39 @@
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+/* nouislider */
+
+#slider {
+    height: 1px !important;
+    background-color: #ecf0f4 !important; /* Set a background color for the track */
+    border: none !important;
+}
+
+#slider .noUi-handle {
+    background-color: #2d88d6 !important;
+    border: none !important; /* Remove the default handle border */
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) !important; /* Optional: Add a subtle shadow to the handles */
+}
+
+#slider .noUi-connect {
+    height: 5px !important;
+    background-color: #2d88d6 !important; /* Customize the connecting line color */
+    border: none !important;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+    display: none !important;
+}
+
+.noUi-horizontal .noUi-handle {
+    top: -5px !important;
+    right: -5px !important;
+}
+
 /* swiper/styles */
 /* reset */
 

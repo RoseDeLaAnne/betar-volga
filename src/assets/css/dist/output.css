@@ -689,6 +689,18 @@ body {
   top: 92px;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.-bottom-4 {
+  bottom: -1rem;
+}
+
+.-bottom-5 {
+  bottom: -1.25rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -731,6 +743,10 @@ body {
 
 .col-span-6 {
   grid-column: span 6 / span 6;
+}
+
+.col-span-8 {
+  grid-column: span 8 / span 8;
 }
 
 .-my-10 {
@@ -968,8 +984,16 @@ body {
   height: 100vh;
 }
 
+.h-\[4px\] {
+  height: 4px;
+}
+
 .max-h-0 {
   max-height: 0px;
+}
+
+.max-h-16 {
+  max-height: 4rem;
 }
 
 .max-h-48 {
@@ -994,18 +1018,6 @@ body {
 
 .max-h-\[592px\] {
   max-height: 592px;
-}
-
-.max-h-12 {
-  max-height: 3rem;
-}
-
-.max-h-14 {
-  max-height: 3.5rem;
-}
-
-.max-h-16 {
-  max-height: 4rem;
 }
 
 .min-h-\[16px\] {
@@ -1118,6 +1130,14 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[900px\] {
+  width: 900px;
 }
 
 .min-w-\[16px\] {
@@ -1363,6 +1383,10 @@ body {
 
 .gap-y-\[5px\] {
   row-gap: 5px;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1631,6 +1655,11 @@ body {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E0E0E0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 224 224 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/src\/assets\/icons\/catalog-1\.svg\'\)\] {
@@ -1993,10 +2022,6 @@ body {
   stroke: #1D1E20;
 }
 
-.stroke-accent-2 {
-  stroke: #E84E1B;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2076,11 +2101,6 @@ body {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 
 .px-\[15px\] {
@@ -2373,10 +2393,6 @@ body {
   font-weight: 500;
 }
 
-.text-\[15px\] {
-  font-size: 15px;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -2516,14 +2532,6 @@ body {
   transition-duration: 150ms;
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 
 .no-scrollbar::-webkit-scrollbar {
@@ -2607,6 +2615,43 @@ body {
 
 #cart-side {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* nouislider */
+
+#slider {
+  height: 1px !important;
+  background-color: #ecf0f4 !important;
+  /* Set a background color for the track */
+  border: none !important;
+}
+
+#slider .noUi-handle {
+  background-color: #2d88d6 !important;
+  border: none !important;
+  /* Remove the default handle border */
+  border-radius: 50% !important;
+  width: 10px !important;
+  height: 10px !important;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) !important;
+  /* Optional: Add a subtle shadow to the handles */
+}
+
+#slider .noUi-connect {
+  height: 5px !important;
+  background-color: #2d88d6 !important;
+  /* Customize the connecting line color */
+  border: none !important;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+  display: none !important;
+}
+
+.noUi-horizontal .noUi-handle {
+  top: -5px !important;
+  right: -5px !important;
 }
 
 /* swiper/styles */
@@ -2801,18 +2846,6 @@ body {
   --tw-bg-opacity: 0;
 }
 
-.hover\:bg-\[length\:192px\]:hover {
-  background-size: 192px;
-}
-
-.hover\:bg-\[length\:512px\]:hover {
-  background-size: 512px;
-}
-
-.hover\:bg-\[length\:448px\]:hover {
-  background-size: 448px;
-}
-
 .hover\:fill-accent-1:hover {
   fill: #2D88D6;
 }
@@ -2910,10 +2943,6 @@ body {
 
 .group:hover .group-hover\:stroke-accent-2 {
   stroke: #E84E1B;
-}
-
-.group:hover .group-hover\:stroke-gray {
-  stroke: #A5A8AD;
 }
 
 .group:hover .group-hover\:stroke-stroke-1 {
@@ -3053,6 +3082,14 @@ body {
 
   .lg\:col-span-9 {
     grid-column: span 9 / span 9;
+  }
+
+  .lg\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+
+  .lg\:col-span-10 {
+    grid-column: span 10 / span 10;
   }
 
   .lg\:row-span-2 {
@@ -3373,6 +3410,10 @@ body {
     grid-template-columns: repeat(9, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
   .lg\:grid-rows-none {
     grid-template-rows: none;
   }
@@ -3411,6 +3452,10 @@ body {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:gap-2 {
@@ -3543,6 +3588,16 @@ body {
 
   .lg\:gap-y-\[30px\] {
     row-gap: 30px;
+  }
+
+  .lg\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
+  .lg\:gap-x-24 {
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
   }
 
   .lg\:overflow-y-auto {
@@ -4011,10 +4066,6 @@ body {
     text-align: left;
   }
 
-  .lg\:text-center {
-    text-align: center;
-  }
-
   .lg\:text-right {
     text-align: right;
   }
@@ -4132,6 +4183,10 @@ body {
     text-decoration-line: underline;
   }
 
+  .lg\:hover\:bg-\[length\:320px\]:hover {
+    background-size: 320px;
+  }
+
   .lg\:hover\:bg-\[length\:448px\]:hover {
     background-size: 448px;
   }
@@ -4142,10 +4197,6 @@ body {
 
   .lg\:hover\:bg-\[length\:768px\]:hover {
     background-size: 768px;
-  }
-
-  .lg\:hover\:bg-\[length\:320px\]:hover {
-    background-size: 320px;
   }
 }
 

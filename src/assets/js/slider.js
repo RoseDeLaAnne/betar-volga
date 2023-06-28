@@ -3,11 +3,19 @@ var input1 = document.getElementById("slider-value1");
 var input2 = document.getElementById("slider-value2");
 
 noUiSlider.create(slider, {
-    start: [0, 100000],
-    connect: true,
+    start: [0, 100000], // Initial slider values
+    connect: true, // Enable range selection
     range: {
         min: 0,
         max: 100000,
+    },
+    format: {
+        from: function (value) {
+            return parseInt(value);
+        },
+        to: function (value) {
+            return parseInt(value);
+        },
     },
 });
 
