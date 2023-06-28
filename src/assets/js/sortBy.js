@@ -1,10 +1,14 @@
 var sortByWindow = document.getElementById("sort-by-window");
 var sortBySvgId = document.getElementById("sort-by-svg-id");
-var sortBySvgIdIconName = sortBySvgId.href.baseVal.slice(
-    sortBySvgId.href.baseVal.lastIndexOf("#") + 1
-);
+
 
 const openSortByWindow = () => {
+    var sortBySvgIdIconName = sortBySvgId.href.baseVal.slice(
+        sortBySvgId.href.baseVal.lastIndexOf("#") + 1
+    );
+
+    console.log(sortBySvgIdIconName)
+
     if (sortBySvgIdIconName === "arrow_bottom") {
         sortBySvgId.setAttribute("href", "assets/icons/sprites.svg#arrow_top");
     } else {
