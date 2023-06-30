@@ -729,12 +729,12 @@ body {
   grid-column: span 3 / span 3;
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-
 .col-span-4 {
   grid-column: span 4 / span 4;
+}
+
+.col-span-6 {
+  grid-column: span 6 / span 6;
 }
 
 .-my-10 {
@@ -758,6 +758,10 @@ body {
 
 .-mr-0\.5 {
   margin-right: -0.125rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mb-4 {
@@ -818,10 +822,6 @@ body {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -1439,6 +1439,10 @@ body {
   border-radius: 6px;
 }
 
+.rounded-\[9px\] {
+  border-radius: 9px;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1453,10 +1457,6 @@ body {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-\[9px\] {
-  border-radius: 9px;
 }
 
 .rounded-l-\[20px\] {
@@ -1487,11 +1487,6 @@ body {
 .rounded-t-\[10px\] {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-.rounded-s-\[9px\] {
-  border-start-start-radius: 9px;
-  border-end-start-radius: 9px;
 }
 
 .border {
@@ -1990,6 +1985,10 @@ body {
   stroke: #2D88D6;
 }
 
+.stroke-accent-2 {
+  stroke: #E84E1B;
+}
+
 .stroke-fullWhite {
   stroke: #FFFFFF;
 }
@@ -2008,10 +2007,6 @@ body {
 
 .stroke-textSecondary {
   stroke: #1D1E20;
-}
-
-.stroke-accent-2 {
-  stroke: #E84E1B;
 }
 
 .object-cover {
@@ -2363,6 +2358,13 @@ body {
   font-weight: 500;
 }
 
+.text-h4 {
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
 .text-mobile-b1 {
   font-size: 12px;
   font-weight: 500;
@@ -2383,13 +2385,6 @@ body {
   line-height: 100%;
   letter-spacing: -0.02em;
   font-weight: 500;
-}
-
-.text-h4 {
-  font-size: 24px;
-  line-height: 110%;
-  letter-spacing: -0.02em;
-  font-weight: 400;
 }
 
 .font-medium {
@@ -3155,6 +3150,14 @@ body {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:block {
