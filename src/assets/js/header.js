@@ -36,7 +36,7 @@ function toggleFixedHeader() {
 
             cartSide.classList.add(`top-[92px]`);
             cartSide.classList.add(`h-[calc(100%-92px)]`);
-            cartSideBlock.classList.add(`h-[calc(100%-92px)]`);
+            cartSideBlock.classList.add(`lg:h-[calc(100%-92px)]`);
         }
 
         if (scrollPosition > 48) {
@@ -66,11 +66,11 @@ function toggleFixedHeader() {
         } else {
             cartSide.classList.remove(`top-[92px]`);
             cartSide.classList.remove(`h-[calc(100%-92px)]`);
-            cartSideBlock.classList.remove(`h-[calc(100%-92px)]`);
+            cartSideBlock.classList.remove(`lg:h-[calc(100%-92px)]`);
 
             cartSide.classList.add(`top-[220px]`);
             cartSide.classList.add(`h-[calc(100%-220px)]`);
-            cartSideBlock.classList.add(`h-[calc(100%-220px)]`);
+            cartSideBlock.classList.add(`lg:h-[calc(100%-220px)]`);
         }
 
         headerLevel1.classList.remove("max-h-0");

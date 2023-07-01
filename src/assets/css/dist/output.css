@@ -964,6 +964,10 @@ body {
   height: calc(100% - 92px);
 }
 
+.h-\[calc\(100vh-104px\)\] {
+  height: calc(100vh - 104px);
+}
+
 .h-full {
   height: 100%;
 }
@@ -974,6 +978,14 @@ body {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[calc\(100\%_-220px\)\] {
+  height: calc(100% -220px);
+}
+
+.h-\[calc\(100\%_-_220px\)\] {
+  height: calc(100% - 220px);
 }
 
 .max-h-0 {
@@ -3264,12 +3276,28 @@ body {
     height: 92px;
   }
 
+  .lg\:h-\[calc\(100\%-220px\)\] {
+    height: calc(100% - 220px);
+  }
+
   .lg\:h-auto {
     height: auto;
   }
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-\[calc\(100vh-104px\)\] {
+    height: calc(100vh - 104px);
+  }
+
+  .lg\:h-\[calc\(100vh-220px\)\] {
+    height: calc(100vh - 220px);
+  }
+
+  .lg\:h-\[calc\(100\%-92px\)\] {
+    height: calc(100% - 92px);
   }
 
   .lg\:max-h-64 {
