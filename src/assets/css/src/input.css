@@ -147,6 +147,12 @@
     height: auto !important;
 }
 
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
     display: none !important;
@@ -300,7 +306,3 @@
         display: none !important;
     }
 }
-
-/* ul */
-
-

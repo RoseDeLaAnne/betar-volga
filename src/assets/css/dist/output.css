@@ -992,6 +992,10 @@ body {
   max-height: 16rem;
 }
 
+.max-h-8 {
+  max-height: 2rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -2669,6 +2673,12 @@ body {
   height: auto !important;
 }
 
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none !important;
@@ -2810,8 +2820,6 @@ body {
     display: none !important;
   }
 }
-
-/* ul */
 
 .hover\:border:hover {
   border-width: 1px;
@@ -3296,6 +3304,10 @@ body {
     width: 3rem;
   }
 
+  .lg\:w-2\/12 {
+    width: 16.666667%;
+  }
+
   .lg\:w-2\/3 {
     width: 66.666667%;
   }
@@ -3324,12 +3336,20 @@ body {
     width: 1.25rem;
   }
 
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .lg\:w-52 {
     width: 13rem;
   }
 
   .lg\:w-6 {
     width: 1.5rem;
+  }
+
+  .lg\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .lg\:w-8 {
@@ -4188,5 +4208,3 @@ body {
     background-size: 768px;
   }
 }
-
-
