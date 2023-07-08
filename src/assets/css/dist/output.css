@@ -689,6 +689,10 @@ body {
   top: 92px;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -822,6 +826,14 @@ body {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
 }
 
 .block {
@@ -1142,6 +1154,26 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[5\.55\%\] {
+  width: 5.55%;
+}
+
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-\[32px\] {
+  width: 32px;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[2\%\] {
+  width: 2%;
 }
 
 .min-w-\[16px\] {
@@ -3152,6 +3184,14 @@ body {
     top: 220px;
   }
 
+  .lg\:right-2 {
+    right: 0.5rem;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:order-1 {
     order: 1;
   }
@@ -3280,6 +3320,10 @@ body {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .lg\:-mt-10 {
+    margin-top: -2.5rem;
   }
 
   .lg\:block {
@@ -3532,6 +3576,34 @@ body {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[11\.12\%\] {
+    width: 11.12%;
+  }
+
+  .lg\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:w-\[303\%\] {
+    width: 303%;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
   .lg\:min-w-\[32px\] {
